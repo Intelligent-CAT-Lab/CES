@@ -1,0 +1,71 @@
+[EXAMPLE]
+[CODE]
+def find_all_duplicate(numbers):
+    duplicates = []
+    for i in range(len(numbers)): ## [STATE]i=??[/STATE][STATE]range(len(numbers))=??[/STATE][STATE]len(numbers)=??[/STATE]
+        for j in range(i + 1, len(numbers)): ## [STATE]j=??[/STATE][STATE]range(i + 1, len(numbers))=??[/STATE][STATE]len(numbers)=??[/STATE]
+            if numbers[i] == numbers[j]: ## [CONDITION](numbers[i] == numbers[j])=??[/CONDITION][BRANCH]taken=??[/BRANCH]
+                duplicates.append(numbers[i])
+    return duplicates
+[/CODE]
+
+[INPUT]
+find_all_duplicate([3, 5, 4, 3, 7, 4])
+[/INPUT]
+
+[QUESTION]
+First print the step by step reasoning (wrapped with [REASONING] and [/REASONING]), then print the annotated code (wrapped with [PYTHON] and [PYTHON]), finally print the output (wrapped with [OUTPUT] and [OUTPUT]):
+[/QUESTION]
+
+[REASONING]
+The function find_all_duplicate(numbers) takes a list of numbers([3, 5, 4, 3, 7, 4]) as its parameter.
+The outer loop iterats through each element in the list to compare it against the others.
+In the inner loop, for each element indexed by i in the outer loop, compare it with every other element that comes after it in the list.
+First Iteration (i=0):
+    - `i` is 0, j in the inner loop is 1, 2, 3, 4 and 5.
+    - numbers[i]=3: compare with 5, 4, 3, 7, 4:
+        - When j = 1 (numbers[j]=5), the condition `numbers[i] == numbers[j]` is False, the if branch is not taken.
+        - When j = 2 (numbers[j]=4), the condition `numbers[i] == numbers[j]` is False, the if branch is not taken.
+        - When j = 3 (numbers[j]=3), the condition `numbers[i] == numbers[j]` is True, the if branch is taken. Append 3 to duplicates.
+        - When j = 4 (numbers[j]=7), the condition `numbers[i] == numbers[j]` is False, the if branch is not taken.
+        - When j = 5 (numbers[j]=4), the condition `numbers[i] == numbers[j]` is False, the if branch is not taken. 
+Second Iteration (i=1):
+    - `i` is 1, j in the inner loop is 2, 3, 4 and 5.
+    - numbers[i]=5: compare with 4, 3, 7, 4:
+        - When j = 2 (numbers[j]=4), the condition `numbers[i] == numbers[j]` is False, the if branch is not taken.
+        - When j = 3 (numbers[j]=3), the condition `numbers[i] == numbers[j]` is False, the if branch is not taken.
+        - When j = 4 (numbers[j]=7), the condition `numbers[i] == numbers[j]` is False, the if branch is not taken.
+        - When j = 5 (numbers[j]=4), the condition `numbers[i] == numbers[j]` is False, the if branch is not taken.
+Third Iteration (i=2):
+    - `i` is 2, j in the inner loop is 3, 4, 5.
+    - numbers[i]=4: compare with 3, 7, 4:
+        - When j = 3 (numbers[j]=3), the condition `numbers[i] == numbers[j]` is False, the if branch is not taken.
+        - When j = 4 (numbers[j]=7), the condition `numbers[i] == numbers[j]` is False, the if branch is not taken.
+        - When j = 5 (numbers[j]=4), the condition `numbers[i] == numbers[j]` is True, the if branch is taken. Append 4 to duplicates
+Forth Iteration (i=3):
+    - `i` is 3, j in the inner loop is 4, 5.
+    - numbers[i]=3, Compare with 7, 4:
+        - When j = 4 (numbers[j]=7), the condition `numbers[i] == numbers[j]` is False, the if branch is not taken.
+        - When j = 5 (numbers[j]=4), the condition `numbers[i] == numbers[j]` is False, the if branch is not taken.
+Fifth Iteration (i=4):
+    - `i` is 4, j in the inner loop is 5.
+    - numbers[i] = 7, compare with 4:
+        - When j = 5 (numbers[j]=4), the condition `numbers[i] == numbers[j]` is False, the if branch is not taken.
+Sixth iteration (i=5):
+    No more elements to compare.
+[/REASONING]
+
+[PYTHON]
+def find_all_duplicate(numbers):
+    duplicates = []
+    for i in range(len(numbers)): ## [STATE]i=[0, 1, 2, 3, 4, 5][/STATE][STATE]range(len(numbers))=[0, 1, 2, 3, 4, 5][/STATE][STATE]len(numbers)=[6][/STATE]
+        for j in range(i + 1, len(numbers)): ## [STATE]j=[1, 2, 3, 4, 5, 2, 3, 4, 5, 3, 4, 5, 4, 5, 5][/STATE][STATE]range(i + 1, len(numbers))=[[1, 2, 3, 4, 5], [2, 3, 4, 5], [3, 4, 5], [4, 5], [5]][/STATE][STATE]len(numbers)=[6][/STATE]
+            if numbers[i] == numbers[j]: ## [CONDITION](numbers[i] == numbers[j])=[False, False, True, False, False, False, False, False, False, False, False, True, False, False, False][/CONDITION][BRANCH]taken=[F, F, T, F, F, F, F, F, F, F, F, T, F, F, F][/BRANCH]
+                duplicates.append(numbers[i])
+    return duplicates
+[/PYTHON]
+
+[OUTPUT]
+[3, 4]
+[/OUTPUT]
+[/EXAMPLE]

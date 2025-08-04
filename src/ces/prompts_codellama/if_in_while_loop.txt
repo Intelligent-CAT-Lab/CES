@@ -1,0 +1,74 @@
+[EXAMPLE]
+[CODE]
+def sum_up_to_n(n):
+    total = 0
+    current_number = 1
+    while current_number <= n: ## [STATE]current_number=??[/STATE][STATE]n=??[/STATE]
+        if current_number >= 1 and current_number < 3: ## [STATE](current_number >= 1)=??[/STATE][STATE](current_number < 3)=??[/STATE][STATE](current_number >= 1 and current_number < 3)=??[/STATE][BRANCH]taken=??[/BRANCH]
+            total += 1
+        elif current_number < 5: ## [CONDITION](current_number<5)=??[/CONDITION][BRANCH]taken=??[/BRANCH]
+            total += 2
+        else: [CONDITION]taken=??[/CONDITION]
+            total *= 4
+        current_number += 1
+    return total
+[/CODE]
+
+[INPUT]
+sum_up_to_n(5)
+[/INPUT]
+
+[QUESTION]
+First print the step by step reasoning (wrapped with [REASONING] and [/REASONING]), then print the annotated code (wrapped with [PYTHON] and [PYTHON]), finally print the output (wrapped with [OUTPUT] and [OUTPUT]):
+[/QUESTION]
+
+[REASONING]
+The function `sum_up_to_n` is called with ( n = 5 ).
+Inside the function, a variable `total` is initialized to 0.
+The loop iterates from 1 through 5 (since ( n = 5 )).
+First Iteration (current_number = 1):
+    - current_number <= 5 when current_number=1
+    - The conditin `current_number >= 1 and current_number < 3` is true. The first branch is taken.
+    -`total += 1` updates `total` to 1 ( 0 + 1 = 1 ).
+Second Iteration (current_number = 2):
+    - current_number <= 5 when current_number=2
+    - The conditin `current_number >= 1 and current_number < 3` is true.
+    -`total += 1` updates `total` to 2 ( 1 + 1 = 2 ).
+Third Iteration (current_number = 3)
+    - current_number <= 5 when current_number=3.
+    - The condition `current_number >= 1 and current_number < 3` is false. The first branch is not taken.
+    - The condition `current_number < 5` is true. The second branch is taken.
+    -`total += 2` updates `total` to 4 ( 2 + 2 = 4 ).
+Fourth Iteration (current_number = 4)
+    -current_number <= 5 when current_number=4.
+    - The condition `current_number >= 1 and current_number < 3` is false. The first branch is not taken.
+    - The condition `current_number < 5` is true. The second branch is taken.
+    -`total += current_number` updates `total` to 6 ( 4 + 2 = 6 ).
+Fifth Iteration (current_number = 5)
+    -  current_number <= 5 when current_number=5
+    - The condition `current_number >= 1 and current_number < 3` is false. The first branch is not taken.
+    - The condition `current_number < 5` is false. The second branch is not taken.
+    - The else branch is taken. `total *= 4` updates `total` to 24 ( 6 * 4 = 24 ).
+After the loop completes, the function returns the value of `total`, which is now 24.
+[/REASONING]
+
+
+[PYTHON]
+def sum_up_to_n(n):
+    total = 0
+    current_number = 1
+    while current_number <= n: ## [STATE]current_number=[1, 2, 3, 4, 5][/STATE][STATE]n=[5][/STATE]
+        if current_number >= 1 and current_number < 3: ## [STATE](current_number >= 1)=[True, True, True, True, True][/STATE][STATE](current_number < 3)=[True, True, False, False, False][/STATE][STATE](current_number >= 1 and current_number < 3)=[True, True, False, False, False][/STATE][BRANCH]taken=[Y, Y, N, N, N][/BRANCH]
+            total += 1
+        elif current_number < 5: ## [CONDITION](current_number<5)=[True, True, True, True, False][/CONDITION][BRANCH]taken=[N, N, Y, Y, N][/BRANCH]
+            total += 2
+        else: [CONDITION]taken=[N, N, N, N, Y][/CONDITION]
+            total *= 4
+        current_number += 1
+    return total
+[/PYTHON]
+
+[OUTPUT]
+24
+[/OUTPUT]
+[/EXAMPLE]

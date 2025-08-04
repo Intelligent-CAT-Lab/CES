@@ -1,0 +1,158 @@
+[CODE]
+def sum_of_integer(N):
+    sum_1 = 0
+    for i in range(1,N+1): ## [STATE]{i=??}[/STATE][STATE]{range(1,N+1)=??}[/STATE][STATE]{N+1=??}[/STATE]
+        if i >= 1 and i <3: ## [CONDITION](i>=1) = ??[/CONDITION][CONDITION]i <3 = ??[/CONDITION][CONDITION](i >= 1 and i <3)=??[/CONDITION][BRANCH]taken=??[/BRANCH]
+            sum_1 += 1
+        elif i < 5: ## [CONDITION](i<5)=??[/CONDITION][BRANCH]taken=??[/BRANCH]
+            sum_1+= 2
+        else: ## [BRANCH]taken=??[/BRANCH]
+	        sum_1 *= 4
+    return sum_1
+[/CODE]
+
+[INPUT]
+sum_of_integer(5)
+[/INPUT]
+
+[ANSWER]
+def sum_of_integer(N):
+    sum_1 = 0
+    for i in range(1,N+1): ## [STATE]{i=[1, 2, 3, 4, 5]}[/STATE][STATE]{range(1,N+1)=[1, 2, 3, 4, 5]}[/STATE][STATE]{N+1=[6]}[/STATE]
+        if i >= 1 and i <3: ## [CONDITION](i>=1) = [True, True, True, True, True][/CONDITION][CONDITION](i <3 )= [True, True, False, False, False][/CONDITION][CONDITION](i >= 1 and i <3)=[True, True, False, False, False][/CONDITION][BRANCH]taken=[Y, Y, N, N, N][/BRANCH]
+            sum_1 += 1
+        elif i < 5: ## [CONDITION](i<5)=[True, True, True, True, False][/CONDITION][BRANCH]taken=[N, N, Y, Y, N][/BRANCH]
+            sum_1+= 2
+        else: ## [BRANCH]taken=[N, N, N, N, Y][/BRANCH]
+	        sum_1 *= 4
+    return sum_1
+[/ANSWER]
+
+[REASONING]
+The function `sum_of_integer` is called with ( N = 5 ).
+Inside the function, a variable `sum_1` is initialized to 0.
+The loop iterates from 1 through 5 (since ( N = 5 )).
+First Iteration (i = 1)
+   - `i` is 1, which satisfies ( 1 <= i < 3 ).
+   - The condition `i >= 1 and i < 3` is true.
+   - Action: `sum_1 += 1` results in `sum_1 = 1`.
+Second Iteration (i = 2)
+   - `i` is 2, which still satisfies ( 1 <=i < 3 ).
+   - The same condition is true.
+   - Action: `sum_1 += 1` updates `sum_1` to 2 (`1 + 1 = 2`).
+Third Iteration (i = 3)
+   - `i` is 3, which now satisfies ( 3 <= i < 5 ).
+   - The condition `i < 5` is true (while the first condition `i >= 1 and i < 3` is false).
+   - Action: `sum_1 += 2` updates `sum_1` to 4 (`2 + 2 = 4`).
+Fourth Iteration (i = 4)
+   - `i` is 4, also satisfying ( 3 <= i < 5 ).
+   - The condition `i < 5` is still true.
+   - Action: `sum_1 += 2` updates `sum_1` to 6 (`4 + 2 = 6`).
+Fifth Iteration (i = 5)
+   - `i` is 5, now outside the previous conditions, falling into the `else` block.
+   - The `else` block's action: `sum_1 *= 4` updates `sum_1` to 24 (`6 * 4 = 24`).
+Return Statement
+   - After the loop completes, the function returns the value of `sum_1`, which is now 24.
+
+Therefore, the final output of the function `sum_of_integer(5)` is 24.
+[/REASONING]
+
+[OUTPUT]
+24
+[/OUTPUT]
+
+[CODE]
+def sum_up_to_n(n):
+    total = 0
+    current_number = 1
+    while current_number <= n: ## [STATE]current_number=??[/STATE][STATE]n=??[/STATE]
+        total += current_number
+        current_number += 1
+    return total
+[/CODE]
+[INPUT]
+sum_up_to_n(5)
+[/INPUT]
+
+[ANSWER]
+def sum_up_to_n(n):
+    total = 0
+    current_number = 1
+    while current_number <= n: ## [STATE]current_number=[1, 2, 3, 4, 5][/STATE][STATE]n=[5][/STATE]
+        total += current_number
+        current_number += 1
+    return total
+[/ANSWER]
+
+[REASONING]
+The function `sum_up_to_n` is called with ( n = 5 ).
+Inside the function, a variable `total` is initialized to 0.
+The loop iterates from 1 through 5 (since ( n = 5 )).
+First Iteration (current_number = 1):
+    - current_number <= 5 when current_number=1
+    -`total += current_number` updates `total` to 1 ( 0 + 1 = 1 ).
+Second Iteration (current_number = 2):
+    - current_number <= 5 when current_number=2
+    -`total += current_number` updates `total` to 3 ( 1 + 2 = 3 ).
+Third Iteration (current_number = 3)
+    - current_number <= 5 when current_number=3
+    -`total += current_number` updates `total` to 6 ( 3 + 3 = 6 ).
+Fourth Iteration (current_number = 4)
+    -current_number <= 5 when current_number=4
+    -`total += current_number` updates `total` to 10 ( 6 + 4 = 10 ).
+Fifth Iteration (current_number = 5)
+    -   current_number <= 5 when current_number=5
+    -`total += current_number` updates `total` to 15 ( 10 + 5 = 15 ).
+After the loop completes, the function returns the value of `total`, which is now 15.
+[/REASONING]
+
+[OUTPUT]
+15
+[/OUTPUT]
+
+[CODE]
+def sum_elements(elements):
+    total = 0
+    while elements: ## [STATE]elements=??[/STATE]
+        total += elements[-1]
+        elements.pop()
+    return total
+[/CODE]
+
+[INPUT]
+sum_elements([10, 20, 30, 40, 50])
+[/INPUT]
+
+[ANSWER]
+def sum_elements(elements):
+    total = 0
+    while elements: ## [STATE]elements=[[10, 20, 30, 40, 50],[10, 20, 30, 40], [10, 20, 30], [10, 20], [10]][/STATE]
+        total += elements[-1]
+        elements.pop()
+    return total
+[/ANSWER]
+
+[REASONING]
+The function `sum_elements` is called with ( elements = [10, 20, 30, 40, 50]).
+Inside the function, a variable `total` is initialized to 0.
+First Iteration:
+    - elements = [10, 20, 30, 40, 50], elements[-1] = 50.
+    -`total += elements[-1]` updates `total` to 50 ( 0 + 50 = 50 ).
+Second Iteration:
+    - elements = [10, 20, 30, 40], elements[-1] = 40.
+    -`total += elements[-1]` updates `total` to 90 ( 50 + 40 = 90 ).
+Third Iteration:
+    - elements = [10, 20, 30], elements[-1] = 30.
+    -`total += elements[-1]` updates `total` to 120 ( 90 + 30 = 120 ).
+Fourth Iteration:
+    - elements = [10, 20], elements[-1] = 20.
+    -`total += elements[-1]` updates `total` to 140 ( 120 + 20 = 140 ).
+Fifth Iteration:
+    - elements = [10], elements[-1] = 10.
+    -`total += elements[-1]` updates `total` to 150 ( 140 + 10 = 150 ).
+elements is empty, the while loop terminates. The function returns the value of `total`, which is now 150.
+[/REASONING]
+
+[OUTPUT]
+150
+[/OUTPUT]

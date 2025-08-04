@@ -1,0 +1,99 @@
+
+[EXAMPLE]
+[CODE]
+def sum_of_integer(N):
+    sum_1 = 0
+    for i in range(1,N+1): ## [STATE]i=??[/STATE][STATE]range(1,N+1)=??[/STATE][STATE]N+1=??[/STATE]
+        sum += i
+    return sum
+[/CODE]
+[INPUT]
+sum_of_integer(5)
+[/INPUT]
+
+[QUESTION]
+First print the step by step reasoning (wrapped with [REASONING] and [/REASONING]), then print the annotated code (wrapped with [PYTHON] and [PYTHON]), finally print the output (wrapped with [OUTPUT] and [OUTPUT]):
+[/QUESTION]
+
+[REASONING]
+The function `sum_of_integer` is called with ( N = 5 ).
+Inside the function, a variable `sum` is initialized to 0.
+The loop iterates from 1 through 5 (since ( N = 5 )).
+First Iteration (i = 1):
+    `sum += i` updates `sum` to 1 ( 0 + 1 = 1 ).
+Second Iteration (i = 2):
+    `sum += i` updates `sum` to 3 ( 1 + 2 = 3 ).
+Third Iteration (i = 3)
+    `sum += i` updates `sum` to 6 ( 3 + 3 = 6 ).
+Fourth Iteration (i = 4)
+    `sum += i` updates `sum` to 10 ( 6 + 4 = 10 ).
+Fifth Iteration (i = 5)
+    `sum += i` updates `sum` to 15 ( 10 + 5 = 1 ).
+After the loop completes, the function returns the value of `sum`, which is now 15.
+[/REASONING]
+
+[PYTHON]
+def sum_of_integer(N):
+    sum_1 = 0
+    for i in range(1,N+1): ## [STATE]i=[1, 2, 3, 4, 5][/STATE][STATE]range(1,N+1)=[1, 2, 3, 4, 5][/STATE][STATE]N+1=[6][/STATE]
+        sum += i
+    return sum
+[/PYTHON]
+
+[OUTPUT]
+15
+[/OUTPUT]
+[/EXAMPLE]
+
+[EXAMPLE]
+[CODE]
+def reverse_string(input_string):
+    reversed_string = ''
+    for i in range(len(input_string)): ##[STATE]i=??[/STATE][STATE]len(input_string)=??[/STATE][STATE]range(len(input_string))=??[/STATE]
+        reversed_string = input_string[i] + reversed_string
+    return reversed_string
+[/CODE]
+
+[INPUT]
+reverse_string("hello")
+[/INPUT]
+
+[QUESTION]
+First print the step by step reasoning (wrapped with [REASONING] and [/REASONING]), then print the annotated code (wrapped with [PYTHON] and [PYTHON]), finally print the output (wrapped with [OUTPUT] and [OUTPUT]):
+[/QUESTION]
+
+[REASONING]
+The function `reverse_string` is called with (input_string = 'hello' ).
+Inside the function, a variable `reversed_string` is initialized to ''.
+`len(input_string)` = 5 since there are 5 characters in 'hello'.
+The loop iterates from 0 to 4 since `range(len(input_string))`= [0, 1, 2, 3, 4]
+
+First Iteration(i = 0):
+    input_string[i] = 'h'
+    reversed_string = 'h' + '' results in reversed_string = 'h'
+Second Iteration(i = 1):
+    input_string[i] = 'e'
+    reversed_string = 'e' + 'h' results in reversed_string = 'eh'
+Third Iteration(i = 2):
+    i = 2, input_string[i] = 'l'
+    reversed_string = 'l' + 'eh' results in reversed_string = 'leh'
+Forth Iteration(i = 3): 
+    i = 3, input_string[i] = 'l'
+    reversed_string = 'l' + 'leh' results in reversed_string = 'lleh'
+Fifth Iteration(i = 4): 
+    i = 4, input_string[i] = 'o'
+    reversed_string = 'o' + 'lleh' results in reversed_string = 'olleh'
+[/REASONING]
+
+[PYTHON]
+def reverse_string(input_string):
+    reversed_string = ''
+    for i in range(len(input_string)): ##[STATE]i=[0, 1, 2, 3, 4][/STATE][STATE]len(input_string)=[5][/STATE][STATE]range(len(input_string))=[0, 1, 2, 3, 4][/STATE]
+        reversed_string = input_string[i] + reversed_string
+    return reversed_string
+[/PYTHON]
+
+[OUTPUT]
+olleh
+[/OUTPUT]
+[/EXAMPLE]

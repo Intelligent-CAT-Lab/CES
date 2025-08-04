@@ -1,0 +1,107 @@
+[EXAMPLE]
+[CODE]
+def sum_up_to_n(n):
+    total = 0
+    current_number = 1
+    while current_number <= n: ## [STATE]current_number=??[/STATE][STATE]n=??[/STATE]
+        total += current_number
+        current_number += 1
+    return total
+[/CODE]
+
+[INPUT]
+sum_up_to_n(5)
+[/INPUT]
+
+[QUESTION]
+First print the step by step reasoning (wrapped with [REASONING] and [/REASONING]), then print the annotated code (wrapped with [PYTHON] and [PYTHON]), finally print the output (wrapped with [OUTPUT] and [OUTPUT]):
+[/QUESTION]
+
+[REASONING]
+The function `sum_up_to_n` is called with ( n = 5 ).
+Inside the function, a variable `total` is initialized to 0.
+The loop iterates from 1 through 5 (since ( n = 5 )).
+First Iteration (current_number = 1):
+    - current_number <= 5 when current_number=1
+    -`total += current_number` updates `total` to 1 ( 0 + 1 = 1 ).
+Second Iteration (current_number = 2):
+    - current_number <= 5 when current_number=2
+    -`total += current_number` updates `total` to 3 ( 1 + 2 = 3 ).
+Third Iteration (current_number = 3)
+    - current_number <= 5 when current_number=3
+    -`total += current_number` updates `total` to 6 ( 3 + 3 = 6 ).
+Fourth Iteration (current_number = 4)
+    -current_number <= 5 when current_number=4
+    -`total += current_number` updates `total` to 10 ( 6 + 4 = 10 ).
+Fifth Iteration (current_number = 5)
+    -   current_number <= 5 when current_number=5
+    -`total += current_number` updates `total` to 15 ( 10 + 5 = 15 ).
+After the loop completes, the function returns the value of `total`, which is now 15.
+[/REASONING]
+
+[PYTHON]
+def sum_up_to_n(n):
+    total = 0
+    current_number = 1
+    while current_number <= n: ## [STATE]current_number=[1, 2, 3, 4, 5][/STATE][STATE]n=[5][/STATE]
+        total += current_number
+        current_number += 1
+    return total
+[/PYTHON]
+
+[OUTPUT]
+15
+[/OUTPUT]
+
+[EXAMPLE]
+[CODE]
+def sum_elements(elements):
+    total = 0
+    while elements: ## [STATE]elements=??[/STATE]
+        total += elements[-1]
+        elements.pop()
+    return total
+[/CODE]
+
+[INPUT]
+sum_elements([10, 20, 30, 40, 50])
+[/INPUT]
+
+[QUESTION]
+First print the step by step reasoning (wrapped with [REASONING] and [/REASONING]), then print the annotated code (wrapped with [PYTHON] and [PYTHON]), finally print the output (wrapped with [OUTPUT] and [OUTPUT]):
+[/QUESTION]
+
+[REASONING]
+The function `sum_elements` is called with ( elements = [10, 20, 30, 40, 50]).
+Inside the function, a variable `total` is initialized to 0.
+First Iteration:
+    - elements = [10, 20, 30, 40, 50], elements[-1] = 50.
+    -`total += elements[-1]` updates `total` to 50 ( 0 + 50 = 50 ).
+Second Iteration:
+    - elements = [10, 20, 30, 40], elements[-1] = 40.
+    -`total += elements[-1]` updates `total` to 90 ( 50 + 40 = 90 ).
+Third Iteration:
+    - elements = [10, 20, 30], elements[-1] = 30.
+    -`total += elements[-1]` updates `total` to 120 ( 90 + 30 = 120 ).
+Fourth Iteration:
+    - elements = [10, 20], elements[-1] = 20.
+    -`total += elements[-1]` updates `total` to 140 ( 120 + 20 = 140 ).
+Fifth Iteration:
+    - elements = [10], elements[-1] = 10.
+    -`total += elements[-1]` updates `total` to 150 ( 140 + 10 = 150 ).
+elements is empty, the while loop terminates. The function returns the value of `total`, which is now 150.
+[/REASONING]
+
+[PYTHON]
+def sum_elements(elements):
+    total = 0
+    while elements: ## [STATE]elements=[[10, 20, 30, 40, 50],[10, 20, 30, 40], [10, 20, 30], [10, 20], [10]][/STATE]
+        total += elements[-1]
+        elements.pop()
+    return total
+[/PYTHON]
+
+[OUTPUT]
+150
+[/OUTPUT]
+[/EXAMPLE]
