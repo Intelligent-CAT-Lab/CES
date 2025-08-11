@@ -1,0 +1,46 @@
+{
+    "HumanEval_0": [
+        {
+            "condition": [
+                "idx != idx2"
+            ],
+            "line_no": 4,
+            "condition_gt": [
+                [
+                    false,
+                    true,
+                    true,
+                    true,
+                    true,
+                    true,
+                    true,
+                    false,
+                    true,
+                    true,
+                    true,
+                    true
+                ]
+            ]
+        },
+        {
+            "condition": [
+                "distance < threshold"
+            ],
+            "line_no": 6,
+            "condition_gt": [
+                [
+                    false,
+                    false,
+                    false,
+                    false,
+                    false,
+                    false,
+                    false,
+                    false,
+                    false,
+                    true
+                ]
+            ]
+        }
+    ]
+}
