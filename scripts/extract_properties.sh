@@ -1,0 +1,3 @@
+python src/data_extraction/branch_extraction.py
+python src/data_extraction/condition_extraction.py
+python src/data_extraction/loop_extraction.py

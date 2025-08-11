@@ -26,6 +26,11 @@ docker run -it ces bash
 ```
 
 ## Reproduce Results
+### Extract Program Properties
+To extract the program properties required by CES, please run the following command:
+```
+bash scripts/extract_properties.sh
+```
 ### RQ1. Performance in CES
 To reprodeuce LLMs' performance on CES, please run the folliwing command:
 ```
