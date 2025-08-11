@@ -12,6 +12,11 @@ pip install -r requirements.txt
 
 Then go to `config/model_config.json` and edit the file with your OpenAI/Google AI Studio key.
 
+Install Python grammer for tree-sitter:
+```
+https://github.com/tree-sitter/tree-sitter-python.git
+```
+
 Alternatively, we provide a Dockerfile to reproduce the results of CES.
 Please download [Docker](https://www.docker.com/) and and then execute the following to create a docker image and execute the container in interactive mode:
 
