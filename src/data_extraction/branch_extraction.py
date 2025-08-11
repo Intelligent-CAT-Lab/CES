@@ -135,7 +135,7 @@ def parse_file(folder):
             if f"[LINE]{pb}[/LINE] is hit" in s:
                 taken.append('Y')
             else:
-                taken.append('N')ss
+                taken.append('N')
         data[int(pb)] = taken
     return data
 
