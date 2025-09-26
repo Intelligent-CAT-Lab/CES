@@ -43,4 +43,8 @@ bash scripts/run_ces.sh $MODEL_ID $DATASET $CACHE_DIR
 
 ```CACHE_DIR```: the directory to save huggingface model checkpoints.
 
+If you want to evaluate new LLMs with CES, please 
+(1) Add the configuration of the model in `model_config.json`
+(2) Add your prompt into `src/ces/create_prompts.py` if needed
+
 ### RQ2. Reasoning Consistency Across Tests

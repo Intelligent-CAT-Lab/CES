@@ -1,0 +1,78 @@
+{
+    "gpt-3.5-turbo":{
+        "api": "openai"
+    },
+    "gpt-4-1106-preview":{
+        "api": "openai"
+    },
+    "codellama/CodeLlama-13b-Instruct-hf": {
+        "api": "vllm"
+    },
+    "codellama/CodeLlama-13b-hf" : {
+        "api": "vllm"
+    },
+    "Qwen/CodeQwen1.5-7B-Chat": {
+        "api": "huggingface_chat"
+    },
+    "Qwen/CodeQwen1.5-7B": {
+        "api": "huggingface_chat"
+    },
+    "deepseek-ai/deepseek-coder-6.7b-instruct" :{
+        "api": "vllm"
+    },
+    "deepseek-ai/deepseek-coder-6.7b-base" : {
+        "api": "vllm"
+    },
+    "meta-llama/Llama-2-13b-hf":{
+        "api": "huggingface"
+    },
+    "ise-uiuc/Magicoder-S-DS-6.7B": {
+        "api": "vllm"
+    },
+    "mistralai/Mistral-7B-Instruct-v0.1": {
+        "api": "huggingface"
+    },
+    "bigcode/starcoder" : {
+        "api":"huggingface"
+    },
+    "bigcode/starcoder2-15b" : {
+        "api": "vllm"
+    },
+    "WizardLM/WizardCoder-15B-V1.0": {
+        "api": "huggingface"
+    },
+    "gpt-4-turbo":{
+        "api": "litellm"
+    },
+    "o4-mini-2025-04-16":{
+        "api": "litellm"
+    },
+    "gemini/gemini-pro":{
+        "api":"litellm"
+    },
+    "codellama/CodeLlama-7b-Instruct-hf": {
+        "api": "huggingface"
+    },
+    "deepseek-ai/deepseek-llm-7b-base": {
+        "api": "huggingface"
+    },
+    "gemini/gemini-1.5-pro":{
+        "api": "litellm"
+    },
+    "gemini/gemini-2.5-pro-preview-05-06":{
+        "api": "litellm"
+    },
+    "semcoder/semcoder_s":{
+        "api": "vllm"
+    },
+    "deepseek-r1": {
+        "api": "dsr1"
+    },
+    "openai/o4-mini": {
+        "api": "openrouter"
+    },
+    "deepseek/deepseek-r1-0528": {
+        "api": "openrouter"
+    }
+    
+}
