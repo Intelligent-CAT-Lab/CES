@@ -48,3 +48,7 @@ If you want to evaluate new LLMs with CES, please
 (2) Add your prompt into `src/ces/create_prompts.py` if needed
 
 ### RQ2. Reasoning Consistency Across Tests
+To reproduce the results in RQ2, please run the following command:
+```
+bash scripts/run_consistency.sh $MODEL_ID$
+```
