@@ -1,5 +1,5 @@
 # CES: Assessing Coherency and Consistency of Code Execution Reasoning by Large Language Models
-Artifact for the paper Assessing Coherency and Consistency of Code Execution Reasoning by Large Language Models, accepted by XXXX.
+Artifact for the paper Assessing Coherency and Consistency of Code Execution Reasoning by Large Language Models, accepted by  the 48th IEEE/ACM International Conference on Software Engineering (ICSE 2026).
 Authors are Changshu Liu, Yang Chen, and Reyhaneh Jabbarvand.
 
 ## Getting Started
