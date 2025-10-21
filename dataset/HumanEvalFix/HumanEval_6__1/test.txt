@@ -1,0 +1,1 @@
+assert parse_nested_parens('(()(())((())))') == [4]

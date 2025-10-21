@@ -1,0 +1,2 @@
+some text, as header of the file
+[ITE][LOC]5[/LOC][VAR]shift > len(s)[/VAR][VAL]True[/VAL][/ITE]

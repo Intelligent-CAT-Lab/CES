@@ -1,0 +1,4 @@
+some text, as header of the file
+[ITE][LOC]11[/LOC][VAR]i % 2 == 1 and is_palindrome(i)[/VAR][VAL]True[/VAL][/ITE]
+[ITE][LOC]11[/LOC][VAR]i % 2 == 1[/VAR][VAL]True[/VAL][/ITE]
+[ITE][LOC]11[/LOC][VAR]is_palindrome(i)[/VAR][VAL]True[/VAL][/ITE]

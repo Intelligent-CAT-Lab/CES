@@ -1,0 +1,1 @@
+assert circular_shift(12, 1) == "21", "This prints if this assert fails 1 (good for debugging!)"

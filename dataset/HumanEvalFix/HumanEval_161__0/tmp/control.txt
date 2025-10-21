@@ -1,0 +1,3 @@
+some text, as header of the file
+[ITE][LOC]5[/LOC][VAR]s[/VAR][VAL]#a@C[/VAL][/ITE]
+[ITE][LOC]11[/LOC][VAR]new_str[/VAR][VAL]['#', 'a', '@', 'C'][/VAL][/ITE]

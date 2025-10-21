@@ -1,0 +1,4 @@
+some text, as header of the file
+[ITE][LOC]6[/LOC][VAR]val > my_val[/VAR][VAL]False[/VAL][/ITE]
+[ITE][LOC]6[/LOC][VAR]val > my_val[/VAR][VAL]False[/VAL][/ITE]
+[ITE][LOC]6[/LOC][VAR]val > my_val[/VAR][VAL]True[/VAL][/ITE]

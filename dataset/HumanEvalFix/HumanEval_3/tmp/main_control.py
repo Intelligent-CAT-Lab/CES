@@ -1,0 +1,15 @@
+from typing import List
+
+
+def below_zero(operations: List[int]) -> bool:
+    balance = 0
+
+    print(f'[ITE][LOC]7[/LOC][VAR]operations[/VAR][VAL]{operations}[/VAL][/ITE]')
+    for op in operations:
+        balance += op
+        if balance == 0:
+            return True
+
+    return False
+
+below_zero([1, 2, (- 3), 1, 2, (- 3)])

@@ -1,0 +1,1 @@
+assert filter_integers([4, {}, [], 23.2, 9, 'adasd']) == [4, 9]

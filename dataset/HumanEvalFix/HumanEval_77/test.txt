@@ -1,0 +1,1 @@
+assert iscube(64) == True, "Fourth test error: " + str(iscube(64))

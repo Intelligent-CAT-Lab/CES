@@ -1,0 +1,1 @@
+assert anti_shuffle('Hello World!!!') == 'Hello !!!Wdlor'

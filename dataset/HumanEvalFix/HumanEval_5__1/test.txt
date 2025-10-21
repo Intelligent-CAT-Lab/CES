@@ -1,0 +1,1 @@
+assert intersperse([2, 2, 2], 2) == [2, 2, 2, 2, 2]

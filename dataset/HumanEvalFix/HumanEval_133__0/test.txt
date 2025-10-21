@@ -1,0 +1,1 @@
+assert sum_squares([1,3,5,7])==84, "This prints if this assert fails 1 (good for debugging!)"

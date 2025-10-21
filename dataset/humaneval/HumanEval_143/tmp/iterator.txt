@@ -1,0 +1,9 @@
+some text, as header of the file
+[ITE][LOC]4[/LOC][VAR]word[/VAR][VAL]This[/VAL][/ITE]
+[ITE][LOC]8[/LOC][VAR]i[/VAR][VAL]2[/VAL][/ITE]
+[ITE][LOC]8[/LOC][VAR]i[/VAR][VAL]3[/VAL][/ITE]
+[ITE][LOC]4[/LOC][VAR]word[/VAR][VAL]is[/VAL][/ITE]
+[ITE][LOC]4[/LOC][VAR]word[/VAR][VAL]a[/VAL][/ITE]
+[ITE][LOC]4[/LOC][VAR]word[/VAR][VAL]test[/VAL][/ITE]
+[ITE][LOC]8[/LOC][VAR]i[/VAR][VAL]2[/VAL][/ITE]
+[ITE][LOC]8[/LOC][VAR]i[/VAR][VAL]3[/VAL][/ITE]

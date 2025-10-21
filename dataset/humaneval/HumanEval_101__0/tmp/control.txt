@@ -1,0 +1,2 @@
+some text, as header of the file
+[ITE][LOC]10[/LOC][VAR]s[/VAR][VAL]One, two, three, four, five, six[/VAL][/ITE]

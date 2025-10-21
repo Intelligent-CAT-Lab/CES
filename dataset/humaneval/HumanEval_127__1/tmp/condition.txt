@@ -1,0 +1,13 @@
+some text, as header of the file
+[ITE][LOC]5[/LOC][VAR]num == 1 or num == 0[/VAR][VAL]True[/VAL][/ITE]
+[ITE][LOC]5[/LOC][VAR]num == 1[/VAR][VAL]True[/VAL][/ITE]
+[ITE][LOC]5[/LOC][VAR]num == 0[/VAR][VAL]False[/VAL][/ITE]
+[ITE][LOC]17[/LOC][VAR]length > 0 and is_prime(length)[/VAR][VAL]False[/VAL][/ITE]
+[ITE][LOC]17[/LOC][VAR]length > 0[/VAR][VAL]True[/VAL][/ITE]
+[ITE][LOC]5[/LOC][VAR]num == 1 or num == 0[/VAR][VAL]True[/VAL][/ITE]
+[ITE][LOC]5[/LOC][VAR]num == 1[/VAR][VAL]True[/VAL][/ITE]
+[ITE][LOC]5[/LOC][VAR]num == 0[/VAR][VAL]False[/VAL][/ITE]
+[ITE][LOC]17[/LOC][VAR]is_prime(length)[/VAR][VAL]False[/VAL][/ITE]
+[ITE][LOC]5[/LOC][VAR]num == 1 or num == 0[/VAR][VAL]True[/VAL][/ITE]
+[ITE][LOC]5[/LOC][VAR]num == 1[/VAR][VAL]True[/VAL][/ITE]
+[ITE][LOC]5[/LOC][VAR]num == 0[/VAR][VAL]False[/VAL][/ITE]

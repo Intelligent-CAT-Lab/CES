@@ -1,0 +1,4 @@
+some text, as header of the file
+[ITE][LOC]5[/LOC][VAR](i < len(arr))[/VAR][VAL]True[/VAL][/ITE]
+[ITE][LOC]5[/LOC][VAR]i[/VAR][VAL]1[/VAL][/ITE]
+[ITE][LOC]5[/LOC][VAR]len(arr)[/VAR][VAL]5[/VAL][/ITE]

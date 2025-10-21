@@ -1,0 +1,3 @@
+some text, as header of the file
+[ITE][LOC]11[/LOC][VAR]range(len(arr))[/VAR][VAL][0, 1, 2, 3, 4][/VAL][/ITE]
+[ITE][LOC]11[/LOC][VAR]len(arr)[/VAR][VAL]5[/VAL][/ITE]

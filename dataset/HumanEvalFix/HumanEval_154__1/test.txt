@@ -1,0 +1,1 @@
+assert  cycpattern_check("efef","fee") == True , "test #3"

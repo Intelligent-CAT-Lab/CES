@@ -1,0 +1,1 @@
+assert multiply(76, 67) == 42, "Fifth test error: " + str(multiply(76, 67))

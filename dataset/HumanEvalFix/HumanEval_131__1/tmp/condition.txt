@@ -1,0 +1,9 @@
+some text, as header of the file
+[ITE][LOC]5[/LOC][VAR]int_digit%2 == 1[/VAR][VAL]True[/VAL][/ITE]
+[ITE][LOC]5[/LOC][VAR]int_digit%2 == 1[/VAR][VAL]True[/VAL][/ITE]
+[ITE][LOC]5[/LOC][VAR]int_digit%2 == 1[/VAR][VAL]True[/VAL][/ITE]
+[ITE][LOC]5[/LOC][VAR]int_digit%2 == 1[/VAR][VAL]False[/VAL][/ITE]
+[ITE][LOC]5[/LOC][VAR]int_digit%2 == 1[/VAR][VAL]True[/VAL][/ITE]
+[ITE][LOC]5[/LOC][VAR]int_digit%2 == 1[/VAR][VAL]False[/VAL][/ITE]
+[ITE][LOC]5[/LOC][VAR]int_digit%2 == 1[/VAR][VAL]True[/VAL][/ITE]
+[ITE][LOC]8[/LOC][VAR]odd_count ==0[/VAR][VAL]False[/VAL][/ITE]

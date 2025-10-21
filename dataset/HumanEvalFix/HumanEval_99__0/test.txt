@@ -1,0 +1,1 @@
+assert closest_integer("14.5") == 15, "Test 2"

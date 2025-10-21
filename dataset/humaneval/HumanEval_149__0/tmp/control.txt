@@ -1,0 +1,2 @@
+some text, as header of the file
+[ITE][LOC]7[/LOC][VAR]lst[/VAR][VAL]['a', 'abcd', 'd', 'dcba'][/VAL][/ITE]

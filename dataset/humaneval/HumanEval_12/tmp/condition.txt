@@ -1,0 +1,5 @@
+some text, as header of the file
+[ITE][LOC]2[/LOC][VAR]not strings[/VAR][VAL]False[/VAL][/ITE]
+[ITE][LOC]7[/LOC][VAR]len(s) == maxlen[/VAR][VAL]False[/VAL][/ITE]
+[ITE][LOC]7[/LOC][VAR]len(s) == maxlen[/VAR][VAL]False[/VAL][/ITE]
+[ITE][LOC]7[/LOC][VAR]len(s) == maxlen[/VAR][VAL]True[/VAL][/ITE]

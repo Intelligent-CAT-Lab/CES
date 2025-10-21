@@ -1,0 +1,5 @@
+some text, as header of the file
+[ITE][LOC]11[/LOC][VAR]((poly(xs, begin) * poly(xs, end)) > 0)[/VAR][VAL]True[/VAL][/ITE]
+[ITE][LOC]11[/LOC][VAR](poly(xs, begin) * poly(xs, end))[/VAR][VAL]736.0[/VAL][/ITE]
+[ITE][LOC]14[/LOC][VAR]((end - begin) > 1e-10)[/VAR][VAL]True[/VAL][/ITE]
+[ITE][LOC]14[/LOC][VAR](end - begin)[/VAR][VAL]4.0[/VAL][/ITE]

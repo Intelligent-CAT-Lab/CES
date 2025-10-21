@@ -1,0 +1,1 @@
+    return None if len(lst) < 3 else lst[1]

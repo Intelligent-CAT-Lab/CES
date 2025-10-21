@@ -1,0 +1,4 @@
+some text, as header of the file
+[ITE][LOC]3[/LOC][VAR]isinstance(temp_a, str)[/VAR][VAL]False[/VAL][/ITE]
+[ITE][LOC]4[/LOC][VAR]isinstance(temp_b, str)[/VAR][VAL]False[/VAL][/ITE]
+[ITE][LOC]5[/LOC][VAR]float(temp_a) == float(temp_b)[/VAR][VAL]False[/VAL][/ITE]

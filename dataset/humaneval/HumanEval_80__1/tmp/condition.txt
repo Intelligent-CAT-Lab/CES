@@ -1,0 +1,6 @@
+some text, as header of the file
+[ITE][LOC]4[/LOC][VAR]len(s) < 3[/VAR][VAL]False[/VAL][/ITE]
+[ITE][LOC]9[/LOC][VAR]s[i] == s[i + 1] or s[i + 1] == s[i + 2] or s[i] == s[i + 2][/VAR][VAL]True[/VAL][/ITE]
+[ITE][LOC]9[/LOC][VAR]s[i] == s[i + 2][/VAR][VAL]False[/VAL][/ITE]
+[ITE][LOC]9[/LOC][VAR]s[i] == s[i + 1][/VAR][VAL]False[/VAL][/ITE]
+[ITE][LOC]9[/LOC][VAR]s[i + 1] == s[i + 2][/VAR][VAL]True[/VAL][/ITE]

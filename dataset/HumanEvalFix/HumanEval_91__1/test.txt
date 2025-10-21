@@ -1,0 +1,1 @@
+assert is_bored("I love It !") == 1, "Test 3"

@@ -1,0 +1,2 @@
+some text, as header of the file
+[ITE][LOC]3[/LOC][VAR]s.split(' ')[/VAR][VAL]['5', 'apples', 'and', '6', 'oranges'][/VAL][/ITE]

@@ -1,0 +1,5 @@
+some text, as header of the file
+[ITE][LOC]6[/LOC][VAR]word[/VAR][VAL]go[/VAL][/ITE]
+[ITE][LOC]6[/LOC][VAR]word[/VAR][VAL]for[/VAL][/ITE]
+[ITE][LOC]10[/LOC][VAR]i[/VAR][VAL]2[/VAL][/ITE]
+[ITE][LOC]6[/LOC][VAR]word[/VAR][VAL]it[/VAL][/ITE]

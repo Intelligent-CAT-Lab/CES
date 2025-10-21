@@ -1,0 +1,5 @@
+some text, as header of the file
+[ITE][LOC]7[/LOC][VAR]l[i] + l[j] + l[k] == 0[/VAR][VAL]False[/VAL][/ITE]
+[ITE][LOC]7[/LOC][VAR]l[i] + l[j] + l[k] == 0[/VAR][VAL]False[/VAL][/ITE]
+[ITE][LOC]7[/LOC][VAR]l[i] + l[j] + l[k] == 0[/VAR][VAL]False[/VAL][/ITE]
+[ITE][LOC]7[/LOC][VAR]l[i] + l[j] + l[k] == 0[/VAR][VAL]False[/VAL][/ITE]

@@ -1,0 +1,18 @@
+def select_words(s, n):
+    result = []
+    for word in s.split():
+        n_consonants = 0
+        for i in range(0, len(word)):
+            if word[i].lower() in ["a","e","i","o","u"]:
+                n_consonants += 1 
+        if n_consonants == n:
+            result.append(word)
+    return result
+
+
+output = select_words('Mary had a little lamb', 3)
+
+file = open("/home/changshu/CODEMIND/dataset/Intermediate/Repair/HumanEvalFix_new/HumanEval_117__1/output.txt", 'w')
+file.write(str(output))
+file.close()
+    

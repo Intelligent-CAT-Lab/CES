@@ -1,0 +1,5 @@
+some text, as header of the file
+[ITE][LOC]4[/LOC][VAR]a + b <= c or a + c <= b or b + c <= a[/VAR][VAL]True[/VAL][/ITE]
+[ITE][LOC]4[/LOC][VAR]b + c <= a[/VAR][VAL]False[/VAL][/ITE]
+[ITE][LOC]4[/LOC][VAR]a + b <= c[/VAR][VAL]True[/VAL][/ITE]
+[ITE][LOC]4[/LOC][VAR]a + c <= b[/VAR][VAL]False[/VAL][/ITE]

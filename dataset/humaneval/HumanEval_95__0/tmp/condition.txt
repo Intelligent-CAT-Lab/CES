@@ -1,0 +1,7 @@
+some text, as header of the file
+[ITE][LOC]4[/LOC][VAR]len(dict.keys()) == 0[/VAR][VAL]False[/VAL][/ITE]
+[ITE][LOC]10[/LOC][VAR]isinstance(key, str) == False[/VAR][VAL]False[/VAL][/ITE]
+[ITE][LOC]13[/LOC][VAR]state == "start"[/VAR][VAL]True[/VAL][/ITE]
+[ITE][LOC]14[/LOC][VAR]key.isupper()[/VAR][VAL]True[/VAL][/ITE]
+[ITE][LOC]10[/LOC][VAR]isinstance(key, str) == False[/VAR][VAL]False[/VAL][/ITE]
+[ITE][LOC]13[/LOC][VAR]state == "start"[/VAR][VAL]False[/VAL][/ITE]

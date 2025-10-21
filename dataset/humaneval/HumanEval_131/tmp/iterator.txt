@@ -1,0 +1,2 @@
+some text, as header of the file
+[ITE][LOC]5[/LOC][VAR]digit[/VAR][VAL]5[/VAL][/ITE]

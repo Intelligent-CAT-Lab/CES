@@ -4,13 +4,13 @@ import ast
 from tree_sitter import Language, Parser
 import shutil
 
-# Language.build_library(
-#   'build/my-languages.so',
-#   ['../tree-sitter-python']  # path to the tree-sitter-pyton repo
-# )
-# PY_LANGUAGE = Language('build/my-languages.so', 'python')
-# parser = Parser()
-# parser.set_language(PY_LANGUAGE)
+Language.build_library(
+  'build/my-languages.so',
+  ['tree-sitter-python']  # path to the tree-sitter-pyton repo
+)
+PY_LANGUAGE = Language('build/my-languages.so', 'python')
+parser = Parser()
+parser.set_language(PY_LANGUAGE)
 
 def read_loop_data(dataset):
     root = "../../dataset/extract"

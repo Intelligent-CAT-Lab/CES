@@ -1,0 +1,9 @@
+some text, as header of the file
+[ITE][LOC]4[/LOC][VAR]range(2, n)[/VAR][VAL][2, 3, 4][/VAL][/ITE]
+[ITE][LOC]4[/LOC][VAR]n[/VAR][VAL]5[/VAL][/ITE]
+[ITE][LOC]6[/LOC][VAR]range(2, i)[/VAR][VAL][][/VAL][/ITE]
+[ITE][LOC]6[/LOC][VAR]i[/VAR][VAL]2[/VAL][/ITE]
+[ITE][LOC]6[/LOC][VAR]range(2, i)[/VAR][VAL][2][/VAL][/ITE]
+[ITE][LOC]6[/LOC][VAR]i[/VAR][VAL]3[/VAL][/ITE]
+[ITE][LOC]6[/LOC][VAR]range(2, i)[/VAR][VAL][2, 3][/VAL][/ITE]
+[ITE][LOC]6[/LOC][VAR]i[/VAR][VAL]4[/VAL][/ITE]

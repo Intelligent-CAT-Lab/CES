@@ -1,0 +1,1 @@
+assert eat(2, 11, 5) == [7, 0], "Error"

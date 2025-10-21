@@ -1,0 +1,1 @@
+assert valid_date('15-01-2012') == False

@@ -1,0 +1,1 @@
+assert search([3, 3]) == -1

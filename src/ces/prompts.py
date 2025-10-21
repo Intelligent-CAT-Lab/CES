@@ -3,9 +3,16 @@ import time
 import os
 from litellm import completion
 import google.generativeai as genai
+from vllm import LLM, SamplingParams
+import json
 
-openai.api_key = os.getenv("OPENAIKEY")
-os.environ["OPENAI_API_KEY"] = os.getenv("OPENAIKEY")
+with open("config/model_config.json", 'r') as f:
+    config = json.load(f)
+    
+openai.api_key = config.get("OPENAI_KEY")
+os.environ["OPENAI_API_KEY"] = config.get("OPENAI_KEY")
+os.environ['GEMINI_API_KEY'] = config.get("GEMINI_API_KEY")
+os.environ['DEEPSEEK_API_KEY'] = config.get("DEEPSEEK_API_KEY")
 # os.environ['GEMINI_API_KEY'] = os.getenv("GEMINIKEY")
 
 def chatgpt_generator(model,message, temp=0.0, max_len=1024):
@@ -91,16 +98,48 @@ def huggingface_generator_chat(model, prompt, max_new_tokens):
     return generated_text
 
 def generator_lllm(model, prompt):
-    response = completion(
-        model=model, 
-        messages=[{"role": "user", "content": prompt}],
-        temperature=0.0
-    )
-    generated_text = response.choices[0]['message']['content']
-    
-    return generated_text
+    retries = 10
+    attempt = 0
+    if model == "gpt-4o-mini":
+        temperature = 1
+    else:
+        temperature = 0.0
+    while attempt < retries:
+        try:
+            output = completion(
+                model=model,
+                messages=[{"role": "user", "content": prompt}],
+                temperature=temperature,
+                top_p=1.0
+            )
+            response_text = output.choices[0]['message']['content']
+            if response_text:
+                print(f"Resolved after {attempt+1} attempts")
+                return response_text
+            else:
+                attempt += 1
+                time.sleep(2)
+        except Exception as e:
+            print(e)
+            if 'maximum context length is' in str(e):
+                output = ''
+                return True, output
+            else:
+                time.sleep(3)
+                attempt += 1
+    print(f"failed after {retries} attempts")
+    return ""
 
 def generator_gemini(model, prompt):
     model = genai.GenerativeModel(model)
     response = model.generate_content(prompt)
     return response.text
+
+
+def generator_vllm(model, prompt, max_tokens):
+    prompts = [prompt]
+    sampling_params = SamplingParams(temperature=0, top_p=0.95, max_tokens=max_tokens)
+    outputs = model.generate(prompts, sampling_params)
+    output = outputs[0]
+    generate_text = output.outputs[0].text
+    return generate_text

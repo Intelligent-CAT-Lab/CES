@@ -1,0 +1,6 @@
+some text, as header of the file
+[ITE][LOC]6[/LOC][VAR]i[/VAR][VAL]5[/VAL][/ITE]
+[ITE][LOC]6[/LOC][VAR]i[/VAR][VAL]apples[/VAL][/ITE]
+[ITE][LOC]6[/LOC][VAR]i[/VAR][VAL]and[/VAL][/ITE]
+[ITE][LOC]6[/LOC][VAR]i[/VAR][VAL]6[/VAL][/ITE]
+[ITE][LOC]6[/LOC][VAR]i[/VAR][VAL]oranges[/VAL][/ITE]

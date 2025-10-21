@@ -1,0 +1,7 @@
+some text, as header of the file
+[ITE][LOC]4[/LOC][VAR]b[/VAR][VAL]([/VAL][/ITE]
+[ITE][LOC]4[/LOC][VAR]b[/VAR][VAL]([/VAL][/ITE]
+[ITE][LOC]4[/LOC][VAR]b[/VAR][VAL])[/VAL][/ITE]
+[ITE][LOC]4[/LOC][VAR]b[/VAR][VAL]([/VAL][/ITE]
+[ITE][LOC]4[/LOC][VAR]b[/VAR][VAL])[/VAL][/ITE]
+[ITE][LOC]4[/LOC][VAR]b[/VAR][VAL])[/VAL][/ITE]

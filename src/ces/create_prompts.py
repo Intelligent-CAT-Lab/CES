@@ -34,11 +34,11 @@ Replace all the '??' in comments with proper states/values/symbols.
 """
 def load_examples(model_id):
     if "CodeLlama-13b" in model_id or "CodeLlama-7b" in model_id:
-        root = "./prompts_codellama"
-    elif "Mistral" in model_id or "gpt-4-turbo" in model_id:
-        root = "./prompts"
+        root = "src/ces/prompts/prompts_codellama"
+    # elif "Mistral" in model_id or "gpt-4-turbo" in model_id:
+    #     root = "src/cesprompts"
     else:
-        root = "./prompts"
+        root = "src/ces/prompts"
     
     path_if_in_nested_loop = os.path.join(root, "if_in_nested_loop.txt")
     path_if = os.path.join(root, "if.txt")
@@ -290,20 +290,20 @@ def create_prompt(code_path, model_id, new_code, code_input, dataset, pl, direct
 
 
         
-if __name__ == "__main__":
-    code_path = "/home/changshu/CODEMIND/dataset/humaneval/HumanEval_47/main.py"
-    model_id = "semcoder"
-    new_code = """from typing import *
-def longest(strings: List[str]) -> Optional[str]:
-    if not strings: ## [CONDITION](not strings)=??[/CONDITION][BRANCH]taken=??[/BRANCH]
-        return None
+# if __name__ == "__main__":
+#     code_path = "/home/changshu/CODEMIND/dataset/humaneval/HumanEval_47/main.py"
+#     model_id = "semcoder"
+#     new_code = """from typing import *
+# def longest(strings: List[str]) -> Optional[str]:
+#     if not strings: ## [CONDITION](not strings)=??[/CONDITION][BRANCH]taken=??[/BRANCH]
+#         return None
 
-    maxlen = max(len(x) for x in strings)
-    for s in strings: ## [STATE]s=??[/STATE][STATE]strings=??[/STATE]
-        if len(s) == maxlen: ## [CONDITION](len(s) == maxlen)=??[/CONDITION][BRANCH]taken=??[/BRANCH]
-            return s
-    """
-    code_input = "longest(['x', 'yyy', 'zzzz', 'www', 'kkkk', 'abc']) "
-    dataset = "humaneval"
-    pl = "Python"
-    prompt = create_prompt(code_path, model_id, new_code, code_input, dataset, pl, False, True)
+#     maxlen = max(len(x) for x in strings)
+#     for s in strings: ## [STATE]s=??[/STATE][STATE]strings=??[/STATE]
+#         if len(s) == maxlen: ## [CONDITION](len(s) == maxlen)=??[/CONDITION][BRANCH]taken=??[/BRANCH]
+#             return s
+#     """
+#     code_input = "longest(['x', 'yyy', 'zzzz', 'www', 'kkkk', 'abc']) "
+#     dataset = "humaneval"
+#     pl = "Python"
+#     prompt = create_prompt(code_path, model_id, new_code, code_input, dataset, pl, False, True)

@@ -1,0 +1,8 @@
+some text, as header of the file
+[ITE][LOC]9[/LOC][VAR]_[/VAR][VAL]4[/VAL][/ITE]
+[ITE][LOC]9[/LOC][VAR]_[/VAR][VAL]5[/VAL][/ITE]
+[ITE][LOC]9[/LOC][VAR]_[/VAR][VAL]6[/VAL][/ITE]
+[ITE][LOC]9[/LOC][VAR]_[/VAR][VAL]7[/VAL][/ITE]
+[ITE][LOC]9[/LOC][VAR]_[/VAR][VAL]8[/VAL][/ITE]
+[ITE][LOC]9[/LOC][VAR]_[/VAR][VAL]9[/VAL][/ITE]
+[ITE][LOC]9[/LOC][VAR]_[/VAR][VAL]10[/VAL][/ITE]

@@ -1,0 +1,1 @@
+assert select_words("Mary had a little lamb", 3) == ["Mary", "lamb"], "Second test error: " + str(select_words("Mary had a little lamb", 3))

@@ -1,0 +1,10 @@
+some text, as header of the file
+[LINE]3[/LINE] may be hit
+[LINE]3[/LINE] is hit
+[LINE]9[/LINE] may be hit
+[LINE]12[/LINE] may be hit
+[LINE]14[/LINE] may be hit
+[LINE]16[/LINE] may be hit
+[LINE]9[/LINE] is hit
+[LINE]10[/LINE] may be hit
+[LINE]10[/LINE] is hit

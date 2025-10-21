@@ -1,0 +1,3 @@
+some text, as header of the file
+[ITE][LOC]1[/LOC][VAR]n < 1[/VAR][VAL]False[/VAL][/ITE]
+[ITE][LOC]4[/LOC][VAR]n % k == 0[/VAR][VAL]True[/VAL][/ITE]

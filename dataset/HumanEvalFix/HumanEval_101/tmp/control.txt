@@ -1,0 +1,2 @@
+some text, as header of the file
+[ITE][LOC]7[/LOC][VAR]s[/VAR][VAL]Hi, my name is John[/VAL][/ITE]

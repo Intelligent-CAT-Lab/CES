@@ -1,0 +1,4 @@
+some text, as header of the file
+[ITE][LOC]2[/LOC][VAR]n == 0[/VAR][VAL]False[/VAL][/ITE]
+[ITE][LOC]6[/LOC][VAR]i % 2 == 0[/VAR][VAL]True[/VAL][/ITE]
+[ITE][LOC]6[/LOC][VAR]i % 2 == 0[/VAR][VAL]False[/VAL][/ITE]

@@ -1,0 +1,2 @@
+some text, as header of the file
+[ITE][LOC]4[/LOC][VAR]all(lst[i-1] <= lst[i] for i in range(1, len(lst)))[/VAR][VAL]True[/VAL][/ITE]

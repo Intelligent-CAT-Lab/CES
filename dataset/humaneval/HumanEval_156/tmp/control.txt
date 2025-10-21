@@ -1,0 +1,12 @@
+some text, as header of the file
+[ITE][LOC]9[/LOC][VAR]number[/VAR][VAL]19[/VAL][/ITE]
+[ITE][LOC]12[/LOC][VAR]div[/VAR][VAL]0[/VAL][/ITE]
+[ITE][LOC]12[/LOC][VAR]div[/VAR][VAL]0[/VAL][/ITE]
+[ITE][LOC]12[/LOC][VAR]div[/VAR][VAL]0[/VAL][/ITE]
+[ITE][LOC]12[/LOC][VAR]div[/VAR][VAL]0[/VAL][/ITE]
+[ITE][LOC]12[/LOC][VAR]div[/VAR][VAL]0[/VAL][/ITE]
+[ITE][LOC]12[/LOC][VAR]div[/VAR][VAL]0[/VAL][/ITE]
+[ITE][LOC]12[/LOC][VAR]div[/VAR][VAL]0[/VAL][/ITE]
+[ITE][LOC]12[/LOC][VAR]div[/VAR][VAL]0[/VAL][/ITE]
+[ITE][LOC]12[/LOC][VAR]div[/VAR][VAL]1[/VAL][/ITE]
+[ITE][LOC]12[/LOC][VAR]div[/VAR][VAL]1[/VAL][/ITE]

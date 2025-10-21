@@ -1,0 +1,6 @@
+some text, as header of the file
+[ITE][LOC]5[/LOC][VAR]i[/VAR][VAL]0[/VAL][/ITE]
+[ITE][LOC]5[/LOC][VAR]l1[/VAR][VAL]-3[/VAL][/ITE]
+[ITE][LOC]6[/LOC][VAR]j[/VAR][VAL]1[/VAL][/ITE]
+[ITE][LOC]6[/LOC][VAR]j[/VAR][VAL]2[/VAL][/ITE]
+[ITE][LOC]6[/LOC][VAR]j[/VAR][VAL]3[/VAL][/ITE]

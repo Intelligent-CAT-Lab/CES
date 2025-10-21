@@ -1,0 +1,10 @@
+some text, as header of the file
+[ITE][LOC]3[/LOC][VAR]sentence.split()[/VAR][VAL]['This', 'is', 'a', 'test'][/VAL][/ITE]
+[ITE][LOC]5[/LOC][VAR]range(2, len(word))[/VAR][VAL][2, 3][/VAL][/ITE]
+[ITE][LOC]5[/LOC][VAR]len(word)[/VAR][VAL]4[/VAL][/ITE]
+[ITE][LOC]5[/LOC][VAR]range(2, len(word))[/VAR][VAL][][/VAL][/ITE]
+[ITE][LOC]5[/LOC][VAR]len(word)[/VAR][VAL]2[/VAL][/ITE]
+[ITE][LOC]5[/LOC][VAR]range(2, len(word))[/VAR][VAL][][/VAL][/ITE]
+[ITE][LOC]5[/LOC][VAR]len(word)[/VAR][VAL]1[/VAL][/ITE]
+[ITE][LOC]5[/LOC][VAR]range(2, len(word))[/VAR][VAL][2, 3][/VAL][/ITE]
+[ITE][LOC]5[/LOC][VAR]len(word)[/VAR][VAL]4[/VAL][/ITE]

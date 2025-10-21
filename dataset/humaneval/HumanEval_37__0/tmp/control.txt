@@ -1,0 +1,4 @@
+some text, as header of the file
+[ITE][LOC]9[/LOC][VAR]zip(evens, odds)[/VAR][VAL][(-10, 3), (-5, 2), (-3, 3), (5, 0), (9, 1)][/VAL][/ITE]
+[ITE][LOC]9[/LOC][VAR]evens[/VAR][VAL][-10, -5, -3, 5, 9, 123][/VAL][/ITE]
+[ITE][LOC]9[/LOC][VAR]odds[/VAR][VAL][3, 2, 3, 0, 1][/VAL][/ITE]

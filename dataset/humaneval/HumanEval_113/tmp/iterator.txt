@@ -1,0 +1,2 @@
+some text, as header of the file
+[ITE][LOC]4[/LOC][VAR]arr[/VAR][VAL]1234567[/VAL][/ITE]

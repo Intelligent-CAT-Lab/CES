@@ -1,0 +1,6 @@
+some text, as header of the file
+[ITE][LOC]6[/LOC][VAR]s.split()[/VAR][VAL]['Hello', 'world'][/VAL][/ITE]
+[ITE][LOC]8[/LOC][VAR]range(0, len(word))[/VAR][VAL][0, 1, 2, 3, 4][/VAL][/ITE]
+[ITE][LOC]8[/LOC][VAR]len(word)[/VAR][VAL]5[/VAL][/ITE]
+[ITE][LOC]8[/LOC][VAR]range(0, len(word))[/VAR][VAL][0, 1, 2, 3, 4][/VAL][/ITE]
+[ITE][LOC]8[/LOC][VAR]len(word)[/VAR][VAL]5[/VAL][/ITE]

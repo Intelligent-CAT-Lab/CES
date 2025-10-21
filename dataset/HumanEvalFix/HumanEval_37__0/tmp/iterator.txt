@@ -1,0 +1,11 @@
+some text, as header of the file
+[ITE][LOC]6[/LOC][VAR]e[/VAR][VAL]5[/VAL][/ITE]
+[ITE][LOC]6[/LOC][VAR]o[/VAR][VAL]0[/VAL][/ITE]
+[ITE][LOC]6[/LOC][VAR]e[/VAR][VAL]-5[/VAL][/ITE]
+[ITE][LOC]6[/LOC][VAR]o[/VAR][VAL]1[/VAL][/ITE]
+[ITE][LOC]6[/LOC][VAR]e[/VAR][VAL]-3[/VAL][/ITE]
+[ITE][LOC]6[/LOC][VAR]o[/VAR][VAL]2[/VAL][/ITE]
+[ITE][LOC]6[/LOC][VAR]e[/VAR][VAL]9[/VAL][/ITE]
+[ITE][LOC]6[/LOC][VAR]o[/VAR][VAL]3[/VAL][/ITE]
+[ITE][LOC]6[/LOC][VAR]e[/VAR][VAL]123[/VAL][/ITE]
+[ITE][LOC]6[/LOC][VAR]o[/VAR][VAL]3[/VAL][/ITE]

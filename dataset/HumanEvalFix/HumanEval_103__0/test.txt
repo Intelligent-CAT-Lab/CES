@@ -1,0 +1,1 @@
+assert rounded_avg(560,851) == "0b1011000010"

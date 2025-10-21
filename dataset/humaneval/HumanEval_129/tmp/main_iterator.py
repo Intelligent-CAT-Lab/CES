@@ -1,0 +1,34 @@
+from typing import *
+def minPath(grid, k):
+    n = len(grid)
+    val = n * n + 1
+    for i in range(n):
+        print(f'[ITE][LOC]5[/LOC][VAR]i[/VAR][VAL]{i}[/VAL][/ITE]')
+        for j in range(n):
+            print(f'[ITE][LOC]6[/LOC][VAR]j[/VAR][VAL]{j}[/VAL][/ITE]')
+            if grid[i][j] == 1:
+                temp = []
+                if i != 0:
+                    temp.append(grid[i - 1][j])
+
+                if j != 0:
+                    temp.append(grid[i][j - 1])
+
+                if i != n - 1:
+                    temp.append(grid[i + 1][j])
+
+                if j != n - 1:
+                    temp.append(grid[i][j + 1])
+
+                val = min(temp)
+
+    ans = []
+    for i in range(k):
+        print(f'[ITE][LOC]24[/LOC][VAR]i[/VAR][VAL]{i}[/VAL][/ITE]')
+        if i % 2 == 0:
+            ans.append(1)
+        else:
+            ans.append(val)
+    return ans
+
+minPath([[1, 2, 3], [4, 5, 6], [7, 8, 9]], 3) 

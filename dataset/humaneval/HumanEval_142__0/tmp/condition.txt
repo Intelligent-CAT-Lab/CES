@@ -1,0 +1,2 @@
+some text, as header of the file
+[ITE][LOC]6[/LOC][VAR]i % 3 == 0[/VAR][VAL]True[/VAL][/ITE]

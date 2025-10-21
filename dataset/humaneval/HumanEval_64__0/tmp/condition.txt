@@ -1,0 +1,4 @@
+some text, as header of the file
+[ITE][LOC]6[/LOC][VAR]s[-1] == 'y' or s[-1] == 'Y'[/VAR][VAL]False[/VAL][/ITE]
+[ITE][LOC]6[/LOC][VAR]s[-1] == 'y'[/VAR][VAL]False[/VAL][/ITE]
+[ITE][LOC]6[/LOC][VAR]s[-1] == 'Y'[/VAR][VAL]False[/VAL][/ITE]

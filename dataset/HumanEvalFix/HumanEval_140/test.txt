@@ -1,0 +1,1 @@
+assert fix_spaces("Mudasir Hanif ") == "Mudasir_Hanif_", "This prints if this assert fails 2 (good for debugging!)"

@@ -1,0 +1,4 @@
+some text, as header of the file
+[ITE][LOC]2[/LOC][VAR]l == sorted(l) or l == sorted(l, reverse=True)[/VAR][VAL]True[/VAL][/ITE]
+[ITE][LOC]2[/LOC][VAR]l == sorted(l)[/VAR][VAL]True[/VAL][/ITE]
+[ITE][LOC]2[/LOC][VAR]l == sorted(l, reverse=True)[/VAR][VAL]False[/VAL][/ITE]

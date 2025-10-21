@@ -1,0 +1,4 @@
+some text, as header of the file
+[ITE][LOC]3[/LOC][VAR]lst[/VAR][VAL][3, 3][/VAL][/ITE]
+[ITE][LOC]7[/LOC][VAR]range(1, len(frq))[/VAR][VAL][1, 2, 3][/VAL][/ITE]
+[ITE][LOC]7[/LOC][VAR]len(frq)[/VAR][VAL]4[/VAL][/ITE]

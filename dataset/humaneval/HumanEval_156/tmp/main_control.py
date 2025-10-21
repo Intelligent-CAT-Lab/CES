@@ -1,0 +1,20 @@
+from typing import *
+def int_to_mini_roman(number):
+    num = [1, 4, 5, 9, 10, 40, 50, 90,  
+           100, 400, 500, 900, 1000] 
+    sym = ["I", "IV", "V", "IX", "X", "XL",  
+           "L", "XC", "C", "CD", "D", "CM", "M"] 
+    i = 12
+    res = ''
+    print(f'[ITE][LOC]9[/LOC][VAR]number[/VAR][VAL]{number}[/VAL][/ITE]')
+    while number: 
+        div = number // num[i] 
+        number %= num[i] 
+        print(f'[ITE][LOC]12[/LOC][VAR]div[/VAR][VAL]{div}[/VAL][/ITE]')
+        while div: 
+            res += sym[i] 
+            div -= 1
+        i -= 1
+    return res.lower()
+
+int_to_mini_roman(19) 

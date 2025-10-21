@@ -1,0 +1,9 @@
+some text, as header of the file
+[ITE][LOC]10[/LOC][VAR]frq[i] >= i[/VAR][VAL]False[/VAL][/ITE]
+[ITE][LOC]10[/LOC][VAR]frq[i] >= i[/VAR][VAL]False[/VAL][/ITE]
+[ITE][LOC]10[/LOC][VAR]frq[i] >= i[/VAR][VAL]False[/VAL][/ITE]
+[ITE][LOC]10[/LOC][VAR]frq[i] >= i[/VAR][VAL]False[/VAL][/ITE]
+[ITE][LOC]10[/LOC][VAR]frq[i] >= i[/VAR][VAL]False[/VAL][/ITE]
+[ITE][LOC]10[/LOC][VAR]frq[i] >= i[/VAR][VAL]False[/VAL][/ITE]
+[ITE][LOC]10[/LOC][VAR]frq[i] >= i[/VAR][VAL]False[/VAL][/ITE]
+[ITE][LOC]10[/LOC][VAR]frq[i] >= i[/VAR][VAL]True[/VAL][/ITE]

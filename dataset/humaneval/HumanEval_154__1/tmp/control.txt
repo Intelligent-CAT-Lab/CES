@@ -1,0 +1,5 @@
+some text, as header of the file
+[ITE][LOC]7[/LOC][VAR]range(((len(a) - l) + 1))[/VAR][VAL][0, 1][/VAL][/ITE]
+[ITE][LOC]7[/LOC][VAR]((len(a) - l) + 1)[/VAR][VAL]2[/VAL][/ITE]
+[ITE][LOC]8[/LOC][VAR]range((l + 1))[/VAR][VAL][0, 1, 2, 3][/VAL][/ITE]
+[ITE][LOC]8[/LOC][VAR](l + 1)[/VAR][VAL]4[/VAL][/ITE]

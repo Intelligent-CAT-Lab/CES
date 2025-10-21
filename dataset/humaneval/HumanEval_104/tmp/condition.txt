@@ -1,0 +1,5 @@
+some text, as header of the file
+[ITE][LOC]4[/LOC][VAR]all (int(c) % 2 == 1 for c in str(i))[/VAR][VAL]True[/VAL][/ITE]
+[ITE][LOC]4[/LOC][VAR]all (int(c) % 2 == 1 for c in str(i))[/VAR][VAL]True[/VAL][/ITE]
+[ITE][LOC]4[/LOC][VAR]all (int(c) % 2 == 1 for c in str(i))[/VAR][VAL]False[/VAL][/ITE]
+[ITE][LOC]4[/LOC][VAR]all (int(c) % 2 == 1 for c in str(i))[/VAR][VAL]True[/VAL][/ITE]

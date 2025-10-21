@@ -1,0 +1,2 @@
+some text, as header of the file
+[ITE][LOC]12[/LOC][VAR](not is_palindrome(string))[/VAR][VAL]False[/VAL][/ITE]

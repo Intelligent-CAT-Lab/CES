@@ -1,0 +1,4 @@
+some text, as header of the file
+[ITE][LOC]4[/LOC][VAR]range(len(string))[/VAR][VAL][0, 1, 2, 3][/VAL][/ITE]
+[ITE][LOC]4[/LOC][VAR]len(string)[/VAR][VAL]4[/VAL][/ITE]
+[ITE][LOC]13[/LOC][VAR]opening_bracket_index[/VAR][VAL][][/VAL][/ITE]

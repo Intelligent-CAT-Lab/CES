@@ -1,0 +1,2 @@
+some text, as header of the file
+[ITE][LOC]6[/LOC][VAR]arr[i] != arr[len(arr) - i - 1][/VAR][VAL]True[/VAL][/ITE]

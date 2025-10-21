@@ -1,0 +1,13 @@
+some text, as header of the file
+[ITE][LOC]4[/LOC][VAR]range(n)[/VAR][VAL][0, 1, 2, 3][/VAL][/ITE]
+[ITE][LOC]4[/LOC][VAR]n[/VAR][VAL]4[/VAL][/ITE]
+[ITE][LOC]5[/LOC][VAR]range(n)[/VAR][VAL][0, 1, 2, 3][/VAL][/ITE]
+[ITE][LOC]5[/LOC][VAR]n[/VAR][VAL]4[/VAL][/ITE]
+[ITE][LOC]5[/LOC][VAR]range(n)[/VAR][VAL][0, 1, 2, 3][/VAL][/ITE]
+[ITE][LOC]5[/LOC][VAR]n[/VAR][VAL]4[/VAL][/ITE]
+[ITE][LOC]5[/LOC][VAR]range(n)[/VAR][VAL][0, 1, 2, 3][/VAL][/ITE]
+[ITE][LOC]5[/LOC][VAR]n[/VAR][VAL]4[/VAL][/ITE]
+[ITE][LOC]5[/LOC][VAR]range(n)[/VAR][VAL][0, 1, 2, 3][/VAL][/ITE]
+[ITE][LOC]5[/LOC][VAR]n[/VAR][VAL]4[/VAL][/ITE]
+[ITE][LOC]23[/LOC][VAR]range(k)[/VAR][VAL][0, 1, 2, 3, 4, 5, 6][/VAL][/ITE]
+[ITE][LOC]23[/LOC][VAR]k[/VAR][VAL]7[/VAL][/ITE]

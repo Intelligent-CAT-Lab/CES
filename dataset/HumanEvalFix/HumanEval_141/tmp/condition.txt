@@ -1,0 +1,5 @@
+some text, as header of the file
+[ITE][LOC]3[/LOC][VAR]len(lst) != 2[/VAR][VAL]False[/VAL][/ITE]
+[ITE][LOC]5[/LOC][VAR]len(lst[0]) == 0[/VAR][VAL]False[/VAL][/ITE]
+[ITE][LOC]7[/LOC][VAR]not lst[0][0].isalpha()[/VAR][VAL]False[/VAL][/ITE]
+[ITE][LOC]10[/LOC][VAR]t > 3[/VAR][VAL]False[/VAL][/ITE]

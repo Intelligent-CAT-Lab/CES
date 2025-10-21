@@ -1,0 +1,2 @@
+some text, as header of the file
+[ITE][LOC]4[/LOC][VAR]len(word) < 3[/VAR][VAL]True[/VAL][/ITE]

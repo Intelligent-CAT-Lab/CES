@@ -1,0 +1,1 @@
+assert histogram('') == {}, "This prints if this assert fails 7 (also good for debugging!)"

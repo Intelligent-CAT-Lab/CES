@@ -1,0 +1,1 @@
+assert bf("Mercury", "Uranus") == ("Venus", "Earth", "Mars", "Jupiter", "Saturn"), "Third test error: " + str(bf("Mercury", "Uranus"))

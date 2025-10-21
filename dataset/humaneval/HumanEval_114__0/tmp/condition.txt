@@ -1,0 +1,4 @@
+some text, as header of the file
+[ITE][LOC]8[/LOC][VAR]s < 0[/VAR][VAL]True[/VAL][/ITE]
+[ITE][LOC]8[/LOC][VAR]s < 0[/VAR][VAL]False[/VAL][/ITE]
+[ITE][LOC]11[/LOC][VAR]max_sum == 0[/VAR][VAL]False[/VAL][/ITE]

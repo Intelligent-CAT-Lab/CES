@@ -1,0 +1,1 @@
+assert Strongest_Extension('Sp', ['671235', 'Bb']) == 'Sp.671235'

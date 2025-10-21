@@ -1,0 +1,1 @@
+assert file_name_check('s1sdf3.asd') == 'No'

@@ -1,0 +1,2 @@
+some text, as header of the file
+[ITE][LOC]7[/LOC][VAR]numerator/denom == int(numerator/denom)[/VAR][VAL]True[/VAL][/ITE]

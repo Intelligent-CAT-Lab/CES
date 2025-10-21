@@ -1,0 +1,4 @@
+some text, as header of the file
+[ITE][LOC]8[/LOC][VAR](i < len(text))[/VAR][VAL]True[/VAL][/ITE]
+[ITE][LOC]8[/LOC][VAR]i[/VAR][VAL]0[/VAL][/ITE]
+[ITE][LOC]8[/LOC][VAR]len(text)[/VAR][VAL]10[/VAL][/ITE]

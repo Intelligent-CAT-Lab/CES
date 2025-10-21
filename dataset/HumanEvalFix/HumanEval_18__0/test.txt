@@ -1,0 +1,1 @@
+assert how_many_times('xyxyxyx', 'x') == 4

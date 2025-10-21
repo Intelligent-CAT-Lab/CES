@@ -1,0 +1,2 @@
+some text, as header of the file
+[LINE]3[/LINE] may be hit

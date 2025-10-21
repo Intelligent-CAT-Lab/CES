@@ -1,0 +1,4 @@
+some text, as header of the file
+[ITE][LOC]6[/LOC][VAR]value.count('.') == 1[/VAR][VAL]True[/VAL][/ITE]
+[ITE][LOC]12[/LOC][VAR]value[-2:] == '.5'[/VAR][VAL]True[/VAL][/ITE]
+[ITE][LOC]13[/LOC][VAR]num > 0[/VAR][VAL]True[/VAL][/ITE]

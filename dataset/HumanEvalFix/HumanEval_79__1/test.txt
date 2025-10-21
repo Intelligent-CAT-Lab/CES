@@ -1,0 +1,1 @@
+assert decimal_to_binary(103) == "db1100111db"

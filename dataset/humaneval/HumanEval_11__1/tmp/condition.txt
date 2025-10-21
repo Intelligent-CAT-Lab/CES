@@ -1,0 +1,5 @@
+some text, as header of the file
+[ITE][LOC]5[/LOC][VAR]i == j[/VAR][VAL]True[/VAL][/ITE]
+[ITE][LOC]5[/LOC][VAR]i == j[/VAR][VAL]False[/VAL][/ITE]
+[ITE][LOC]5[/LOC][VAR]i == j[/VAR][VAL]True[/VAL][/ITE]
+[ITE][LOC]5[/LOC][VAR]i == j[/VAR][VAL]False[/VAL][/ITE]

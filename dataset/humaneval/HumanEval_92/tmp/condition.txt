@@ -1,0 +1,9 @@
+some text, as header of the file
+[ITE][LOC]3[/LOC][VAR]isinstance(x,int) and isinstance(y,int) and isinstance(z,int)[/VAR][VAL]True[/VAL][/ITE]
+[ITE][LOC]3[/LOC][VAR]isinstance(z,int)[/VAR][VAL]True[/VAL][/ITE]
+[ITE][LOC]3[/LOC][VAR]isinstance(x,int)[/VAR][VAL]True[/VAL][/ITE]
+[ITE][LOC]3[/LOC][VAR]isinstance(y,int)[/VAR][VAL]True[/VAL][/ITE]
+[ITE][LOC]4[/LOC][VAR](x+y==z) or (x+z==y) or (y+z==x)[/VAR][VAL]True[/VAL][/ITE]
+[ITE][LOC]4[/LOC][VAR]x+y==z[/VAR][VAL]False[/VAL][/ITE]
+[ITE][LOC]4[/LOC][VAR]x+z==y[/VAR][VAL]True[/VAL][/ITE]
+[ITE][LOC]4[/LOC][VAR]y+z==x[/VAR][VAL]False[/VAL][/ITE]
