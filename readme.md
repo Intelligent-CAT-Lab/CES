@@ -59,3 +59,25 @@ To reproduce the results in RQ2, please run the following command:
 ```
 bash scripts/run_consistency.sh $MODEL_ID$
 ```
+
+### RQ3. Diagnostic Analysis
+After prompting LLMs on CES, run the follwoing command to locate the simulation divergence:
+```
+bash scripts/run_divergence_localization.sh $MODEL_ID$ $DATASET$
+```
+Annlysis results will be written into `Experiment_Results/summary/incorrect_output/{model_id}_{dataset}.json`
+And we will also print results, for example
+```
+V_l, I_l, P_c, B_c
+======LO======
+0_1_X_X: 1
+1_0_X_X: 1
+======CO======
+X_X_0_0: 3
+======LC======
+0_1_X_X: 12
+X_X_0_0: 11
+0_0_X_X: 5
+1_0_X_X: 7
+```
+Definations of symbols can be found in the RQ3 in the paper.
