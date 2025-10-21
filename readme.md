@@ -3,19 +3,21 @@ Artifact for the paper Assessing Coherency and Consistency of Code Execution Rea
 Authors are Changshu Liu, Yang Chen, and Reyhaneh Jabbarvand.
 
 ## Getting Started
-Run the following commands to install all the dependencies on your local machine:
+step 1. Run the following commands to install all the dependencies on your local machine:
 ```
 conda create -n ces python=3.8
 conda activate ces
 pip install -r requirements.txt
 ```
 
-Then go to `config/model_config.json` and edit the file with your OpenAI/Google AI Studio key.
+Step 2. Go to `config/model_config.json` and edit the file with your OpenAI/Google AI Studio key.
 
-Install Python grammer for tree-sitter:
+Step 3. Install Python grammer for tree-sitter:
 ```
 https://github.com/tree-sitter/tree-sitter-python.git
 ```
+Step 4. Download the meta-data required by the experiments: [link](https://drive.google.com/file/d/1RjaS68WWYnWYhjlf1R6ITsHTXLSETWp5/view?usp=sharing). Unzip under `dataset`
+
 
 Alternatively, we provide a Dockerfile to reproduce the results of CES.
 Please download [Docker](https://www.docker.com/) and and then execute the following to create a docker image and execute the container in interactive mode:
