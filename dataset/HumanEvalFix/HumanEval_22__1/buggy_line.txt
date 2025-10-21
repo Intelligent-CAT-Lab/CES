@@ -1,0 +1,2 @@
+    out = [x for x in values if isinstance(x, int)]
+    return values

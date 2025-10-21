@@ -1,0 +1,1 @@
+    min_index=sorted_array.index(min_value)

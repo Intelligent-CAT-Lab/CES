@@ -1,0 +1,2 @@
+    for j, i in enumerate(x):
+            odd_digit_elements.append(j)

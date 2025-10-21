@@ -1,0 +1,4 @@
+                    temp.append(grid[i][j])
+                    temp.append(grid[i][j])
+                    temp.append(grid[i][j])
+                    temp.append(grid[i][j])

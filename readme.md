@@ -45,7 +45,7 @@ bash scripts/run_ces.sh $MODEL_ID $DATASET $CACHE_DIR
 ```
 
 `MODEL_ID`: Currently CES supports following models:  ```codellama/CodeLlama-13b-Instruct-hf```, ```codellama/CodeLlama-13b-hf```,  ```codellama/CodeLlama-13b-Instruct-hf```,```codellama/CodeLlama-7b-hf```,  
-```codellama/CodeLlama-7b-Instruct-hf```, ```codellama/CodeLlama-34b-Instruct-hf``` ```codellama/CodeLlama-13b-hf```,```deepseek-ai/deepseek-coder-6.7b-instruct```, ```deepseek-ai/deepseek-coder-33b-instruct```,```deepseek-ai/deepseek-coder-6.7b-base```, ```ise-uiuc/Magicoder-S-DS-6.7B```, ```bigcode/starcoder```, ```bigcode/starcoder2-15b```, ```gpt-4-turbo```,
+```codellama/CodeLlama-7b-Instruct-hf```, ```codellama/CodeLlama-34b-Instruct-hf``` ```codellama/CodeLlama-13b-hf```,```deepseek-ai/deepseek-coder-6.7b-instruct```, ```deepseek-ai/deepseek-coder-33b-instruct```,```deepseek-ai/deepseek-coder-6.7b-base```, ```bigcode/starcoder2-15b```, ```gpt-4-turbo```,
 ```gemini/gemini-1.5-pro```, ```semcoder/semcoder_s, deepseek-r1, gemini/gemini-2.5-pro-preview-05-06, o4-mini-2025-04-16```
 
 ```CACHE_DIR```: the directory to save huggingface model checkpoints.
@@ -57,7 +57,7 @@ If you want to evaluate new LLMs with CES, please
 ### RQ2. Reasoning Consistency Across Tests
 To reproduce the results in RQ2, please run the following command:
 ```
-bash scripts/run_consistency.sh $MODEL_ID$
+bash scripts/run_consistency.sh $MODEL_ID$ $DATASET$
 ```
 
 ### RQ3. Diagnostic Analysis
@@ -81,3 +81,10 @@ X_X_0_0: 11
 1_0_X_X: 7
 ```
 Definations of symbols can be found in the RQ3 in the paper.
+
+### RQ4. CES and Bug-Related Tasks
+To compare LLMs' performance on bug repair, bug prediction, bug localization, and CES, run the following command:
+```
+bash scripts/run_ces.sh $MODEL_ID HumanEvalFix $CACHE_DIR
+```
+

@@ -1,0 +1,1 @@
+        squared += math.ceil(i)*2

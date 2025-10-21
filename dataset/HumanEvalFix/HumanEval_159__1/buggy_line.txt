@@ -1,0 +1,2 @@
+        return [ number + need , number + remaining-need ]
+        return [ number + need + remaining , 0]

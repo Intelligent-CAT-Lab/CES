@@ -1,0 +1,1 @@
+    return True if len(check) == 1 and (97 <= ord(check.upper()) <= 122) else False

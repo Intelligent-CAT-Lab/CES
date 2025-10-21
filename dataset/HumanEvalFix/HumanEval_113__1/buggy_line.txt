@@ -1,0 +1,1 @@
+        res.append("the number of odd elements " + str(n) + "n the str"+ str(n) +"ng "+ str(n) +" of "+ str(n) +" the "+ str(n) +"nput.")

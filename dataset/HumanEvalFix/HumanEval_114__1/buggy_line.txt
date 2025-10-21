@@ -1,0 +1,1 @@
+    min_sum = min(-i for i in nums)

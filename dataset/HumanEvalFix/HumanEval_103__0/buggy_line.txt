@@ -1,0 +1,1 @@
+    return bin(round(summation/(m - n)))

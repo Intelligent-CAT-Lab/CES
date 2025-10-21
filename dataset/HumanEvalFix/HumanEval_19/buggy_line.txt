@@ -1,0 +1,1 @@
+    return ' '.join([x for x in numbers.split(' ') if x])
