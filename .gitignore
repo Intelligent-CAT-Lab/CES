@@ -1,3 +1,5 @@
 __pycache__
 ./cacehe/
-./config/model_config.json
+
+/config
+/dataset/summary
