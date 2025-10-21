@@ -19,6 +19,11 @@ https://github.com/tree-sitter/tree-sitter-python.git
 Step 4. Download the meta-data required by the experiments: [link](https://drive.google.com/file/d/1RjaS68WWYnWYhjlf1R6ITsHTXLSETWp5/view?usp=sharing). Unzip under `dataset`
 
 
+Install Python grammer for tree-sitter:
+```
+https://github.com/tree-sitter/tree-sitter-python.git
+```
+
 Alternatively, we provide a Dockerfile to reproduce the results of CES.
 Please download [Docker](https://www.docker.com/) and and then execute the following to create a docker image and execute the container in interactive mode:
 

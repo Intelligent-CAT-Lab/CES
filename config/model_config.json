@@ -1,7 +1,7 @@
 {
-    "OPENAI_KEY": "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",
-    "GEMINI_API_KEY": "AIzaSyCfvy0OOAWH2JhBDydBbVUg_rumN6aXHuA",
-    "DEEPSEEK_API_KEY": "sk-3a4ddfde5e894376925eb8b06ed5a381",
+    "OPENAI_KEY": "Paste your OpenAI key here",
+    "GEMINI_API_KEY": "Paste your Google AI Studio key here ",
+    "DEEPSEEK_API_KEY": "Paste your DeepSeek API key here",
     "codellama/CodeLlama-13b-Instruct-hf": {
         "api": "vllm"
     },
