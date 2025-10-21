@@ -452,7 +452,8 @@ def parse_all_control(root):
                                 result.append(o)                         
                         results[d] = result
                     except:
-                        print(d, 'timeout')
+                        pass
+                        # print(d, 'timeout')
                 
         if 'humaneval' in root:
             wr_path = f"dataset/summary/humaneval_control.json"
@@ -522,7 +523,8 @@ def parse_all_iterator(root):
                         
                         results[d]['For']= result 
                     except:
-                        print(d, 'timeout')
+                        pass
+                        # print(d, 'timeout')
                 
         if 'humaneval' in root:
             wr_path = f"dataset/summary/humaneval_iterator.json"

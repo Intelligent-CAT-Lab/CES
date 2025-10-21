@@ -190,30 +190,35 @@ if __name__ =="__main__":
     parser = argparse.ArgumentParser()
     parser.add_argument("--model", type=str, default='none')
     parser.add_argument("--dataset", type=str, default='none', help="select one from [humaneval, HumanEvalFix]")
+    
+    args = parser.parse_args()
     model = args.model
     dataset = args.dataset
     
-    path_branch_condition = f"../../dataset/extract/{dataset}_condition_branch.json"
-    dataset_root = f"../../dataset/{dataset}"
+    path_branch_condition = f"./dataset/summary/{dataset}_condition_branch.json"
+    dataset_root = f"./dataset/{dataset}"
     branch_condition_mapping = json.load(open(path_branch_condition, 'r'))
     loop_data = read_loop_data(dataset)
     condition_data = read_condition_data(dataset)
     branch_data = read_branch_data(dataset)
 
-    
-    write_path = f"../../experiment_results/adaptive_loop_condition_branch/summary/{model}_{dataset}.json"
+    summary_dir = "./Experiment_Results/summary"
+    os.makedirs(summary_dir, exist_ok=True)
+    write_path = f"{summary_dir}/{model}_{dataset}.json"
     
     summary = {}
     for program_id in os.listdir(dataset_root):
         # print(program_id)
-        py_path = f"../../experiment_results/adaptive_loop_condition_branch/{model}/{dataset}/{program_id}/variable.txt"
-        pred_output_path = f"../../experiment_results/adaptive_loop_condition_branch/{model}/{dataset}/{program_id}/predict.txt"
+        py_path = f"./Experiment_Results/{model}/{dataset}/{program_id}/variable.txt"
+        pred_output_path = f"./Experiment_Results/{model}/{dataset}/{program_id}/predict.txt"
         gt_output_path = f"{dataset_root}/{program_id}/output.txt"
         py_file_path = f"{dataset_root}/{program_id}/main.py"
         
         if not os.path.exists(pred_output_path):
-            print(pred_output_path)
+            # print(pred_output_path)
             continue
+        else:
+            print(pred_output_path)
         pred_output = open(pred_output_path, 'r').read().lstrip().strip('\n')
         gt_output = open(gt_output_path, 'r').read().lstrip().strip('\n')
         pred_output = convert_value(pred_output)

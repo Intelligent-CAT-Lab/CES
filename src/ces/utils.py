@@ -13,8 +13,8 @@ parser = Parser()
 parser.set_language(PY_LANGUAGE)
 
 def read_loop_data(dataset):
-    root = "../../dataset/extract"
-    iterator_path = os.path.join(root, f"{dataset}_loop.json")
+    root = "./dataset/summary"
+    iterator_path = os.path.join(root, f"{dataset}_iterator.json")
     condition_path = os.path.join(root, f"{dataset}_control.json")
     iterator_data = json.load(open(iterator_path, 'r'))
     control_data = json.load(open(condition_path, 'r'))
@@ -53,50 +53,50 @@ def read_loop_data(dataset):
                 for cond in conditions:
                     cleaned_data[k]['control'][line_no][cond] = []
                     cleaned_data[k]['all'][line_no][cond] = []
-    iterator_path = os.path.join(root, f"{dataset}_loop_extended.json")
-    condition_path = os.path.join(root, f"{dataset}_control_extended.json")
-    iterator_data = json.load(open(iterator_path, 'r'))
-    control_data = json.load(open(condition_path, 'r'))
-    for k in control_data.keys():
-        cleaned_data[k] = {
-            'iterator':{},
-            'control':{},
-            'all':{}
-        }
+    # iterator_path = os.path.join(root, f"{dataset}_loop_extended.json")
+    # condition_path = os.path.join(root, f"{dataset}_control_extended.json")
+    # iterator_data = json.load(open(iterator_path, 'r'))
+    # control_data = json.load(open(condition_path, 'r'))
+    # for k in control_data.keys():
+    #     cleaned_data[k] = {
+    #         'iterator':{},
+    #         'control':{},
+    #         'all':{}
+    #     }
         
-        if k in iterator_data:
-            ## append iterators for FOR loops
-            for i in iterator_data[k]['For']:
-                lineno = i['line_no']-1
-                iterators = i["iterator"]
-                iterator_gts = i["iterator_gt"]
-                cleaned_data[k]['iterator'][lineno] = {}
-                cleaned_data[k]['all'][lineno] = {}
-                for ite, ite_gt in zip(iterators, iterator_gts):
-                    cleaned_data[k]['iterator'][lineno][ite] = ite_gt
-                    cleaned_data[k]['all'][lineno][ite] = ite_gt
-        ## append loop control
-        for j in control_data[k]:
-            line_no = j["line_no"] - 1
-            conditions = j['condition']
-            condition_gts = j['condition_gt']
-            cleaned_data[k]['control'][line_no] = {}
-            if line_no not in cleaned_data[k]['all'].keys():
-                cleaned_data[k]['all'][line_no] = {}
-            if condition_gts:
-                for cond, cond_gt in zip(conditions, condition_gts):
-                    cleaned_data[k]['control'][line_no][cond] = cond_gt
-                    cleaned_data[k]['all'][line_no][cond] = cond_gt
-            else:
-                for cond in conditions:
-                    cleaned_data[k]['control'][line_no][cond] = []
-                    cleaned_data[k]['all'][line_no][cond] = []
+    #     if k in iterator_data:
+    #         ## append iterators for FOR loops
+    #         for i in iterator_data[k]['For']:
+    #             lineno = i['line_no']-1
+    #             iterators = i["iterator"]
+    #             iterator_gts = i["iterator_gt"]
+    #             cleaned_data[k]['iterator'][lineno] = {}
+    #             cleaned_data[k]['all'][lineno] = {}
+    #             for ite, ite_gt in zip(iterators, iterator_gts):
+    #                 cleaned_data[k]['iterator'][lineno][ite] = ite_gt
+    #                 cleaned_data[k]['all'][lineno][ite] = ite_gt
+    #     ## append loop control
+    #     for j in control_data[k]:
+    #         line_no = j["line_no"] - 1
+    #         conditions = j['condition']
+    #         condition_gts = j['condition_gt']
+    #         cleaned_data[k]['control'][line_no] = {}
+    #         if line_no not in cleaned_data[k]['all'].keys():
+    #             cleaned_data[k]['all'][line_no] = {}
+    #         if condition_gts:
+    #             for cond, cond_gt in zip(conditions, condition_gts):
+    #                 cleaned_data[k]['control'][line_no][cond] = cond_gt
+    #                 cleaned_data[k]['all'][line_no][cond] = cond_gt
+    #         else:
+    #             for cond in conditions:
+    #                 cleaned_data[k]['control'][line_no][cond] = []
+    #                 cleaned_data[k]['all'][line_no][cond] = []
                     
     return cleaned_data
 
 def read_condition_data(dataset):
     cleaned_data = {}
-    root = "../../dataset/extract"
+    root = "./dataset/summary"
     condition_path = os.path.join(root, f"{dataset}_condition.json")
     condition_data = json.load(open(condition_path, 'r'))
     for key in condition_data:
@@ -108,23 +108,23 @@ def read_condition_data(dataset):
             cleaned_data[key][lineno] = {}
             for cond, gt in zip(conditions, gts):
                 cleaned_data[key][lineno][cond] = gt
-    condition_path = os.path.join(root, f"{dataset}_condition_extended.json")
-    condition_data = json.load(open(condition_path, 'r'))
-    for key in condition_data:
-        cleaned_data[key] = {}
-        for item in condition_data[key]:
-            lineno = item['line_no']
-            conditions = item['condition']
-            gts = item['condition_gt']
-            cleaned_data[key][lineno] = {}
-            for cond, gt in zip(conditions, gts):
-                cleaned_data[key][lineno][cond] = gt
+    # condition_path = os.path.join(root, f"{dataset}_condition_extended.json")
+    # condition_data = json.load(open(condition_path, 'r'))
+    # for key in condition_data:
+    #     cleaned_data[key] = {}
+    #     for item in condition_data[key]:
+    #         lineno = item['line_no']
+    #         conditions = item['condition']
+    #         gts = item['condition_gt']
+    #         cleaned_data[key][lineno] = {}
+    #         for cond, gt in zip(conditions, gts):
+    #             cleaned_data[key][lineno][cond] = gt
       
     return cleaned_data
 
 
 def read_branch_data(dataset):
-    root = "../../dataset/extract"
+    root = "./dataset/summary"
     branch_path =  os.path.join(root, f"{dataset}_branch.json")
     branch_data=  json.load(open(branch_path, 'r'))
     cleaned_data = {}
@@ -132,12 +132,12 @@ def read_branch_data(dataset):
         cleaned_data[k] = {}
         for i in branch_data[k]:
             cleaned_data[k][int(i)] = {"taken":branch_data[k][i]}
-    branch_path =  os.path.join(root, f"{dataset}_branch_extended.json")
-    branch_data=  json.load(open(branch_path, 'r'))
-    for k in branch_data:
-        cleaned_data[k] = {}
-        for i in branch_data[k]:
-            cleaned_data[k][int(i)] = {"taken":branch_data[k][i]}
+    # branch_path =  os.path.join(root, f"{dataset}_branch_extended.json")
+    # branch_data=  json.load(open(branch_path, 'r'))
+    # for k in branch_data:
+    #     cleaned_data[k] = {}
+    #     for i in branch_data[k]:
+    #         cleaned_data[k][int(i)] = {"taken":branch_data[k][i]}
     return cleaned_data
 
 
