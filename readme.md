@@ -10,18 +10,11 @@ conda activate ces
 pip install -r requirements.txt
 ```
 
-Step 2. Go to `config/model_config.json` and edit the file with your OpenAI/Google AI Studio key.
+Step 2. Go to `config/model_config.json` and edit the file with your OpenAI/Google AI Studio key/DeepSeek key.
 
-Step 3. Install Python grammer for tree-sitter:
+Step 3. Download the meta-data required by the experiments:
 ```
-https://github.com/tree-sitter/tree-sitter-python.git
-```
-Step 4. Download the meta-data required by the experiments: [link](https://drive.google.com/file/d/1RjaS68WWYnWYhjlf1R6ITsHTXLSETWp5/view?usp=sharing). Unzip under `dataset`
-
-
-Install Python grammer for tree-sitter:
-```
-https://github.com/tree-sitter/tree-sitter-python.git
+bash scripts/setup_data.sh
 ```
 
 Alternatively, we provide a Dockerfile to reproduce the results of CES.
@@ -32,12 +25,7 @@ docker build -t ces .
 docker run -it ces bash
 ```
 
-## Reproduce Results
-### Extract Program Properties
-To extract the program properties required by CES, please run the following command:
-```
-bash scripts/extract_properties.sh
-```
+## 🔥 Run CES
 ### RQ1. Performance in CES
 To reprodeuce LLMs' performance on CES, please run the folliwing command:
 ```
@@ -50,9 +38,6 @@ bash scripts/run_ces.sh $MODEL_ID $DATASET $CACHE_DIR
 
 ```CACHE_DIR```: the directory to save huggingface model checkpoints.
 
-If you want to evaluate new LLMs with CES, please 
-(1) Add the configuration of the model in `model_config.json`
-(2) Add your prompt into `src/ces/create_prompts.py` if needed
 
 ### RQ2. Reasoning Consistency Across Tests
 To reproduce the results in RQ2, please run the following command:
@@ -108,5 +93,27 @@ confident success: 43
 suspicious success: 13
 likely success: 52
 incoherent: 31
+```
+
+
+## ⚙️ Evaluate New Models
+If you want to eleluate new LLMs with CES:
+(1) Update configuration in [model_config.json](./config/model_config.json)
+
+(2) Add new prompts in [create_prompts.py](./src/ces/create_prompts.py), if necessary.
+
+## ⚙️ Add new Benchmarks
+The experiments in the paper are conducted with HumanEval/HuamanEvalPack dataset.
+However, we also provied a pipeline to extract program properties supporting other Python benchmarks (e.r. CruxEval, ClassEval)
+
+## 📝 Citation
+If you find this repository useful, please cite this as
+```
+@article{liu2025assessing,
+  title={Assessing Coherency and Consistency of Code Execution Reasoning by Large Language Models}, 
+  author={Changshu Liu and Yang Chen and Reyhaneh Jabbarvand},
+  year={2025},
+  journal = {the 48th IEEE/ACM International Conference on Software Engineering (ICSE 2026)},
+}
 ```
 
