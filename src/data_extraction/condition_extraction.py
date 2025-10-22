@@ -4,6 +4,7 @@ from tqdm import tqdm
 from subprocess import PIPE, Popen
 import ast
 import json
+import argparse
 
 Language.build_library(
   'build/my-languages.so',
@@ -151,33 +152,50 @@ def rewrite_all_py(condition_data, root):
 
 def execute_python(root):
     for d in os.listdir(root):
-        py_path = os.path.join(root, d, 'tmp', 'main_condition.py')
-        output_path = os.path.join(root, d, 'tmp', 'condition.txt')
-        # print(py_path)
-        if not os.path.exists(py_path):
-            continue
+        if "Avatar" in root or "CodeNet" in root:
+            py_path = os.path.join(root, d, 'tmp', 'main_branch.py')
+            output_path = os.path.join(root, d, 'tmp', 'branch.txt')
+            input_path = os.path.join(root, d, 'input.txt')
+            code_input = open(input_path, 'r').read().strip('\n')
+            cmd_py = f"timeout 10s python {py_path}"
+            input_bytes = bytes(code_input+'\n', 'utf-8')
+            fout = open(output_path, 'w')
+            fout.write('some text, as header of the file\n')
+            fout.flush()
+            try:
+                process = Popen(cmd_py.split(' '), stdout=fout, stdin=PIPE, stderr=PIPE)
+                process.stdin.write(input_bytes)
+                _,error=process.communicate()
+            except:
+                pass
         else:
-            pass
-        cmd_py = f"timeout 10s python {py_path}"
-
-        fout = open(output_path, 'w')
-        fout.write('some text, as header of the file\n')
-        fout.flush()
-        try:
-            process = Popen(cmd_py.split(' '), stdout=fout, stdin=PIPE, stderr=PIPE)
-
-            _,error=process.communicate()
-            if error:
-                print("*"*10)
-                print(error)
-                print(py_path)
+            py_path = os.path.join(root, d, 'tmp', 'main_condition.py')
+            output_path = os.path.join(root, d, 'tmp', 'condition.txt')
+            # print(py_path)
+            if not os.path.exists(py_path):
+                continue
             else:
                 pass
-                
-        except:
-            print(py_path)  
+            cmd_py = f"timeout 10s python {py_path}"
 
-def parse_all(root):
+            fout = open(output_path, 'w')
+            fout.write('some text, as header of the file\n')
+            fout.flush()
+            try:
+                process = Popen(cmd_py.split(' '), stdout=fout, stdin=PIPE, stderr=PIPE)
+
+                _,error=process.communicate()
+                if error:
+                    print("*"*10)
+                    print(error)
+                    print(py_path)
+                else:
+                    pass
+                    
+            except:
+                print(py_path)  
+
+def parse_all(root, dataset):
     def parse_output_file(path):
         results = {}
         with open(path, 'r') as file:
@@ -221,17 +239,19 @@ def parse_all(root):
                     continue
                 result = parse_output_file(file_path)
                 results[d] = result
-        if 'humaneval' in root:
-            wr_path = f"dataset/summary/humaneval_condition.json"
-        if 'HumanEvalFix' in root:
-            wr_path = f"dataset/summary/HumanEvalFix_condition.json"
+        wr_path = f"dataset/summary/{dataset}_condition.json"
         with open(wr_path, 'w') as wr:
             json.dump(results, wr, indent=4)
             
             
 if __name__ == '__main__':
-    root_humaneval = "dataset/humaneval" 
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--dataset", type=str, default='none', help="select one from [humaneval, HumanEvalFix, etc.]")
+    args = parser.parse_args()
+    dataset = args.dataset
+    
+    root_humaneval = f"dataset/{dataset}"
     condition_data = check_condition_type(root_humaneval)
     rewrite_all_py(condition_data, root_humaneval)
     execute_python(root_humaneval)
-    parse_all(root_humaneval)
+    parse_all(root_humaneval, dataset)

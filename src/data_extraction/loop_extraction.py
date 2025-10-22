@@ -3,14 +3,10 @@ import os
 import astunparse
 import json
 import javalang
-# from read_debugger_log import parse_log_python
-import traceback
-import shutil
-import subprocess
 from subprocess import PIPE, Popen
 from tqdm import tqdm
-import func_timeout
 from func_timeout import func_set_timeout
+import argparse
 
 class PythonLoopExtractor(ast.NodeVisitor):
     def __init__(self):
@@ -370,10 +366,6 @@ def execute_all_py(root, file_type):
     count = 0
     if 'Avatar' in root or 'CodeNet' in root or 'cruxeval' in root or 'mbpp' in root or 'humaneval' in root or "HumanEvalFix" in root:
         for d in tqdm(os.listdir(root)):
-            if d in ['p02932', 'p03154', 'p04041', 'p03622_s847822644', 'p03373_s952038093', 'p02685_s739016793', 'p01809_s372022005']:
-                continue
-            # if '__' not in d:
-            #     continue
             code_folder = os.path.join(root, d)
             tmp_folder = os.path.join(code_folder, 'tmp')
             if os.path.exists(tmp_folder):
@@ -381,7 +373,7 @@ def execute_all_py(root, file_type):
                 count += r
     print(count)
 ## 
-def parse_all_control(root):
+def parse_all_control(root, dataset):
     # @func_set_timeout(10)
     def parse_output_file(path):
         results = {}
@@ -419,12 +411,6 @@ def parse_all_control(root):
     if 'Avatar' in root or 'CodeNet' in root or 'cruxeval' in root or 'mbpp' in root or 'humaneval' in root or 'HumanEvalFix' in root:
         results = {}
         for d in tqdm(os.listdir(root)):
-            # if d in ['p02932', 'p03154', 'p04041', 'p03622_s847822644', 'p03373_s952038093', 'p02685_s739016793', 'p01809_s372022005', 'p02608','p03989_s448868183', 'p03009_s121820884', 
-            #          'p03253', 'p02333', 'p02965_s615230682', 'p02842']:
-            #     continue
-            # print("process-", d)
-            # if '__' not in d:
-            #     continue
             code_folder = os.path.join(root, d)
             tmp_folder = os.path.join(code_folder, 'tmp')
             code_path = os.path.join(code_folder, 'main.py')
@@ -454,17 +440,14 @@ def parse_all_control(root):
                     except:
                         pass
                         # print(d, 'timeout')
-                
-        if 'humaneval' in root:
-            wr_path = f"dataset/summary/humaneval_control.json"
-        if 'HumanEvalFix' in root:
-            wr_path = f"dataset/summary/HumanEvalFix_control.json"
+
+        wr_path = f"dataset/summary/{dataset}_control.json"
         with open(wr_path, 'w') as wr:
             json.dump(results, wr, indent=4)
 
 
 
-def parse_all_iterator(root):
+def parse_all_iterator(root, dataset):
     # @func_set_timeout(10)
     def parse_output_file(path):
         results = {}
@@ -497,8 +480,8 @@ def parse_all_iterator(root):
             converted_results.append(obj)
         
         return converted_results
-    
-    if 'Avatar' in root or 'CodeNet' in root or 'cruxeval' in root or 'mbpp' in root or 'humaneval' in root or 'HumanEvalFix' in root:
+
+    if 'Avatar' in root  or 'cruxeval' in root or 'mbpp' in root or 'humaneval' in root or 'HumanEvalFix' in root:
         results = {}
         for d in tqdm(os.listdir(root)):
             code_folder = os.path.join(root, d)
@@ -526,19 +509,21 @@ def parse_all_iterator(root):
                         pass
                         # print(d, 'timeout')
                 
-        if 'humaneval' in root:
-            wr_path = f"dataset/summary/humaneval_iterator.json"
-        if 'HumanEvalFix' in root:
-            wr_path = f"dataset/summary/HumanEvalFix_iterator.json"
+
+        wr_path = f"dataset/summary/{dataset}_iterator.json"
         with open(wr_path, 'w') as wr:
             json.dump(results, wr, indent=4)
 
 
 if __name__ == "__main__":
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--dataset", type=str, default='none', help="select one from [humaneval, HumanEvalFix, etc.]")
+    args = parser.parse_args()
+    dataset = args.dataset
 
-    root_humaneval = 'dataset/humaneval'
-    rewrite_all_python(root_humaneval)
-    execute_all_py(root_humaneval, "control")
-    execute_all_py(root_humaneval, "iterator")
-    parse_all_iterator(root_humaneval)
-    parse_all_control(root_humaneval)
+    root = f'dataset/{dataset}'
+    rewrite_all_python(root)
+    execute_all_py(root, "control")
+    execute_all_py(root, "iterator")
+    parse_all_iterator(root, dataset)
+    parse_all_control(root, dataset)

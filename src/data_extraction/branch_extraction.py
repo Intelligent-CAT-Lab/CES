@@ -5,6 +5,8 @@ import ast
 import json
 from subprocess import PIPE, Popen
 import re
+import argparse
+
 Language.build_library(
   'build/my-languages.so',
   ['tree-sitter-python']  # path to the tree-sitter-pyton repo
@@ -92,31 +94,47 @@ def extract_all(root):
 
 
 def execute_python(root):
-    # for d in os.listdir(root):
-    py_path = os.path.join(root, 'tmp', 'main_branch.py')
-    output_path = os.path.join(root, 'tmp', 'branch.txt')
-    # print(py_path)
-    
-    if not os.path.exists(py_path):
-        print(py_path)
-    cmd_py = f"timeout 10s python {py_path}"
-
-    fout = open(output_path, 'w')
-    fout.write('some text, as header of the file\n')
-    fout.flush()
-    try:
-        process = Popen(cmd_py.split(' '), stdout=fout, stdin=PIPE, stderr=PIPE)
-
-        _,error=process.communicate()
-        if error:
-            print("*"*10)
-            print(error)
-            print(py_path)
-        else:
+    if "Avatar" in root or "CodeNet" in root:
+        py_path = os.path.join(root, 'tmp', 'main_branch.py')
+        output_path = os.path.join(root, 'tmp', 'branch.txt')
+        input_path = os.path.join(root, 'input.txt')
+        code_input = open(input_path, 'r').read().strip('\n')
+        input_bytes = bytes(code_input+'\n', 'utf-8')
+        cmd_py = f"timeout 10s python {py_path}"
+        fout = open(output_path, 'w')
+        fout.write('some text, as header of the file\n')
+        fout.flush()
+        try:
+            process = Popen(cmd_py.split(' '), stdout=fout, stdin=PIPE, stderr=PIPE)
+            process.stdin.write(input_bytes)
+            _,error=process.communicate()
+        except:
             pass
-            
-    except:
-        print(py_path)
+    else:
+        # for d in os.listdir(root):
+        py_path = os.path.join(root, 'tmp', 'main_branch.py')
+        output_path = os.path.join(root, 'tmp', 'branch.txt')
+        # print(py_path)
+        
+        if not os.path.exists(py_path):
+            print(py_path)
+        cmd_py = f"timeout 10s python {py_path}"
+
+        fout = open(output_path, 'w')
+        fout.write('some text, as header of the file\n')
+        fout.flush()
+        try:
+            process = Popen(cmd_py.split(' '), stdout=fout, stdin=PIPE, stderr=PIPE)
+            _,error=process.communicate()
+            if error:
+                print("*"*10)
+                print(error)
+                print(py_path)
+            else:
+                pass  
+        except:
+            print(py_path)
+
 
 def parse_file(folder):
     log_path = os.path.join(folder, 'tmp', 'branch.txt')
@@ -139,13 +157,10 @@ def parse_file(folder):
         data[int(pb)] = taken
     return data
 
-# a = extract_all("/home/changshu/CODEMIND/dataset/humaneval")
-# with open("/home/changshu/CODEMIND/dataset/Loops/huamaneval_branch.json", 'w') as wr:
-#     json.dump(a, wr, indent=4)
 
-def main():
+def main(dataset):
     results = {}
-    root_humaneval = "dataset/humaneval"
+    root_humaneval = f"dataset/{dataset}"
     for d in os.listdir(root_humaneval):
         path = os.path.join(root_humaneval, d)
         data = extract_branch(path)
@@ -156,9 +171,13 @@ def main():
             if r:
                 results[d] = r
     # # print(results)
-    wr_path_humaneval = "dataset/summary/humaneval_branch.json"
+    wr_path_humaneval = f"dataset/summary/{dataset}_branch.json"
     with open(wr_path_humaneval, 'w') as wr:
         json.dump(results, wr, indent=4)
 
 if __name__ == '__main__':
-    main()
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--dataset", type=str, default='none', help="select one from [humaneval, HumanEvalFix, etc.]")
+    args = parser.parse_args()
+    dataset = args.dataset
+    main(dataset)

@@ -1,7 +1,7 @@
 import ast
-import astunparse
 from pathlib import Path
 import json
+import argparse
 
 class IfExtractor(ast.NodeVisitor):
     def __init__(self):
@@ -55,8 +55,13 @@ def main(file_path):
     return candidate_list
 
 if __name__ == "__main__":
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--dataset", type=str, default='none', help="select one from [humaneval, HumanEvalFix, etc.]")
+    args = parser.parse_args()
+    dataset = args.dataset
+    
     results = {}
-    root = "./dataset/humaneval"
+    root = f"./dataset/{dataset}"
     files = list(Path(root).glob("**/main.py"))
     count = 0
     for f in files:
@@ -65,8 +70,8 @@ if __name__ == "__main__":
         results[problem_id] = conditions
         if conditions:
             count += 1
-    
-    result_path = "./dataset/summary/HumanEvalFix_condition_branch.json"
-    
+
+    result_path = f"./dataset/summary/{dataset}_condition_branch.json"
+
     with open(result_path, 'w') as wr:
         json.dump(results, wr, indent=4)

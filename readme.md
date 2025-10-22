@@ -6,7 +6,7 @@ Authors are Changshu Liu, Yang Chen, and Reyhaneh Jabbarvand.
 <a href="#-run-ces">🔥 Run CES</a>•
 <a href="">🏆 Leaderboard</a>
 <a href="#-Evaluate New Models">⚙️ Evaluate New LLMs</a> • 
-<a href="#️-add-new-benchmarks">⚙️ Add New Benchmarks</a> • 
+<a href="#️-add-new-datasets">⚙️ Add New Benchmarks</a> • 
 <a href="#-citation">📝 Citation</a>
 </p>
 
@@ -115,9 +115,41 @@ If you want to eleluate new LLMs with CES:
 
 (2) Add new prompts in [create_prompts.py](./src/ces/create_prompts.py), if necessary.
 
-## ⚙️ Add new Benchmarks
+## ⚙️ Add new Datasets
 The experiments in the paper are conducted with HumanEval/HuamanEvalPack dataset.
-However, we also provied a pipeline to extract program properties supporting other Python benchmarks (e.r. CruxEval, ClassEval)
+However, we also provide a pipeline to extract program properties supporting other Python benchmarks (e.r. CruxEval, MBPP, ClassEval, Avatar-Python):
+
+First, please organize your datasets as below under `dataset`:
+```
+--{DATASET_NAME}
+  |
+  |__{Problem_ID_1}
+  |  |
+  |  |__main.py (the Python code snippet)
+  |  |
+  |  |__input.txt (the entry point of main.py)
+  |  |
+  |  |__output.txt (the expected output of main.py)
+  |
+  |__{Problem_ID_2} 
+  |  |
+  |  |__main.py (the Python code snippet)
+  |  |
+  |  |__input.txt (the entry point of main.py)
+  |  |
+  |  |__output.txt (the expected output of main.py)
+  |
+  .......
+  |__{Problem_ID_N}
+     |
+     |....... 
+```
+Then run the following command:
+```
+bash scripts/extract_properties.sh $DATASET_NAME
+```
+Ground truth values of program properties will be exported under `dataset/summary`
+
 
 ## 📝 Citation
 If you find this repository useful, please cite this as
