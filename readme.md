@@ -2,7 +2,15 @@
 Artifact for the paper Assessing Coherency and Consistency of Code Execution Reasoning by Large Language Models, accepted by  the 48th IEEE/ACM International Conference on Software Engineering (ICSE 2026).
 Authors are Changshu Liu, Yang Chen, and Reyhaneh Jabbarvand.
 
-## Getting Started
+<p align="center">
+<a href="#-run-ces">🔥 Run CES</a>•
+<a href="https://crux-eval.github.io/leaderboard.html">🏆 Leaderboard</a>
+<a href="#-Evaluate New Models">⚙️ Evaluate New LLMs</a> • 
+<a href="#️-add-new-benchmarks">⚙️ Add New Benchmarks</a> • 
+<a href="#-citation">📝 Citation</a>
+</p>
+
+## 📋 Getting Started
 step 1. Run the following commands to install all the dependencies on your local machine:
 ```
 conda create -n ces python=3.8
