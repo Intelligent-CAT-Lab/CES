@@ -1,4 +1,4 @@
-# CES: Assessing Coherency and Consistency of Code Execution Reasoning by Large Language Models
+# Assessing Coherency and Consistency of Code Execution Reasoning by Large Language Models
 Artifact for the paper Assessing Coherency and Consistency of Code Execution Reasoning by Large Language Models, accepted by  the 48th IEEE/ACM International Conference on Software Engineering (ICSE 2026).
 Authors are Changshu Liu, Yang Chen, and Reyhaneh Jabbarvand.
 
@@ -33,7 +33,7 @@ docker build -t ces .
 docker run -it ces bash
 ```
 
-## 🔥 Run CES
+## 🔥 Run CES (**C**ode **E**xecuation **S**imulation)
 ### RQ1. Performance in CES
 To reprodeuce LLMs' performance on CES, please run the folliwing command:
 ```
@@ -102,6 +102,10 @@ suspicious success: 13
 likely success: 52
 incoherent: 31
 ```
+
+### RQ5. Assessing Coherency and Consistency of Code Execution Reasoning by Large Language Models
+
+To compare LLMs' performance on CES with REVAL, we have provided LLMs' performance on 82 overlapped problems under `src/REval`.
 
 
 ## ⚙️ Evaluate New Models
