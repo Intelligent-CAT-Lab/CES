@@ -83,8 +83,30 @@ X_X_0_0: 11
 Definations of symbols can be found in the RQ3 in the paper.
 
 ### RQ4. CES and Bug-Related Tasks
-To compare LLMs' performance on bug repair, bug prediction, bug localization, and CES, run the following command:
+To compare an LLM’s performance on bug repair, bug prediction, bug localization, and CES, run:
 ```
-bash scripts/run_ces.sh $MODEL_ID HumanEvalFix $CACHE_DIR
+bash scripts/run_bug_tasks.sh $MODEL_ID HumanEvalFix $CACHE_DIR
+```
+Then use the CES framework to perform a reliable analysis of the model’s performance on bug-related tasks:
+```
+bash scripts/analyze_bug_tasks.sh $MODEL_ID HumanEvalFix
+```
+This command generate JSON reports under `./Experiment_Results/summary/bug_task_analysis`, and  print key statistics in the console, for example:
+```
+======Bug Repair gpt-4-turbo  HumanEvalFix ======
+confident success: 44
+suspicious success: 13
+likely success: 57
+incoherent: 32
+======Bug Localization gpt-4-turbo  HumanEvalFix ======
+confident success: 32
+suspicious success: 9
+likely success: 48
+incoherent: 23
+======Bug Prediction gpt-4-turbo  HumanEvalFix ======
+confident success: 43
+suspicious success: 13
+likely success: 52
+incoherent: 31
 ```
 
