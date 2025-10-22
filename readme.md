@@ -4,7 +4,7 @@ Authors are Changshu Liu, Yang Chen, and Reyhaneh Jabbarvand.
 
 <p align="center">
 <a href="#-run-ces">🔥 Run CES</a>•
-<a href="https://crux-eval.github.io/leaderboard.html">🏆 Leaderboard</a>
+<a href="">🏆 Leaderboard</a>
 <a href="#-Evaluate New Models">⚙️ Evaluate New LLMs</a> • 
 <a href="#️-add-new-benchmarks">⚙️ Add New Benchmarks</a> • 
 <a href="#-citation">📝 Citation</a>
