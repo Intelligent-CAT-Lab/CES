@@ -106,6 +106,7 @@ incoherent: 31
 
 ## ⚙️ Evaluate New Models
 If you want to eleluate new LLMs with CES:
+
 (1) Update configuration in [model_config.json](./config/model_config.json)
 
 (2) Add new prompts in [create_prompts.py](./src/ces/create_prompts.py), if necessary.
