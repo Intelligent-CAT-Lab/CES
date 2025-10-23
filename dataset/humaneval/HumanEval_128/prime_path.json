@@ -1,0 +1,80 @@
+{
+    "humaneval_id": "HumanEval_128",
+    "python_file": "HumanEval_128/main.py",
+    "input_file": "HumanEval_128/input.txt",
+    "prime_paths_nodes": [
+        [
+            "1",
+            "13",
+            "3",
+            "4"
+        ],
+        [
+            "1",
+            "13",
+            "3",
+            "5",
+            "10"
+        ]
+    ],
+    "prime_paths_statements": [
+        [
+            "from typing import *\\ldef prod_signs(arr):...\\lprod_signs([1, 2, 2, -4])\\l",
+            "prod_signs",
+            "if not arr:\\l",
+            "return None\\l"
+        ],
+        [
+            "from typing import *\\ldef prod_signs(arr):...\\lprod_signs([1, 2, 2, -4])\\l",
+            "prod_signs",
+            "if not arr:\\l",
+            "prod = 0 if 0 in arr else (-1) ** len(list(filter(lambda x: x < 0, arr)))\\l",
+            "return prod * sum([abs(i) for i in arr])\\l"
+        ]
+    ],
+    "prime_paths_linenumbers": [
+        [
+            1,
+            7,
+            3,
+            3
+        ],
+        [
+            1,
+            7,
+            3,
+            4,
+            5
+        ]
+    ],
+    "covered_statements_linenumbers": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        7
+    ],
+    "missing_statements_linenumbers": [],
+    "covered_prime_paths_linenumbers": [
+        [
+            1,
+            7,
+            3,
+            3
+        ],
+        [
+            1,
+            7,
+            3,
+            4,
+            5
+        ]
+    ],
+    "missing_prime_paths_linenumbers": [],
+    "num_total_prime_paths": 2,
+    "num_covered_paths": 2,
+    "prime_path_coverage": 1.0,
+    "cfg_png": "/home/yang/share_repo/StaticAnalysis/cfglogshumaneval/HumanEval_128_CFG.png",
+    "cfg_dot": "/home/yang/share_repo/StaticAnalysis/cfglogshumaneval/HumanEval_128_CFG.dot"
+}

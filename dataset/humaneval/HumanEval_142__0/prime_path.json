@@ -1,0 +1,415 @@
+{
+    "humaneval_id": "HumanEval_142__0",
+    "python_file": "HumanEval_142__0/main.py",
+    "input_file": "HumanEval_142__0/input.txt",
+    "prime_paths_nodes": [
+        [
+            "7",
+            "9",
+            "4",
+            "8"
+        ],
+        [
+            "7",
+            "11",
+            "12",
+            "4",
+            "8"
+        ],
+        [
+            "7",
+            "11",
+            "14",
+            "4",
+            "8"
+        ],
+        [
+            "9",
+            "4",
+            "7",
+            "11",
+            "12"
+        ],
+        [
+            "9",
+            "4",
+            "7",
+            "11",
+            "14"
+        ],
+        [
+            "11",
+            "12",
+            "4",
+            "7",
+            "9"
+        ],
+        [
+            "11",
+            "14",
+            "4",
+            "7",
+            "9"
+        ],
+        [
+            "12",
+            "4",
+            "7",
+            "11",
+            "14"
+        ],
+        [
+            "14",
+            "4",
+            "7",
+            "11",
+            "12"
+        ],
+        [
+            "1",
+            "20",
+            "3",
+            "4",
+            "8"
+        ],
+        [
+            "1",
+            "20",
+            "3",
+            "4",
+            "7",
+            "9"
+        ],
+        [
+            "1",
+            "20",
+            "3",
+            "4",
+            "7",
+            "11",
+            "12"
+        ],
+        [
+            "1",
+            "20",
+            "3",
+            "4",
+            "7",
+            "11",
+            "14"
+        ]
+    ],
+    "prime_paths_statements": [
+        [
+            "if i % 3 == 0:\\l",
+            "result.append(lst[i] ** 2)\\l",
+            "for i in range(len(lst)):\\l",
+            "return sum(result)\\l"
+        ],
+        [
+            "if i % 3 == 0:\\l",
+            "if i % 4 == 0 and i % 3 != 0:\\l",
+            "result.append(lst[i] ** 3)\\l",
+            "for i in range(len(lst)):\\l",
+            "return sum(result)\\l"
+        ],
+        [
+            "if i % 3 == 0:\\l",
+            "if i % 4 == 0 and i % 3 != 0:\\l",
+            "result.append(lst[i])\\l",
+            "for i in range(len(lst)):\\l",
+            "return sum(result)\\l"
+        ],
+        [
+            "result.append(lst[i] ** 2)\\l",
+            "for i in range(len(lst)):\\l",
+            "if i % 3 == 0:\\l",
+            "if i % 4 == 0 and i % 3 != 0:\\l",
+            "result.append(lst[i] ** 3)\\l"
+        ],
+        [
+            "result.append(lst[i] ** 2)\\l",
+            "for i in range(len(lst)):\\l",
+            "if i % 3 == 0:\\l",
+            "if i % 4 == 0 and i % 3 != 0:\\l",
+            "result.append(lst[i])\\l"
+        ],
+        [
+            "if i % 4 == 0 and i % 3 != 0:\\l",
+            "result.append(lst[i] ** 3)\\l",
+            "for i in range(len(lst)):\\l",
+            "if i % 3 == 0:\\l",
+            "result.append(lst[i] ** 2)\\l"
+        ],
+        [
+            "if i % 4 == 0 and i % 3 != 0:\\l",
+            "result.append(lst[i])\\l",
+            "for i in range(len(lst)):\\l",
+            "if i % 3 == 0:\\l",
+            "result.append(lst[i] ** 2)\\l"
+        ],
+        [
+            "result.append(lst[i] ** 3)\\l",
+            "for i in range(len(lst)):\\l",
+            "if i % 3 == 0:\\l",
+            "if i % 4 == 0 and i % 3 != 0:\\l",
+            "result.append(lst[i])\\l"
+        ],
+        [
+            "result.append(lst[i])\\l",
+            "for i in range(len(lst)):\\l",
+            "if i % 3 == 0:\\l",
+            "if i % 4 == 0 and i % 3 != 0:\\l",
+            "result.append(lst[i] ** 3)\\l"
+        ],
+        [
+            "from typing import *\\ldef sum_squares(lst):...\\lsum_squares([0])\\l",
+            "sum_squares",
+            "result = []\\l",
+            "for i in range(len(lst)):\\l",
+            "return sum(result)\\l"
+        ],
+        [
+            "from typing import *\\ldef sum_squares(lst):...\\lsum_squares([0])\\l",
+            "sum_squares",
+            "result = []\\l",
+            "for i in range(len(lst)):\\l",
+            "if i % 3 == 0:\\l",
+            "result.append(lst[i] ** 2)\\l"
+        ],
+        [
+            "from typing import *\\ldef sum_squares(lst):...\\lsum_squares([0])\\l",
+            "sum_squares",
+            "result = []\\l",
+            "for i in range(len(lst)):\\l",
+            "if i % 3 == 0:\\l",
+            "if i % 4 == 0 and i % 3 != 0:\\l",
+            "result.append(lst[i] ** 3)\\l"
+        ],
+        [
+            "from typing import *\\ldef sum_squares(lst):...\\lsum_squares([0])\\l",
+            "sum_squares",
+            "result = []\\l",
+            "for i in range(len(lst)):\\l",
+            "if i % 3 == 0:\\l",
+            "if i % 4 == 0 and i % 3 != 0:\\l",
+            "result.append(lst[i])\\l"
+        ]
+    ],
+    "prime_paths_linenumbers": [
+        [
+            7,
+            8,
+            6,
+            13
+        ],
+        [
+            7,
+            9,
+            10,
+            6,
+            13
+        ],
+        [
+            7,
+            9,
+            12,
+            6,
+            13
+        ],
+        [
+            8,
+            6,
+            7,
+            9,
+            10
+        ],
+        [
+            8,
+            6,
+            7,
+            9,
+            12
+        ],
+        [
+            9,
+            10,
+            6,
+            7,
+            8
+        ],
+        [
+            9,
+            12,
+            6,
+            7,
+            8
+        ],
+        [
+            10,
+            6,
+            7,
+            9,
+            12
+        ],
+        [
+            12,
+            6,
+            7,
+            9,
+            10
+        ],
+        [
+            1,
+            15,
+            5,
+            6,
+            13
+        ],
+        [
+            1,
+            15,
+            5,
+            6,
+            7,
+            8
+        ],
+        [
+            1,
+            15,
+            5,
+            6,
+            7,
+            9,
+            10
+        ],
+        [
+            1,
+            15,
+            5,
+            6,
+            7,
+            9,
+            12
+        ]
+    ],
+    "covered_statements_linenumbers": [
+        1,
+        4,
+        5,
+        6,
+        7,
+        8,
+        13,
+        15
+    ],
+    "missing_statements_linenumbers": [
+        9,
+        10,
+        12
+    ],
+    "covered_prime_paths_linenumbers": [
+        [
+            7,
+            8,
+            6,
+            13
+        ],
+        [
+            1,
+            15,
+            5,
+            6,
+            13
+        ],
+        [
+            1,
+            15,
+            5,
+            6,
+            7,
+            8
+        ]
+    ],
+    "missing_prime_paths_linenumbers": [
+        [
+            7,
+            9,
+            10,
+            6,
+            13
+        ],
+        [
+            7,
+            9,
+            12,
+            6,
+            13
+        ],
+        [
+            8,
+            6,
+            7,
+            9,
+            10
+        ],
+        [
+            8,
+            6,
+            7,
+            9,
+            12
+        ],
+        [
+            9,
+            10,
+            6,
+            7,
+            8
+        ],
+        [
+            9,
+            12,
+            6,
+            7,
+            8
+        ],
+        [
+            10,
+            6,
+            7,
+            9,
+            12
+        ],
+        [
+            12,
+            6,
+            7,
+            9,
+            10
+        ],
+        [
+            1,
+            15,
+            5,
+            6,
+            7,
+            9,
+            10
+        ],
+        [
+            1,
+            15,
+            5,
+            6,
+            7,
+            9,
+            12
+        ]
+    ],
+    "num_total_prime_paths": 13,
+    "num_covered_paths": 3,
+    "prime_path_coverage": 0.23,
+    "cfg_png": "/home/yang/share_repo/StaticAnalysis/cfglogshumaneval/HumanEval_142__0_CFG.png",
+    "cfg_dot": "/home/yang/share_repo/StaticAnalysis/cfglogshumaneval/HumanEval_142__0_CFG.dot"
+}

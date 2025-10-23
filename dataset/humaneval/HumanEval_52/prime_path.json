@@ -1,0 +1,103 @@
+{
+    "humaneval_id": "HumanEval_52",
+    "python_file": "HumanEval_52/main.py",
+    "input_file": "HumanEval_52/input.txt",
+    "prime_paths_nodes": [
+        [
+            "4",
+            "3",
+            "5"
+        ],
+        [
+            "1",
+            "11",
+            "3",
+            "5"
+        ],
+        [
+            "1",
+            "11",
+            "3",
+            "4",
+            "6"
+        ]
+    ],
+    "prime_paths_statements": [
+        [
+            "if e >= t:\\l",
+            "for e in l:\\l",
+            "return True\\l"
+        ],
+        [
+            "from typing import *\\ldef below_threshold(l: list, t: int):...\\lbelow_threshold([1, 20, 4, 10], 21)\\l",
+            "below_threshold",
+            "for e in l:\\l",
+            "return True\\l"
+        ],
+        [
+            "from typing import *\\ldef below_threshold(l: list, t: int):...\\lbelow_threshold([1, 20, 4, 10], 21)\\l",
+            "below_threshold",
+            "for e in l:\\l",
+            "if e >= t:\\l",
+            "return False\\l"
+        ]
+    ],
+    "prime_paths_linenumbers": [
+        [
+            4,
+            3,
+            6
+        ],
+        [
+            1,
+            8,
+            3,
+            6
+        ],
+        [
+            1,
+            8,
+            3,
+            4,
+            5
+        ]
+    ],
+    "covered_statements_linenumbers": [
+        1,
+        2,
+        3,
+        4,
+        6,
+        8
+    ],
+    "missing_statements_linenumbers": [
+        5
+    ],
+    "covered_prime_paths_linenumbers": [
+        [
+            4,
+            3,
+            6
+        ],
+        [
+            1,
+            8,
+            3,
+            6
+        ]
+    ],
+    "missing_prime_paths_linenumbers": [
+        [
+            1,
+            8,
+            3,
+            4,
+            5
+        ]
+    ],
+    "num_total_prime_paths": 3,
+    "num_covered_paths": 2,
+    "prime_path_coverage": 0.67,
+    "cfg_png": "/home/yang/share_repo/StaticAnalysis/cfglogshumaneval/HumanEval_52_CFG.png",
+    "cfg_dot": "/home/yang/share_repo/StaticAnalysis/cfglogshumaneval/HumanEval_52_CFG.dot"
+}

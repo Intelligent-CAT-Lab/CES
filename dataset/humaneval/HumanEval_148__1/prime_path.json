@@ -1,0 +1,139 @@
+{
+    "humaneval_id": "HumanEval_148__1",
+    "python_file": "HumanEval_148__1/main.py",
+    "input_file": "HumanEval_148__1/input.txt",
+    "prime_paths_nodes": [
+        [
+            "1",
+            "17",
+            "3",
+            "4",
+            "5"
+        ],
+        [
+            "1",
+            "17",
+            "3",
+            "4",
+            "6",
+            "10",
+            "11"
+        ],
+        [
+            "1",
+            "17",
+            "3",
+            "4",
+            "6",
+            "10",
+            "13"
+        ]
+    ],
+    "prime_paths_statements": [
+        [
+            "from typing import *\\ldef bf(planet1, planet2):...\\lbf('Mercury', 'Uranus')\\l",
+            "bf",
+            "planet_names = ('Mercury', 'Venus', 'Earth', 'Mars', 'Jupiter', 'Saturn',\\l    'Uranus', 'Neptune')\\l",
+            "if planet1 not in planet_names or planet2 not in planet_names or planet1 == planet2:\\l",
+            "return ()\\l"
+        ],
+        [
+            "from typing import *\\ldef bf(planet1, planet2):...\\lbf('Mercury', 'Uranus')\\l",
+            "bf",
+            "planet_names = ('Mercury', 'Venus', 'Earth', 'Mars', 'Jupiter', 'Saturn',\\l    'Uranus', 'Neptune')\\l",
+            "if planet1 not in planet_names or planet2 not in planet_names or planet1 == planet2:\\l",
+            "planet1_index = planet_names.index(planet1)\\lplanet2_index = planet_names.index(planet2)\\l",
+            "if planet1_index < planet2_index:\\l",
+            "return planet_names[planet1_index + 1:planet2_index]\\l"
+        ],
+        [
+            "from typing import *\\ldef bf(planet1, planet2):...\\lbf('Mercury', 'Uranus')\\l",
+            "bf",
+            "planet_names = ('Mercury', 'Venus', 'Earth', 'Mars', 'Jupiter', 'Saturn',\\l    'Uranus', 'Neptune')\\l",
+            "if planet1 not in planet_names or planet2 not in planet_names or planet1 == planet2:\\l",
+            "planet1_index = planet_names.index(planet1)\\lplanet2_index = planet_names.index(planet2)\\l",
+            "if planet1_index < planet2_index:\\l",
+            "return planet_names[planet2_index + 1:planet1_index]\\l"
+        ]
+    ],
+    "prime_paths_linenumbers": [
+        [
+            1,
+            23,
+            5,
+            14,
+            15
+        ],
+        [
+            1,
+            23,
+            5,
+            14,
+            16,
+            17,
+            18,
+            19
+        ],
+        [
+            1,
+            23,
+            5,
+            14,
+            16,
+            17,
+            18,
+            21
+        ]
+    ],
+    "covered_statements_linenumbers": [
+        1,
+        4,
+        5,
+        14,
+        16,
+        17,
+        18,
+        19,
+        23
+    ],
+    "missing_statements_linenumbers": [
+        15,
+        21
+    ],
+    "covered_prime_paths_linenumbers": [
+        [
+            1,
+            23,
+            5,
+            14,
+            16,
+            17,
+            18,
+            19
+        ]
+    ],
+    "missing_prime_paths_linenumbers": [
+        [
+            1,
+            23,
+            5,
+            14,
+            15
+        ],
+        [
+            1,
+            23,
+            5,
+            14,
+            16,
+            17,
+            18,
+            21
+        ]
+    ],
+    "num_total_prime_paths": 3,
+    "num_covered_paths": 1,
+    "prime_path_coverage": 0.33,
+    "cfg_png": "/home/yang/share_repo/StaticAnalysis/cfglogshumaneval/HumanEval_148__1_CFG.png",
+    "cfg_dot": "/home/yang/share_repo/StaticAnalysis/cfglogshumaneval/HumanEval_148__1_CFG.dot"
+}

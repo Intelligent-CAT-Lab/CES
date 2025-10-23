@@ -1,0 +1,218 @@
+{
+    "humaneval_id": "HumanEval_72",
+    "python_file": "HumanEval_72/main.py",
+    "input_file": "HumanEval_72/input.txt",
+    "prime_paths_nodes": [
+        [
+            "10",
+            "13",
+            "9",
+            "11"
+        ],
+        [
+            "13",
+            "9",
+            "10",
+            "12"
+        ],
+        [
+            "1",
+            "17",
+            "3",
+            "5"
+        ],
+        [
+            "1",
+            "17",
+            "3",
+            "6",
+            "9",
+            "11"
+        ],
+        [
+            "1",
+            "17",
+            "3",
+            "6",
+            "9",
+            "10",
+            "12"
+        ],
+        [
+            "1",
+            "17",
+            "3",
+            "6",
+            "9",
+            "10",
+            "13"
+        ]
+    ],
+    "prime_paths_statements": [
+        [
+            "if q[i] != q[j]:\\l",
+            "i += 1\\lj -= 1\\l",
+            "while i < j:\\l",
+            "return True\\l"
+        ],
+        [
+            "i += 1\\lj -= 1\\l",
+            "while i < j:\\l",
+            "if q[i] != q[j]:\\l",
+            "return False\\l"
+        ],
+        [
+            "from typing import *\\ldef will_it_fly(q, w):...\\lwill_it_fly([3, 2, 3], 9)\\l",
+            "will_it_fly",
+            "if sum(q) > w:\\l",
+            "return False\\l"
+        ],
+        [
+            "from typing import *\\ldef will_it_fly(q, w):...\\lwill_it_fly([3, 2, 3], 9)\\l",
+            "will_it_fly",
+            "if sum(q) > w:\\l",
+            "i, j = 0, len(q) - 1\\l",
+            "while i < j:\\l",
+            "return True\\l"
+        ],
+        [
+            "from typing import *\\ldef will_it_fly(q, w):...\\lwill_it_fly([3, 2, 3], 9)\\l",
+            "will_it_fly",
+            "if sum(q) > w:\\l",
+            "i, j = 0, len(q) - 1\\l",
+            "while i < j:\\l",
+            "if q[i] != q[j]:\\l",
+            "return False\\l"
+        ],
+        [
+            "from typing import *\\ldef will_it_fly(q, w):...\\lwill_it_fly([3, 2, 3], 9)\\l",
+            "will_it_fly",
+            "if sum(q) > w:\\l",
+            "i, j = 0, len(q) - 1\\l",
+            "while i < j:\\l",
+            "if q[i] != q[j]:\\l",
+            "i += 1\\lj -= 1\\l"
+        ]
+    ],
+    "prime_paths_linenumbers": [
+        [
+            8,
+            10,
+            11,
+            7,
+            12
+        ],
+        [
+            10,
+            11,
+            7,
+            8,
+            9
+        ],
+        [
+            1,
+            14,
+            3,
+            4
+        ],
+        [
+            1,
+            14,
+            3,
+            6,
+            7,
+            12
+        ],
+        [
+            1,
+            14,
+            3,
+            6,
+            7,
+            8,
+            9
+        ],
+        [
+            1,
+            14,
+            3,
+            6,
+            7,
+            8,
+            10,
+            11
+        ]
+    ],
+    "covered_statements_linenumbers": [
+        1,
+        2,
+        3,
+        6,
+        7,
+        8,
+        10,
+        11,
+        12,
+        14
+    ],
+    "missing_statements_linenumbers": [
+        4,
+        9
+    ],
+    "covered_prime_paths_linenumbers": [
+        [
+            8,
+            10,
+            11,
+            7,
+            12
+        ],
+        [
+            1,
+            14,
+            3,
+            6,
+            7,
+            12
+        ],
+        [
+            1,
+            14,
+            3,
+            6,
+            7,
+            8,
+            10,
+            11
+        ]
+    ],
+    "missing_prime_paths_linenumbers": [
+        [
+            10,
+            11,
+            7,
+            8,
+            9
+        ],
+        [
+            1,
+            14,
+            3,
+            4
+        ],
+        [
+            1,
+            14,
+            3,
+            6,
+            7,
+            8,
+            9
+        ]
+    ],
+    "num_total_prime_paths": 6,
+    "num_covered_paths": 3,
+    "prime_path_coverage": 0.5,
+    "cfg_png": "/home/yang/share_repo/StaticAnalysis/cfglogshumaneval/HumanEval_72_CFG.png",
+    "cfg_dot": "/home/yang/share_repo/StaticAnalysis/cfglogshumaneval/HumanEval_72_CFG.dot"
+}

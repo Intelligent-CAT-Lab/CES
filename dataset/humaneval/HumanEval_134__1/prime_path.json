@@ -1,0 +1,52 @@
+{
+    "humaneval_id": "HumanEval_134__1",
+    "python_file": "HumanEval_134__1/main.py",
+    "input_file": "HumanEval_134__1/input.txt",
+    "prime_paths_nodes": [
+        [
+            "1",
+            "8",
+            "3",
+            "5"
+        ]
+    ],
+    "prime_paths_statements": [
+        [
+            "from typing import *\\ldef check_if_last_char_is_a_letter(txt):...\\lcheck_if_last_char_is_a_letter('A')\\l",
+            "check_if_last_char_is_a_letter",
+            "check = txt.split(' ')[-1]\\l",
+            "return True if len(check) == 1 and 97 <= ord(check.lower()) <= 122 else False\\l"
+        ]
+    ],
+    "prime_paths_linenumbers": [
+        [
+            1,
+            10,
+            6,
+            7
+        ]
+    ],
+    "covered_statements_linenumbers": [
+        1,
+        4,
+        6,
+        7,
+        8,
+        10
+    ],
+    "missing_statements_linenumbers": [],
+    "covered_prime_paths_linenumbers": [
+        [
+            1,
+            10,
+            6,
+            7
+        ]
+    ],
+    "missing_prime_paths_linenumbers": [],
+    "num_total_prime_paths": 1,
+    "num_covered_paths": 1,
+    "prime_path_coverage": 1.0,
+    "cfg_png": "/home/yang/share_repo/StaticAnalysis/cfglogshumaneval/HumanEval_134__1_CFG.png",
+    "cfg_dot": "/home/yang/share_repo/StaticAnalysis/cfglogshumaneval/HumanEval_134__1_CFG.dot"
+}

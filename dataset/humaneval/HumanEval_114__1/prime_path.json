@@ -1,0 +1,464 @@
+{
+    "humaneval_id": "HumanEval_114__1",
+    "python_file": "HumanEval_114__1/main.py",
+    "input_file": "HumanEval_114__1/input.txt",
+    "prime_paths_nodes": [
+        [
+            "5",
+            "7",
+            "8",
+            "9",
+            "4",
+            "6",
+            "11",
+            "12",
+            "14"
+        ],
+        [
+            "5",
+            "7",
+            "8",
+            "9",
+            "4",
+            "6",
+            "12",
+            "14"
+        ],
+        [
+            "5",
+            "7",
+            "9",
+            "4",
+            "6",
+            "11",
+            "12",
+            "14"
+        ],
+        [
+            "5",
+            "7",
+            "9",
+            "4",
+            "6",
+            "12",
+            "14"
+        ],
+        [
+            "7",
+            "8",
+            "9",
+            "4",
+            "5"
+        ],
+        [
+            "7",
+            "9",
+            "4",
+            "5"
+        ],
+        [
+            "8",
+            "9",
+            "4",
+            "5",
+            "7"
+        ],
+        [
+            "9",
+            "4",
+            "5",
+            "7",
+            "8"
+        ],
+        [
+            "1",
+            "17",
+            "3",
+            "4",
+            "5",
+            "7",
+            "8",
+            "9"
+        ],
+        [
+            "1",
+            "17",
+            "3",
+            "4",
+            "5",
+            "7",
+            "9"
+        ],
+        [
+            "1",
+            "17",
+            "3",
+            "4",
+            "6",
+            "11",
+            "12",
+            "14"
+        ],
+        [
+            "1",
+            "17",
+            "3",
+            "4",
+            "6",
+            "12",
+            "14"
+        ]
+    ],
+    "prime_paths_statements": [
+        [
+            "s += -num\\l",
+            "if s < 0:\\l",
+            "s = 0\\l",
+            "max_sum = max(s, max_sum)\\l",
+            "for num in nums:\\l",
+            "if max_sum == 0:\\l",
+            "max_sum = max(-i for i in nums)\\l",
+            "min_sum = -max_sum\\l",
+            "return min_sum\\l"
+        ],
+        [
+            "s += -num\\l",
+            "if s < 0:\\l",
+            "s = 0\\l",
+            "max_sum = max(s, max_sum)\\l",
+            "for num in nums:\\l",
+            "if max_sum == 0:\\l",
+            "min_sum = -max_sum\\l",
+            "return min_sum\\l"
+        ],
+        [
+            "s += -num\\l",
+            "if s < 0:\\l",
+            "max_sum = max(s, max_sum)\\l",
+            "for num in nums:\\l",
+            "if max_sum == 0:\\l",
+            "max_sum = max(-i for i in nums)\\l",
+            "min_sum = -max_sum\\l",
+            "return min_sum\\l"
+        ],
+        [
+            "s += -num\\l",
+            "if s < 0:\\l",
+            "max_sum = max(s, max_sum)\\l",
+            "for num in nums:\\l",
+            "if max_sum == 0:\\l",
+            "min_sum = -max_sum\\l",
+            "return min_sum\\l"
+        ],
+        [
+            "if s < 0:\\l",
+            "s = 0\\l",
+            "max_sum = max(s, max_sum)\\l",
+            "for num in nums:\\l",
+            "s += -num\\l"
+        ],
+        [
+            "if s < 0:\\l",
+            "max_sum = max(s, max_sum)\\l",
+            "for num in nums:\\l",
+            "s += -num\\l"
+        ],
+        [
+            "s = 0\\l",
+            "max_sum = max(s, max_sum)\\l",
+            "for num in nums:\\l",
+            "s += -num\\l",
+            "if s < 0:\\l"
+        ],
+        [
+            "max_sum = max(s, max_sum)\\l",
+            "for num in nums:\\l",
+            "s += -num\\l",
+            "if s < 0:\\l",
+            "s = 0\\l"
+        ],
+        [
+            "from typing import *\\ldef minSubArraySum(nums):...\\lminSubArraySum([0, 10, 20, 1000000])\\l",
+            "minSubArraySum",
+            "max_sum = 0\\ls = 0\\l",
+            "for num in nums:\\l",
+            "s += -num\\l",
+            "if s < 0:\\l",
+            "s = 0\\l",
+            "max_sum = max(s, max_sum)\\l"
+        ],
+        [
+            "from typing import *\\ldef minSubArraySum(nums):...\\lminSubArraySum([0, 10, 20, 1000000])\\l",
+            "minSubArraySum",
+            "max_sum = 0\\ls = 0\\l",
+            "for num in nums:\\l",
+            "s += -num\\l",
+            "if s < 0:\\l",
+            "max_sum = max(s, max_sum)\\l"
+        ],
+        [
+            "from typing import *\\ldef minSubArraySum(nums):...\\lminSubArraySum([0, 10, 20, 1000000])\\l",
+            "minSubArraySum",
+            "max_sum = 0\\ls = 0\\l",
+            "for num in nums:\\l",
+            "if max_sum == 0:\\l",
+            "max_sum = max(-i for i in nums)\\l",
+            "min_sum = -max_sum\\l",
+            "return min_sum\\l"
+        ],
+        [
+            "from typing import *\\ldef minSubArraySum(nums):...\\lminSubArraySum([0, 10, 20, 1000000])\\l",
+            "minSubArraySum",
+            "max_sum = 0\\ls = 0\\l",
+            "for num in nums:\\l",
+            "if max_sum == 0:\\l",
+            "min_sum = -max_sum\\l",
+            "return min_sum\\l"
+        ]
+    ],
+    "prime_paths_linenumbers": [
+        [
+            8,
+            9,
+            10,
+            11,
+            7,
+            12,
+            13,
+            14,
+            15
+        ],
+        [
+            8,
+            9,
+            10,
+            11,
+            7,
+            12,
+            14,
+            15
+        ],
+        [
+            8,
+            9,
+            11,
+            7,
+            12,
+            13,
+            14,
+            15
+        ],
+        [
+            8,
+            9,
+            11,
+            7,
+            12,
+            14,
+            15
+        ],
+        [
+            9,
+            10,
+            11,
+            7,
+            8
+        ],
+        [
+            9,
+            11,
+            7,
+            8
+        ],
+        [
+            10,
+            11,
+            7,
+            8,
+            9
+        ],
+        [
+            11,
+            7,
+            8,
+            9,
+            10
+        ],
+        [
+            1,
+            17,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11
+        ],
+        [
+            1,
+            17,
+            5,
+            6,
+            7,
+            8,
+            9,
+            11
+        ],
+        [
+            1,
+            17,
+            5,
+            6,
+            7,
+            12,
+            13,
+            14,
+            15
+        ],
+        [
+            1,
+            17,
+            5,
+            6,
+            7,
+            12,
+            14,
+            15
+        ]
+    ],
+    "covered_statements_linenumbers": [
+        1,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        17
+    ],
+    "missing_statements_linenumbers": [],
+    "covered_prime_paths_linenumbers": [
+        [
+            8,
+            9,
+            10,
+            11,
+            7,
+            12,
+            13,
+            14,
+            15
+        ],
+        [
+            8,
+            9,
+            10,
+            11,
+            7,
+            12,
+            14,
+            15
+        ],
+        [
+            8,
+            9,
+            11,
+            7,
+            12,
+            13,
+            14,
+            15
+        ],
+        [
+            8,
+            9,
+            11,
+            7,
+            12,
+            14,
+            15
+        ],
+        [
+            9,
+            10,
+            11,
+            7,
+            8
+        ],
+        [
+            9,
+            11,
+            7,
+            8
+        ],
+        [
+            10,
+            11,
+            7,
+            8,
+            9
+        ],
+        [
+            11,
+            7,
+            8,
+            9,
+            10
+        ],
+        [
+            1,
+            17,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11
+        ],
+        [
+            1,
+            17,
+            5,
+            6,
+            7,
+            8,
+            9,
+            11
+        ],
+        [
+            1,
+            17,
+            5,
+            6,
+            7,
+            12,
+            13,
+            14,
+            15
+        ],
+        [
+            1,
+            17,
+            5,
+            6,
+            7,
+            12,
+            14,
+            15
+        ]
+    ],
+    "missing_prime_paths_linenumbers": [],
+    "num_total_prime_paths": 12,
+    "num_covered_paths": 12,
+    "prime_path_coverage": 1.0,
+    "cfg_png": "/home/yang/share_repo/StaticAnalysis/cfglogshumaneval/HumanEval_114__1_CFG.png",
+    "cfg_dot": "/home/yang/share_repo/StaticAnalysis/cfglogshumaneval/HumanEval_114__1_CFG.dot"
+}

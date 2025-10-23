@@ -1,0 +1,105 @@
+{
+    "humaneval_id": "HumanEval_160__1",
+    "python_file": "HumanEval_160__1/main.py",
+    "input_file": "HumanEval_160__1/input.txt",
+    "prime_paths_nodes": [
+        [
+            "7",
+            "5",
+            "8"
+        ],
+        [
+            "1",
+            "12",
+            "3",
+            "5",
+            "7"
+        ],
+        [
+            "1",
+            "12",
+            "3",
+            "5",
+            "8"
+        ]
+    ],
+    "prime_paths_statements": [
+        [
+            "expression += oprt + str(oprn)\\l",
+            "for oprt, oprn in zip(operator, operand[1:]):\\l",
+            "return eval(expression)\\l"
+        ],
+        [
+            "from typing import *\\ldef do_algebra(operator, operand):...\\ldo_algebra(['+', '*', '-'], [2, 3, 4, 5])\\l",
+            "do_algebra",
+            "expression = str(operand[0])\\l",
+            "for oprt, oprn in zip(operator, operand[1:]):\\l",
+            "expression += oprt + str(oprn)\\l"
+        ],
+        [
+            "from typing import *\\ldef do_algebra(operator, operand):...\\ldo_algebra(['+', '*', '-'], [2, 3, 4, 5])\\l",
+            "do_algebra",
+            "expression = str(operand[0])\\l",
+            "for oprt, oprn in zip(operator, operand[1:]):\\l",
+            "return eval(expression)\\l"
+        ]
+    ],
+    "prime_paths_linenumbers": [
+        [
+            7,
+            6,
+            8
+        ],
+        [
+            1,
+            10,
+            5,
+            6,
+            7
+        ],
+        [
+            1,
+            10,
+            5,
+            6,
+            8
+        ]
+    ],
+    "covered_statements_linenumbers": [
+        1,
+        4,
+        5,
+        6,
+        7,
+        8,
+        10
+    ],
+    "missing_statements_linenumbers": [],
+    "covered_prime_paths_linenumbers": [
+        [
+            7,
+            6,
+            8
+        ],
+        [
+            1,
+            10,
+            5,
+            6,
+            7
+        ],
+        [
+            1,
+            10,
+            5,
+            6,
+            8
+        ]
+    ],
+    "missing_prime_paths_linenumbers": [],
+    "num_total_prime_paths": 3,
+    "num_covered_paths": 3,
+    "prime_path_coverage": 1.0,
+    "cfg_png": "/home/yang/share_repo/StaticAnalysis/cfglogshumaneval/HumanEval_160__1_CFG.png",
+    "cfg_dot": "/home/yang/share_repo/StaticAnalysis/cfglogshumaneval/HumanEval_160__1_CFG.dot"
+}

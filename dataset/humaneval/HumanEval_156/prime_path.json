@@ -1,0 +1,285 @@
+{
+    "humaneval_id": "HumanEval_156",
+    "python_file": "HumanEval_156/main.py",
+    "input_file": "HumanEval_156/input.txt",
+    "prime_paths_nodes": [
+        [
+            "5",
+            "7",
+            "9",
+            "4",
+            "6"
+        ],
+        [
+            "8",
+            "7",
+            "9",
+            "4",
+            "5"
+        ],
+        [
+            "8",
+            "7",
+            "9",
+            "4",
+            "6"
+        ],
+        [
+            "9",
+            "4",
+            "5",
+            "7",
+            "8"
+        ],
+        [
+            "1",
+            "12",
+            "3",
+            "4",
+            "6"
+        ],
+        [
+            "1",
+            "12",
+            "3",
+            "4",
+            "5",
+            "7",
+            "8"
+        ],
+        [
+            "1",
+            "12",
+            "3",
+            "4",
+            "5",
+            "7",
+            "9"
+        ]
+    ],
+    "prime_paths_statements": [
+        [
+            "div = number // num[i]\\lnumber %= num[i]\\l",
+            "while div:\\l",
+            "i -= 1\\l",
+            "while number:\\l",
+            "return res.lower()\\l"
+        ],
+        [
+            "res += sym[i]\\ldiv -= 1\\l",
+            "while div:\\l",
+            "i -= 1\\l",
+            "while number:\\l",
+            "div = number // num[i]\\lnumber %= num[i]\\l"
+        ],
+        [
+            "res += sym[i]\\ldiv -= 1\\l",
+            "while div:\\l",
+            "i -= 1\\l",
+            "while number:\\l",
+            "return res.lower()\\l"
+        ],
+        [
+            "i -= 1\\l",
+            "while number:\\l",
+            "div = number // num[i]\\lnumber %= num[i]\\l",
+            "while div:\\l",
+            "res += sym[i]\\ldiv -= 1\\l"
+        ],
+        [
+            "from typing import *\\ldef int_to_mini_roman(number):...\\lint_to_mini_roman(19)\\l",
+            "int_to_mini_roman",
+            "num = [1, 4, 5, 9, 10, 40, 50, 90, 100, 400, 500, 900, 1000]\\lsym = ['I', 'IV', 'V', 'IX', 'X', 'XL', 'L', 'XC', 'C', 'CD', 'D', 'CM', 'M']\\li = 12\\lres = ''\\l",
+            "while number:\\l",
+            "return res.lower()\\l"
+        ],
+        [
+            "from typing import *\\ldef int_to_mini_roman(number):...\\lint_to_mini_roman(19)\\l",
+            "int_to_mini_roman",
+            "num = [1, 4, 5, 9, 10, 40, 50, 90, 100, 400, 500, 900, 1000]\\lsym = ['I', 'IV', 'V', 'IX', 'X', 'XL', 'L', 'XC', 'C', 'CD', 'D', 'CM', 'M']\\li = 12\\lres = ''\\l",
+            "while number:\\l",
+            "div = number // num[i]\\lnumber %= num[i]\\l",
+            "while div:\\l",
+            "res += sym[i]\\ldiv -= 1\\l"
+        ],
+        [
+            "from typing import *\\ldef int_to_mini_roman(number):...\\lint_to_mini_roman(19)\\l",
+            "int_to_mini_roman",
+            "num = [1, 4, 5, 9, 10, 40, 50, 90, 100, 400, 500, 900, 1000]\\lsym = ['I', 'IV', 'V', 'IX', 'X', 'XL', 'L', 'XC', 'C', 'CD', 'D', 'CM', 'M']\\li = 12\\lres = ''\\l",
+            "while number:\\l",
+            "div = number // num[i]\\lnumber %= num[i]\\l",
+            "while div:\\l",
+            "i -= 1\\l"
+        ]
+    ],
+    "prime_paths_linenumbers": [
+        [
+            10,
+            11,
+            12,
+            15,
+            9,
+            16
+        ],
+        [
+            13,
+            14,
+            12,
+            15,
+            9,
+            10,
+            11
+        ],
+        [
+            13,
+            14,
+            12,
+            15,
+            9,
+            16
+        ],
+        [
+            15,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14
+        ],
+        [
+            1,
+            18,
+            3,
+            5,
+            7,
+            8,
+            9,
+            16
+        ],
+        [
+            1,
+            18,
+            3,
+            5,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14
+        ],
+        [
+            1,
+            18,
+            3,
+            5,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            15
+        ]
+    ],
+    "covered_statements_linenumbers": [
+        1,
+        2,
+        3,
+        5,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        18
+    ],
+    "missing_statements_linenumbers": [],
+    "covered_prime_paths_linenumbers": [
+        [
+            10,
+            11,
+            12,
+            15,
+            9,
+            16
+        ],
+        [
+            13,
+            14,
+            12,
+            15,
+            9,
+            10,
+            11
+        ],
+        [
+            13,
+            14,
+            12,
+            15,
+            9,
+            16
+        ],
+        [
+            15,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14
+        ],
+        [
+            1,
+            18,
+            3,
+            5,
+            7,
+            8,
+            9,
+            16
+        ],
+        [
+            1,
+            18,
+            3,
+            5,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14
+        ],
+        [
+            1,
+            18,
+            3,
+            5,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            15
+        ]
+    ],
+    "missing_prime_paths_linenumbers": [],
+    "num_total_prime_paths": 7,
+    "num_covered_paths": 7,
+    "prime_path_coverage": 1.0,
+    "cfg_png": "/home/yang/share_repo/StaticAnalysis/cfglogshumaneval/HumanEval_156_CFG.png",
+    "cfg_dot": "/home/yang/share_repo/StaticAnalysis/cfglogshumaneval/HumanEval_156_CFG.dot"
+}

@@ -1,0 +1,285 @@
+{
+    "humaneval_id": "HumanEval_141__1",
+    "python_file": "HumanEval_141__1/main.py",
+    "input_file": "HumanEval_141__1/input.txt",
+    "prime_paths_nodes": [
+        [
+            "1",
+            "28",
+            "3",
+            "5",
+            "7"
+        ],
+        [
+            "1",
+            "28",
+            "3",
+            "5",
+            "8",
+            "10"
+        ],
+        [
+            "1",
+            "28",
+            "3",
+            "5",
+            "8",
+            "11",
+            "14"
+        ],
+        [
+            "1",
+            "28",
+            "3",
+            "5",
+            "8",
+            "11",
+            "15",
+            "17"
+        ],
+        [
+            "1",
+            "28",
+            "3",
+            "5",
+            "8",
+            "11",
+            "15",
+            "18",
+            "22",
+            "23"
+        ],
+        [
+            "1",
+            "28",
+            "3",
+            "5",
+            "8",
+            "11",
+            "15",
+            "18",
+            "22",
+            "24"
+        ]
+    ],
+    "prime_paths_statements": [
+        [
+            "from typing import *\\ldef file_name_check(file_name):...\\lfile_name_check('@this1_is6_valid.exe...')\\l",
+            "file_name_check",
+            "suf = ['txt', 'exe', 'dll']\\llst = file_name.split(sep='.')\\l",
+            "if len(lst) != 2:\\l",
+            "return 'No'\\l"
+        ],
+        [
+            "from typing import *\\ldef file_name_check(file_name):...\\lfile_name_check('@this1_is6_valid.exe...')\\l",
+            "file_name_check",
+            "suf = ['txt', 'exe', 'dll']\\llst = file_name.split(sep='.')\\l",
+            "if len(lst) != 2:\\l",
+            "if not lst[1] in suf:\\l",
+            "return 'No'\\l"
+        ],
+        [
+            "from typing import *\\ldef file_name_check(file_name):...\\lfile_name_check('@this1_is6_valid.exe...')\\l",
+            "file_name_check",
+            "suf = ['txt', 'exe', 'dll']\\llst = file_name.split(sep='.')\\l",
+            "if len(lst) != 2:\\l",
+            "if not lst[1] in suf:\\l",
+            "if len(lst[0]) == 0:\\l",
+            "return 'No'\\l"
+        ],
+        [
+            "from typing import *\\ldef file_name_check(file_name):...\\lfile_name_check('@this1_is6_valid.exe...')\\l",
+            "file_name_check",
+            "suf = ['txt', 'exe', 'dll']\\llst = file_name.split(sep='.')\\l",
+            "if len(lst) != 2:\\l",
+            "if not lst[1] in suf:\\l",
+            "if len(lst[0]) == 0:\\l",
+            "if not lst[0][0].isalpha():\\l",
+            "return 'No'\\l"
+        ],
+        [
+            "from typing import *\\ldef file_name_check(file_name):...\\lfile_name_check('@this1_is6_valid.exe...')\\l",
+            "file_name_check",
+            "suf = ['txt', 'exe', 'dll']\\llst = file_name.split(sep='.')\\l",
+            "if len(lst) != 2:\\l",
+            "if not lst[1] in suf:\\l",
+            "if len(lst[0]) == 0:\\l",
+            "if not lst[0][0].isalpha():\\l",
+            "t = len([x for x in lst[0] if x.isdigit()])\\l",
+            "if t > 3:\\l",
+            "return 'No'\\l"
+        ],
+        [
+            "from typing import *\\ldef file_name_check(file_name):...\\lfile_name_check('@this1_is6_valid.exe...')\\l",
+            "file_name_check",
+            "suf = ['txt', 'exe', 'dll']\\llst = file_name.split(sep='.')\\l",
+            "if len(lst) != 2:\\l",
+            "if not lst[1] in suf:\\l",
+            "if len(lst[0]) == 0:\\l",
+            "if not lst[0][0].isalpha():\\l",
+            "t = len([x for x in lst[0] if x.isdigit()])\\l",
+            "if t > 3:\\l",
+            "return 'Yes'\\l"
+        ]
+    ],
+    "prime_paths_linenumbers": [
+        [
+            1,
+            20,
+            5,
+            6,
+            7,
+            8
+        ],
+        [
+            1,
+            20,
+            5,
+            6,
+            7,
+            9,
+            10
+        ],
+        [
+            1,
+            20,
+            5,
+            6,
+            7,
+            9,
+            11,
+            12
+        ],
+        [
+            1,
+            20,
+            5,
+            6,
+            7,
+            9,
+            11,
+            13,
+            14
+        ],
+        [
+            1,
+            20,
+            5,
+            6,
+            7,
+            9,
+            11,
+            13,
+            15,
+            16,
+            17
+        ],
+        [
+            1,
+            20,
+            5,
+            6,
+            7,
+            9,
+            11,
+            13,
+            15,
+            16,
+            18
+        ]
+    ],
+    "covered_statements_linenumbers": [
+        1,
+        4,
+        5,
+        6,
+        7,
+        9,
+        11,
+        13,
+        14,
+        20
+    ],
+    "missing_statements_linenumbers": [
+        8,
+        10,
+        12,
+        15,
+        16,
+        17,
+        18
+    ],
+    "covered_prime_paths_linenumbers": [
+        [
+            1,
+            20,
+            5,
+            6,
+            7,
+            9,
+            11,
+            13,
+            14
+        ]
+    ],
+    "missing_prime_paths_linenumbers": [
+        [
+            1,
+            20,
+            5,
+            6,
+            7,
+            8
+        ],
+        [
+            1,
+            20,
+            5,
+            6,
+            7,
+            9,
+            10
+        ],
+        [
+            1,
+            20,
+            5,
+            6,
+            7,
+            9,
+            11,
+            12
+        ],
+        [
+            1,
+            20,
+            5,
+            6,
+            7,
+            9,
+            11,
+            13,
+            15,
+            16,
+            17
+        ],
+        [
+            1,
+            20,
+            5,
+            6,
+            7,
+            9,
+            11,
+            13,
+            15,
+            16,
+            18
+        ]
+    ],
+    "num_total_prime_paths": 6,
+    "num_covered_paths": 1,
+    "prime_path_coverage": 0.17,
+    "cfg_png": "/home/yang/share_repo/StaticAnalysis/cfglogshumaneval/HumanEval_141__1_CFG.png",
+    "cfg_dot": "/home/yang/share_repo/StaticAnalysis/cfglogshumaneval/HumanEval_141__1_CFG.dot"
+}

@@ -1,0 +1,87 @@
+{
+    "humaneval_id": "HumanEval_65__0",
+    "python_file": "HumanEval_65__0/main.py",
+    "input_file": "HumanEval_65__0/input.txt",
+    "prime_paths_nodes": [
+        [
+            "1",
+            "13",
+            "3",
+            "5",
+            "7"
+        ],
+        [
+            "1",
+            "13",
+            "3",
+            "5",
+            "9"
+        ]
+    ],
+    "prime_paths_statements": [
+        [
+            "from typing import *\\ldef circular_shift(x, shift):...\\lcircular_shift(97, 8)\\l",
+            "circular_shift",
+            "s = str(x)\\l",
+            "if shift > len(s):\\l",
+            "return s[::-1]\\l"
+        ],
+        [
+            "from typing import *\\ldef circular_shift(x, shift):...\\lcircular_shift(97, 8)\\l",
+            "circular_shift",
+            "s = str(x)\\l",
+            "if shift > len(s):\\l",
+            "return s[len(s) - shift:] + s[:len(s) - shift]\\l"
+        ]
+    ],
+    "prime_paths_linenumbers": [
+        [
+            1,
+            11,
+            5,
+            6,
+            7
+        ],
+        [
+            1,
+            11,
+            5,
+            6,
+            9
+        ]
+    ],
+    "covered_statements_linenumbers": [
+        1,
+        4,
+        5,
+        6,
+        7,
+        11
+    ],
+    "missing_statements_linenumbers": [
+        9
+    ],
+    "covered_prime_paths_linenumbers": [
+        [
+            1,
+            11,
+            5,
+            6,
+            7
+        ]
+    ],
+    "missing_prime_paths_linenumbers": [
+        [
+            1,
+            11,
+            5,
+            6,
+            9
+        ]
+    ],
+    "num_total_prime_paths": 2,
+    "num_covered_paths": 1,
+    "prime_path_coverage": 0.5,
+    "cfg_png": "/home/yang/share_repo/StaticAnalysis/cfglogshumaneval/HumanEval_65__0_CFG.png",
+    "cfg_dot": "/home/yang/share_repo/StaticAnalysis/cfglogshumaneval/HumanEval_65__0_CFG.dot"
+}

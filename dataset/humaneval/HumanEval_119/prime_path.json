@@ -1,0 +1,263 @@
+{
+    "humaneval_id": "HumanEval_119",
+    "python_file": "HumanEval_119/main.py",
+    "input_file": "HumanEval_119/input.txt",
+    "prime_paths_nodes": [
+        [
+            "5",
+            "6",
+            "8"
+        ],
+        [
+            "5",
+            "6",
+            "7",
+            "9",
+            "10",
+            "12"
+        ],
+        [
+            "5",
+            "6",
+            "7",
+            "11",
+            "10",
+            "12"
+        ],
+        [
+            "7",
+            "9",
+            "10",
+            "6",
+            "8"
+        ],
+        [
+            "7",
+            "11",
+            "10",
+            "6",
+            "8"
+        ],
+        [
+            "9",
+            "10",
+            "6",
+            "7",
+            "11"
+        ],
+        [
+            "11",
+            "10",
+            "6",
+            "7",
+            "9"
+        ],
+        [
+            "1",
+            "20",
+            "3",
+            "17"
+        ]
+    ],
+    "prime_paths_statements": [
+        [
+            "val = 0\\l",
+            "for i in s:\\l",
+            "return True if val == 0 else False\\l"
+        ],
+        [
+            "val = 0\\l",
+            "for i in s:\\l",
+            "if i == '(':\\l",
+            "val = val + 1\\l",
+            "if val < 0:\\l",
+            "return False\\l"
+        ],
+        [
+            "val = 0\\l",
+            "for i in s:\\l",
+            "if i == '(':\\l",
+            "val = val - 1\\l",
+            "if val < 0:\\l",
+            "return False\\l"
+        ],
+        [
+            "if i == '(':\\l",
+            "val = val + 1\\l",
+            "if val < 0:\\l",
+            "for i in s:\\l",
+            "return True if val == 0 else False\\l"
+        ],
+        [
+            "if i == '(':\\l",
+            "val = val - 1\\l",
+            "if val < 0:\\l",
+            "for i in s:\\l",
+            "return True if val == 0 else False\\l"
+        ],
+        [
+            "val = val + 1\\l",
+            "if val < 0:\\l",
+            "for i in s:\\l",
+            "if i == '(':\\l",
+            "val = val - 1\\l"
+        ],
+        [
+            "val = val - 1\\l",
+            "if val < 0:\\l",
+            "for i in s:\\l",
+            "if i == '(':\\l",
+            "val = val + 1\\l"
+        ],
+        [
+            "from typing import *\\ldef match_parens(lst):...\\lmatch_parens(['()(', ')'])\\l",
+            "match_parens",
+            "def check(s):...\\lS1 = lst[0] + lst[1]\\lS2 = lst[1] + lst[0]\\l",
+            "return 'Yes' if check(S1) or che...'No'\\l"
+        ]
+    ],
+    "prime_paths_linenumbers": [
+        [
+            4,
+            5,
+            12
+        ],
+        [
+            4,
+            5,
+            6,
+            7,
+            10,
+            11
+        ],
+        [
+            4,
+            5,
+            6,
+            9,
+            10,
+            11
+        ],
+        [
+            6,
+            7,
+            10,
+            5,
+            12
+        ],
+        [
+            6,
+            9,
+            10,
+            5,
+            12
+        ],
+        [
+            7,
+            10,
+            5,
+            6,
+            9
+        ],
+        [
+            9,
+            10,
+            5,
+            6,
+            7
+        ],
+        [
+            1,
+            18,
+            3,
+            14,
+            15,
+            16
+        ]
+    ],
+    "covered_statements_linenumbers": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        9,
+        10,
+        12,
+        14,
+        15,
+        16,
+        18
+    ],
+    "missing_statements_linenumbers": [
+        11
+    ],
+    "covered_prime_paths_linenumbers": [
+        [
+            4,
+            5,
+            12
+        ],
+        [
+            6,
+            7,
+            10,
+            5,
+            12
+        ],
+        [
+            6,
+            9,
+            10,
+            5,
+            12
+        ],
+        [
+            7,
+            10,
+            5,
+            6,
+            9
+        ],
+        [
+            9,
+            10,
+            5,
+            6,
+            7
+        ],
+        [
+            1,
+            18,
+            3,
+            14,
+            15,
+            16
+        ]
+    ],
+    "missing_prime_paths_linenumbers": [
+        [
+            4,
+            5,
+            6,
+            7,
+            10,
+            11
+        ],
+        [
+            4,
+            5,
+            6,
+            9,
+            10,
+            11
+        ]
+    ],
+    "num_total_prime_paths": 8,
+    "num_covered_paths": 6,
+    "prime_path_coverage": 0.75,
+    "cfg_png": "/home/yang/share_repo/StaticAnalysis/cfglogshumaneval/HumanEval_119_CFG.png",
+    "cfg_dot": "/home/yang/share_repo/StaticAnalysis/cfglogshumaneval/HumanEval_119_CFG.dot"
+}

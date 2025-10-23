@@ -1,0 +1,96 @@
+{
+    "humaneval_id": "HumanEval_64",
+    "python_file": "HumanEval_64/main.py",
+    "input_file": "HumanEval_64/input.txt",
+    "prime_paths_nodes": [
+        [
+            "1",
+            "10",
+            "3",
+            "5",
+            "6",
+            "7"
+        ],
+        [
+            "1",
+            "10",
+            "3",
+            "5",
+            "7"
+        ]
+    ],
+    "prime_paths_statements": [
+        [
+            "from typing import *\\ldef vowels_count(s):...\\lvowels_count('abcde')\\l",
+            "vowels_count",
+            "vowels = 'aeiouAEIOU'\\ln_vowels = sum(c in vowels for c in s)\\l",
+            "if s[-1] == 'y' or s[-1] == 'Y':\\l",
+            "n_vowels += 1\\l",
+            "return n_vowels\\l"
+        ],
+        [
+            "from typing import *\\ldef vowels_count(s):...\\lvowels_count('abcde')\\l",
+            "vowels_count",
+            "vowels = 'aeiouAEIOU'\\ln_vowels = sum(c in vowels for c in s)\\l",
+            "if s[-1] == 'y' or s[-1] == 'Y':\\l",
+            "return n_vowels\\l"
+        ]
+    ],
+    "prime_paths_linenumbers": [
+        [
+            1,
+            9,
+            3,
+            4,
+            5,
+            6,
+            7
+        ],
+        [
+            1,
+            9,
+            3,
+            4,
+            5,
+            7
+        ]
+    ],
+    "covered_statements_linenumbers": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        7,
+        9
+    ],
+    "missing_statements_linenumbers": [
+        6
+    ],
+    "covered_prime_paths_linenumbers": [
+        [
+            1,
+            9,
+            3,
+            4,
+            5,
+            7
+        ]
+    ],
+    "missing_prime_paths_linenumbers": [
+        [
+            1,
+            9,
+            3,
+            4,
+            5,
+            6,
+            7
+        ]
+    ],
+    "num_total_prime_paths": 2,
+    "num_covered_paths": 1,
+    "prime_path_coverage": 0.5,
+    "cfg_png": "/home/yang/share_repo/StaticAnalysis/cfglogshumaneval/HumanEval_64_CFG.png",
+    "cfg_dot": "/home/yang/share_repo/StaticAnalysis/cfglogshumaneval/HumanEval_64_CFG.dot"
+}

@@ -1,0 +1,482 @@
+{
+    "humaneval_id": "HumanEval_132__0",
+    "python_file": "HumanEval_132__0/main.py",
+    "input_file": "HumanEval_132__0/input.txt",
+    "prime_paths_nodes": [
+        [
+            "7",
+            "9",
+            "4",
+            "8",
+            "16",
+            "18"
+        ],
+        [
+            "7",
+            "11",
+            "4",
+            "8",
+            "16",
+            "18"
+        ],
+        [
+            "7",
+            "9",
+            "4",
+            "8",
+            "16",
+            "17",
+            "19"
+        ],
+        [
+            "7",
+            "11",
+            "4",
+            "8",
+            "16",
+            "17",
+            "19"
+        ],
+        [
+            "9",
+            "4",
+            "7",
+            "11"
+        ],
+        [
+            "11",
+            "4",
+            "7",
+            "9"
+        ],
+        [
+            "17",
+            "16",
+            "18"
+        ],
+        [
+            "17",
+            "19",
+            "16",
+            "18"
+        ],
+        [
+            "19",
+            "16",
+            "17"
+        ],
+        [
+            "1",
+            "23",
+            "3",
+            "4",
+            "7",
+            "9"
+        ],
+        [
+            "1",
+            "23",
+            "3",
+            "4",
+            "7",
+            "11"
+        ],
+        [
+            "1",
+            "23",
+            "3",
+            "4",
+            "8",
+            "16",
+            "18"
+        ],
+        [
+            "1",
+            "23",
+            "3",
+            "4",
+            "8",
+            "16",
+            "17",
+            "19"
+        ]
+    ],
+    "prime_paths_statements": [
+        [
+            "if string[i] == '[':\\l",
+            "opening_bracket_index.append(i)\\l",
+            "for i in range(len(string)):\\l",
+            "closing_bracket_index.reverse()\\lcnt = 0\\li = 0\\ll = len(closing_bracket_index)\\l",
+            "for idx in opening_bracket_index:\\l",
+            "return cnt >= 2\\l"
+        ],
+        [
+            "if string[i] == '[':\\l",
+            "closing_bracket_index.append(i)\\l",
+            "for i in range(len(string)):\\l",
+            "closing_bracket_index.reverse()\\lcnt = 0\\li = 0\\ll = len(closing_bracket_index)\\l",
+            "for idx in opening_bracket_index:\\l",
+            "return cnt >= 2\\l"
+        ],
+        [
+            "if string[i] == '[':\\l",
+            "opening_bracket_index.append(i)\\l",
+            "for i in range(len(string)):\\l",
+            "closing_bracket_index.reverse()\\lcnt = 0\\li = 0\\ll = len(closing_bracket_index)\\l",
+            "for idx in opening_bracket_index:\\l",
+            "if i < l and idx < closing_bracket_index[i]:\\l",
+            "cnt += 1\\li += 1\\l"
+        ],
+        [
+            "if string[i] == '[':\\l",
+            "closing_bracket_index.append(i)\\l",
+            "for i in range(len(string)):\\l",
+            "closing_bracket_index.reverse()\\lcnt = 0\\li = 0\\ll = len(closing_bracket_index)\\l",
+            "for idx in opening_bracket_index:\\l",
+            "if i < l and idx < closing_bracket_index[i]:\\l",
+            "cnt += 1\\li += 1\\l"
+        ],
+        [
+            "opening_bracket_index.append(i)\\l",
+            "for i in range(len(string)):\\l",
+            "if string[i] == '[':\\l",
+            "closing_bracket_index.append(i)\\l"
+        ],
+        [
+            "closing_bracket_index.append(i)\\l",
+            "for i in range(len(string)):\\l",
+            "if string[i] == '[':\\l",
+            "opening_bracket_index.append(i)\\l"
+        ],
+        [
+            "if i < l and idx < closing_bracket_index[i]:\\l",
+            "for idx in opening_bracket_index:\\l",
+            "return cnt >= 2\\l"
+        ],
+        [
+            "if i < l and idx < closing_bracket_index[i]:\\l",
+            "cnt += 1\\li += 1\\l",
+            "for idx in opening_bracket_index:\\l",
+            "return cnt >= 2\\l"
+        ],
+        [
+            "cnt += 1\\li += 1\\l",
+            "for idx in opening_bracket_index:\\l",
+            "if i < l and idx < closing_bracket_index[i]:\\l"
+        ],
+        [
+            "from typing import *\\ldef is_nested(string):...\\lis_nested('[][][[]]')\\l",
+            "is_nested",
+            "opening_bracket_index = []\\lclosing_bracket_index = []\\l",
+            "for i in range(len(string)):\\l",
+            "if string[i] == '[':\\l",
+            "opening_bracket_index.append(i)\\l"
+        ],
+        [
+            "from typing import *\\ldef is_nested(string):...\\lis_nested('[][][[]]')\\l",
+            "is_nested",
+            "opening_bracket_index = []\\lclosing_bracket_index = []\\l",
+            "for i in range(len(string)):\\l",
+            "if string[i] == '[':\\l",
+            "closing_bracket_index.append(i)\\l"
+        ],
+        [
+            "from typing import *\\ldef is_nested(string):...\\lis_nested('[][][[]]')\\l",
+            "is_nested",
+            "opening_bracket_index = []\\lclosing_bracket_index = []\\l",
+            "for i in range(len(string)):\\l",
+            "closing_bracket_index.reverse()\\lcnt = 0\\li = 0\\ll = len(closing_bracket_index)\\l",
+            "for idx in opening_bracket_index:\\l",
+            "return cnt >= 2\\l"
+        ],
+        [
+            "from typing import *\\ldef is_nested(string):...\\lis_nested('[][][[]]')\\l",
+            "is_nested",
+            "opening_bracket_index = []\\lclosing_bracket_index = []\\l",
+            "for i in range(len(string)):\\l",
+            "closing_bracket_index.reverse()\\lcnt = 0\\li = 0\\ll = len(closing_bracket_index)\\l",
+            "for idx in opening_bracket_index:\\l",
+            "if i < l and idx < closing_bracket_index[i]:\\l",
+            "cnt += 1\\li += 1\\l"
+        ]
+    ],
+    "prime_paths_linenumbers": [
+        [
+            8,
+            9,
+            7,
+            12,
+            13,
+            14,
+            15,
+            16,
+            20
+        ],
+        [
+            8,
+            11,
+            7,
+            12,
+            13,
+            14,
+            15,
+            16,
+            20
+        ],
+        [
+            8,
+            9,
+            7,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19
+        ],
+        [
+            8,
+            11,
+            7,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19
+        ],
+        [
+            9,
+            7,
+            8,
+            11
+        ],
+        [
+            11,
+            7,
+            8,
+            9
+        ],
+        [
+            17,
+            16,
+            20
+        ],
+        [
+            17,
+            18,
+            19,
+            16,
+            20
+        ],
+        [
+            18,
+            19,
+            16,
+            17
+        ],
+        [
+            1,
+            22,
+            5,
+            6,
+            7,
+            8,
+            9
+        ],
+        [
+            1,
+            22,
+            5,
+            6,
+            7,
+            8,
+            11
+        ],
+        [
+            1,
+            22,
+            5,
+            6,
+            7,
+            12,
+            13,
+            14,
+            15,
+            16,
+            20
+        ],
+        [
+            1,
+            22,
+            5,
+            6,
+            7,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19
+        ]
+    ],
+    "covered_statements_linenumbers": [
+        1,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        22
+    ],
+    "missing_statements_linenumbers": [],
+    "covered_prime_paths_linenumbers": [
+        [
+            8,
+            9,
+            7,
+            12,
+            13,
+            14,
+            15,
+            16,
+            20
+        ],
+        [
+            8,
+            11,
+            7,
+            12,
+            13,
+            14,
+            15,
+            16,
+            20
+        ],
+        [
+            8,
+            9,
+            7,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19
+        ],
+        [
+            8,
+            11,
+            7,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19
+        ],
+        [
+            9,
+            7,
+            8,
+            11
+        ],
+        [
+            11,
+            7,
+            8,
+            9
+        ],
+        [
+            17,
+            16,
+            20
+        ],
+        [
+            17,
+            18,
+            19,
+            16,
+            20
+        ],
+        [
+            18,
+            19,
+            16,
+            17
+        ],
+        [
+            1,
+            22,
+            5,
+            6,
+            7,
+            8,
+            9
+        ],
+        [
+            1,
+            22,
+            5,
+            6,
+            7,
+            8,
+            11
+        ],
+        [
+            1,
+            22,
+            5,
+            6,
+            7,
+            12,
+            13,
+            14,
+            15,
+            16,
+            20
+        ],
+        [
+            1,
+            22,
+            5,
+            6,
+            7,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19
+        ]
+    ],
+    "missing_prime_paths_linenumbers": [],
+    "num_total_prime_paths": 13,
+    "num_covered_paths": 13,
+    "prime_path_coverage": 1.0,
+    "cfg_png": "/home/yang/share_repo/StaticAnalysis/cfglogshumaneval/HumanEval_132__0_CFG.png",
+    "cfg_dot": "/home/yang/share_repo/StaticAnalysis/cfglogshumaneval/HumanEval_132__0_CFG.dot"
+}

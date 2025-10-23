@@ -1,0 +1,202 @@
+{
+    "humaneval_id": "HumanEval_0",
+    "python_file": "HumanEval_0/main.py",
+    "input_file": "HumanEval_0/input.txt",
+    "prime_paths_nodes": [
+        [
+            "8",
+            "5",
+            "3",
+            "6"
+        ],
+        [
+            "8",
+            "10",
+            "13",
+            "5",
+            "3",
+            "6"
+        ],
+        [
+            "10",
+            "13",
+            "5",
+            "8"
+        ],
+        [
+            "13",
+            "5",
+            "8",
+            "10"
+        ],
+        [
+            "1",
+            "19",
+            "3",
+            "6"
+        ],
+        [
+            "1",
+            "19",
+            "3",
+            "5",
+            "8",
+            "10",
+            "13",
+            "14"
+        ]
+    ],
+    "prime_paths_statements": [
+        [
+            "if idx != idx2:\\l",
+            "for idx2, elem2 in enumerate(numbers):\\l",
+            "for idx, elem in enumerate(numbers):\\l",
+            "return False\\l"
+        ],
+        [
+            "if idx != idx2:\\l",
+            "distance = abs(elem - elem2)\\l",
+            "if distance < threshold:\\l",
+            "for idx2, elem2 in enumerate(numbers):\\l",
+            "for idx, elem in enumerate(numbers):\\l",
+            "return False\\l"
+        ],
+        [
+            "distance = abs(elem - elem2)\\l",
+            "if distance < threshold:\\l",
+            "for idx2, elem2 in enumerate(numbers):\\l",
+            "if idx != idx2:\\l"
+        ],
+        [
+            "if distance < threshold:\\l",
+            "for idx2, elem2 in enumerate(numbers):\\l",
+            "if idx != idx2:\\l",
+            "distance = abs(elem - elem2)\\l"
+        ],
+        [
+            "from typing import *\\ldef has_close_elements(numbers: List[float], threshold: float) ->bool:...\\lhas_close_elements([1.0, 2.0, 3.9, 4.0, 5.0, 2.2], 0.3)\\l",
+            "has_close_elements",
+            "for idx, elem in enumerate(numbers):\\l",
+            "return False\\l"
+        ],
+        [
+            "from typing import *\\ldef has_close_elements(numbers: List[float], threshold: float) ->bool:...\\lhas_close_elements([1.0, 2.0, 3.9, 4.0, 5.0, 2.2], 0.3)\\l",
+            "has_close_elements",
+            "for idx, elem in enumerate(numbers):\\l",
+            "for idx2, elem2 in enumerate(numbers):\\l",
+            "if idx != idx2:\\l",
+            "distance = abs(elem - elem2)\\l",
+            "if distance < threshold:\\l",
+            "return True\\l"
+        ]
+    ],
+    "prime_paths_linenumbers": [
+        [
+            5,
+            4,
+            3,
+            10
+        ],
+        [
+            5,
+            6,
+            7,
+            4,
+            3,
+            10
+        ],
+        [
+            6,
+            7,
+            4,
+            5
+        ],
+        [
+            7,
+            4,
+            5,
+            6
+        ],
+        [
+            1,
+            12,
+            3,
+            10
+        ],
+        [
+            1,
+            12,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8
+        ]
+    ],
+    "covered_statements_linenumbers": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        12
+    ],
+    "missing_statements_linenumbers": [
+        10
+    ],
+    "covered_prime_paths_linenumbers": [
+        [
+            6,
+            7,
+            4,
+            5
+        ],
+        [
+            7,
+            4,
+            5,
+            6
+        ],
+        [
+            1,
+            12,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8
+        ]
+    ],
+    "missing_prime_paths_linenumbers": [
+        [
+            5,
+            4,
+            3,
+            10
+        ],
+        [
+            5,
+            6,
+            7,
+            4,
+            3,
+            10
+        ],
+        [
+            1,
+            12,
+            3,
+            10
+        ]
+    ],
+    "num_total_prime_paths": 6,
+    "num_covered_paths": 3,
+    "prime_path_coverage": 0.5,
+    "cfg_png": "/home/yang/share_repo/StaticAnalysis/cfglogshumaneval/HumanEval_0_CFG.png",
+    "cfg_dot": "/home/yang/share_repo/StaticAnalysis/cfglogshumaneval/HumanEval_0_CFG.dot"
+}

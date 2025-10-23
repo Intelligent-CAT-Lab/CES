@@ -1,0 +1,156 @@
+{
+    "humaneval_id": "HumanEval_18",
+    "python_file": "HumanEval_18/main.py",
+    "input_file": "HumanEval_18/input.txt",
+    "prime_paths_nodes": [
+        [
+            "8",
+            "4",
+            "9"
+        ],
+        [
+            "8",
+            "11",
+            "4",
+            "9"
+        ],
+        [
+            "11",
+            "4",
+            "8"
+        ],
+        [
+            "1",
+            "15",
+            "3",
+            "4",
+            "9"
+        ],
+        [
+            "1",
+            "15",
+            "3",
+            "4",
+            "8",
+            "11"
+        ]
+    ],
+    "prime_paths_statements": [
+        [
+            "if string[i:i + len(substring)] == substring:\\l",
+            "for i in range(len(string) - len(substring) + 1):\\l",
+            "return times\\l"
+        ],
+        [
+            "if string[i:i + len(substring)] == substring:\\l",
+            "times += 1\\l",
+            "for i in range(len(string) - len(substring) + 1):\\l",
+            "return times\\l"
+        ],
+        [
+            "times += 1\\l",
+            "for i in range(len(string) - len(substring) + 1):\\l",
+            "if string[i:i + len(substring)] == substring:\\l"
+        ],
+        [
+            "from typing import *\\ldef how_many_times(string: str, substring: str) ->int:...\\lhow_many_times('', 'x')\\l",
+            "how_many_times",
+            "times = 0\\l",
+            "for i in range(len(string) - len(substring) + 1):\\l",
+            "return times\\l"
+        ],
+        [
+            "from typing import *\\ldef how_many_times(string: str, substring: str) ->int:...\\lhow_many_times('', 'x')\\l",
+            "how_many_times",
+            "times = 0\\l",
+            "for i in range(len(string) - len(substring) + 1):\\l",
+            "if string[i:i + len(substring)] == substring:\\l",
+            "times += 1\\l"
+        ]
+    ],
+    "prime_paths_linenumbers": [
+        [
+            6,
+            5,
+            9
+        ],
+        [
+            6,
+            7,
+            5,
+            9
+        ],
+        [
+            7,
+            5,
+            6
+        ],
+        [
+            1,
+            11,
+            3,
+            5,
+            9
+        ],
+        [
+            1,
+            11,
+            3,
+            5,
+            6,
+            7
+        ]
+    ],
+    "covered_statements_linenumbers": [
+        1,
+        2,
+        3,
+        5,
+        9,
+        11
+    ],
+    "missing_statements_linenumbers": [
+        6,
+        7
+    ],
+    "covered_prime_paths_linenumbers": [
+        [
+            1,
+            11,
+            3,
+            5,
+            9
+        ]
+    ],
+    "missing_prime_paths_linenumbers": [
+        [
+            6,
+            5,
+            9
+        ],
+        [
+            6,
+            7,
+            5,
+            9
+        ],
+        [
+            7,
+            5,
+            6
+        ],
+        [
+            1,
+            11,
+            3,
+            5,
+            6,
+            7
+        ]
+    ],
+    "num_total_prime_paths": 5,
+    "num_covered_paths": 1,
+    "prime_path_coverage": 0.2,
+    "cfg_png": "/home/yang/share_repo/StaticAnalysis/cfglogshumaneval/HumanEval_18_CFG.png",
+    "cfg_dot": "/home/yang/share_repo/StaticAnalysis/cfglogshumaneval/HumanEval_18_CFG.dot"
+}

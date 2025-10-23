@@ -1,0 +1,598 @@
+{
+    "humaneval_id": "HumanEval_20__0",
+    "python_file": "HumanEval_20__0/main.py",
+    "input_file": "HumanEval_20__0/input.txt",
+    "prime_paths_nodes": [
+        [
+            "9",
+            "6",
+            "4",
+            "7"
+        ],
+        [
+            "9",
+            "11",
+            "13",
+            "6",
+            "4",
+            "7"
+        ],
+        [
+            "9",
+            "11",
+            "15",
+            "17",
+            "6",
+            "4",
+            "7"
+        ],
+        [
+            "9",
+            "11",
+            "15",
+            "17",
+            "18",
+            "6",
+            "4",
+            "7"
+        ],
+        [
+            "11",
+            "13",
+            "6",
+            "9"
+        ],
+        [
+            "11",
+            "15",
+            "17",
+            "6",
+            "9"
+        ],
+        [
+            "11",
+            "15",
+            "17",
+            "18",
+            "6",
+            "9"
+        ],
+        [
+            "13",
+            "6",
+            "9",
+            "11",
+            "15",
+            "17",
+            "18"
+        ],
+        [
+            "15",
+            "17",
+            "6",
+            "9",
+            "11",
+            "13"
+        ],
+        [
+            "15",
+            "17",
+            "18",
+            "6",
+            "9",
+            "11",
+            "13"
+        ],
+        [
+            "17",
+            "6",
+            "9",
+            "11",
+            "15"
+        ],
+        [
+            "17",
+            "18",
+            "6",
+            "9",
+            "11",
+            "15"
+        ],
+        [
+            "18",
+            "6",
+            "9",
+            "11",
+            "15",
+            "17"
+        ],
+        [
+            "1",
+            "27",
+            "3",
+            "4",
+            "7"
+        ],
+        [
+            "1",
+            "27",
+            "3",
+            "4",
+            "6",
+            "9",
+            "11",
+            "13"
+        ],
+        [
+            "1",
+            "27",
+            "3",
+            "4",
+            "6",
+            "9",
+            "11",
+            "15",
+            "17",
+            "18"
+        ]
+    ],
+    "prime_paths_statements": [
+        [
+            "if idx != idx2:\\l",
+            "for idx2, elem2 in enumerate(numbers):\\l",
+            "for idx, elem in enumerate(numbers):\\l",
+            "return closest_pair\\l"
+        ],
+        [
+            "if idx != idx2:\\l",
+            "if distance is None:\\l",
+            "distance = abs(elem - elem2)\\lclosest_pair = tuple(sorted([elem, elem2]))\\l",
+            "for idx2, elem2 in enumerate(numbers):\\l",
+            "for idx, elem in enumerate(numbers):\\l",
+            "return closest_pair\\l"
+        ],
+        [
+            "if idx != idx2:\\l",
+            "if distance is None:\\l",
+            "new_distance = abs(elem - elem2)\\l",
+            "if new_distance < distance:\\l",
+            "for idx2, elem2 in enumerate(numbers):\\l",
+            "for idx, elem in enumerate(numbers):\\l",
+            "return closest_pair\\l"
+        ],
+        [
+            "if idx != idx2:\\l",
+            "if distance is None:\\l",
+            "new_distance = abs(elem - elem2)\\l",
+            "if new_distance < distance:\\l",
+            "distance = new_distance\\lclosest_pair = tuple(sorted([elem, elem2]))\\l",
+            "for idx2, elem2 in enumerate(numbers):\\l",
+            "for idx, elem in enumerate(numbers):\\l",
+            "return closest_pair\\l"
+        ],
+        [
+            "if distance is None:\\l",
+            "distance = abs(elem - elem2)\\lclosest_pair = tuple(sorted([elem, elem2]))\\l",
+            "for idx2, elem2 in enumerate(numbers):\\l",
+            "if idx != idx2:\\l"
+        ],
+        [
+            "if distance is None:\\l",
+            "new_distance = abs(elem - elem2)\\l",
+            "if new_distance < distance:\\l",
+            "for idx2, elem2 in enumerate(numbers):\\l",
+            "if idx != idx2:\\l"
+        ],
+        [
+            "if distance is None:\\l",
+            "new_distance = abs(elem - elem2)\\l",
+            "if new_distance < distance:\\l",
+            "distance = new_distance\\lclosest_pair = tuple(sorted([elem, elem2]))\\l",
+            "for idx2, elem2 in enumerate(numbers):\\l",
+            "if idx != idx2:\\l"
+        ],
+        [
+            "distance = abs(elem - elem2)\\lclosest_pair = tuple(sorted([elem, elem2]))\\l",
+            "for idx2, elem2 in enumerate(numbers):\\l",
+            "if idx != idx2:\\l",
+            "if distance is None:\\l",
+            "new_distance = abs(elem - elem2)\\l",
+            "if new_distance < distance:\\l",
+            "distance = new_distance\\lclosest_pair = tuple(sorted([elem, elem2]))\\l"
+        ],
+        [
+            "new_distance = abs(elem - elem2)\\l",
+            "if new_distance < distance:\\l",
+            "for idx2, elem2 in enumerate(numbers):\\l",
+            "if idx != idx2:\\l",
+            "if distance is None:\\l",
+            "distance = abs(elem - elem2)\\lclosest_pair = tuple(sorted([elem, elem2]))\\l"
+        ],
+        [
+            "new_distance = abs(elem - elem2)\\l",
+            "if new_distance < distance:\\l",
+            "distance = new_distance\\lclosest_pair = tuple(sorted([elem, elem2]))\\l",
+            "for idx2, elem2 in enumerate(numbers):\\l",
+            "if idx != idx2:\\l",
+            "if distance is None:\\l",
+            "distance = abs(elem - elem2)\\lclosest_pair = tuple(sorted([elem, elem2]))\\l"
+        ],
+        [
+            "if new_distance < distance:\\l",
+            "for idx2, elem2 in enumerate(numbers):\\l",
+            "if idx != idx2:\\l",
+            "if distance is None:\\l",
+            "new_distance = abs(elem - elem2)\\l"
+        ],
+        [
+            "if new_distance < distance:\\l",
+            "distance = new_distance\\lclosest_pair = tuple(sorted([elem, elem2]))\\l",
+            "for idx2, elem2 in enumerate(numbers):\\l",
+            "if idx != idx2:\\l",
+            "if distance is None:\\l",
+            "new_distance = abs(elem - elem2)\\l"
+        ],
+        [
+            "distance = new_distance\\lclosest_pair = tuple(sorted([elem, elem2]))\\l",
+            "for idx2, elem2 in enumerate(numbers):\\l",
+            "if idx != idx2:\\l",
+            "if distance is None:\\l",
+            "new_distance = abs(elem - elem2)\\l",
+            "if new_distance < distance:\\l"
+        ],
+        [
+            "from typing import *\\ldef find_closest_elements(numbers: List[float]) ->Tuple[float, float]:...\\lfind_closest_elements([1.1, 2.2, 3.1, 4.1, 5.1])\\l",
+            "find_closest_elements",
+            "closest_pair = None\\ldistance = None\\l",
+            "for idx, elem in enumerate(numbers):\\l",
+            "return closest_pair\\l"
+        ],
+        [
+            "from typing import *\\ldef find_closest_elements(numbers: List[float]) ->Tuple[float, float]:...\\lfind_closest_elements([1.1, 2.2, 3.1, 4.1, 5.1])\\l",
+            "find_closest_elements",
+            "closest_pair = None\\ldistance = None\\l",
+            "for idx, elem in enumerate(numbers):\\l",
+            "for idx2, elem2 in enumerate(numbers):\\l",
+            "if idx != idx2:\\l",
+            "if distance is None:\\l",
+            "distance = abs(elem - elem2)\\lclosest_pair = tuple(sorted([elem, elem2]))\\l"
+        ],
+        [
+            "from typing import *\\ldef find_closest_elements(numbers: List[float]) ->Tuple[float, float]:...\\lfind_closest_elements([1.1, 2.2, 3.1, 4.1, 5.1])\\l",
+            "find_closest_elements",
+            "closest_pair = None\\ldistance = None\\l",
+            "for idx, elem in enumerate(numbers):\\l",
+            "for idx2, elem2 in enumerate(numbers):\\l",
+            "if idx != idx2:\\l",
+            "if distance is None:\\l",
+            "new_distance = abs(elem - elem2)\\l",
+            "if new_distance < distance:\\l",
+            "distance = new_distance\\lclosest_pair = tuple(sorted([elem, elem2]))\\l"
+        ]
+    ],
+    "prime_paths_linenumbers": [
+        [
+            10,
+            9,
+            8,
+            20
+        ],
+        [
+            10,
+            11,
+            12,
+            13,
+            9,
+            8,
+            20
+        ],
+        [
+            10,
+            11,
+            15,
+            16,
+            9,
+            8,
+            20
+        ],
+        [
+            10,
+            11,
+            15,
+            16,
+            17,
+            18,
+            9,
+            8,
+            20
+        ],
+        [
+            11,
+            12,
+            13,
+            9,
+            10
+        ],
+        [
+            11,
+            15,
+            16,
+            9,
+            10
+        ],
+        [
+            11,
+            15,
+            16,
+            17,
+            18,
+            9,
+            10
+        ],
+        [
+            12,
+            13,
+            9,
+            10,
+            11,
+            15,
+            16,
+            17,
+            18
+        ],
+        [
+            15,
+            16,
+            9,
+            10,
+            11,
+            12,
+            13
+        ],
+        [
+            15,
+            16,
+            17,
+            18,
+            9,
+            10,
+            11,
+            12,
+            13
+        ],
+        [
+            16,
+            9,
+            10,
+            11,
+            15
+        ],
+        [
+            16,
+            17,
+            18,
+            9,
+            10,
+            11,
+            15
+        ],
+        [
+            17,
+            18,
+            9,
+            10,
+            11,
+            15,
+            16
+        ],
+        [
+            1,
+            22,
+            5,
+            6,
+            8,
+            20
+        ],
+        [
+            1,
+            22,
+            5,
+            6,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13
+        ],
+        [
+            1,
+            22,
+            5,
+            6,
+            8,
+            9,
+            10,
+            11,
+            15,
+            16,
+            17,
+            18
+        ]
+    ],
+    "covered_statements_linenumbers": [
+        1,
+        4,
+        5,
+        6,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        15,
+        16,
+        17,
+        18,
+        20,
+        22
+    ],
+    "missing_statements_linenumbers": [],
+    "covered_prime_paths_linenumbers": [
+        [
+            10,
+            9,
+            8,
+            20
+        ],
+        [
+            10,
+            11,
+            12,
+            13,
+            9,
+            8,
+            20
+        ],
+        [
+            10,
+            11,
+            15,
+            16,
+            9,
+            8,
+            20
+        ],
+        [
+            10,
+            11,
+            15,
+            16,
+            17,
+            18,
+            9,
+            8,
+            20
+        ],
+        [
+            11,
+            12,
+            13,
+            9,
+            10
+        ],
+        [
+            11,
+            15,
+            16,
+            9,
+            10
+        ],
+        [
+            11,
+            15,
+            16,
+            17,
+            18,
+            9,
+            10
+        ],
+        [
+            12,
+            13,
+            9,
+            10,
+            11,
+            15,
+            16,
+            17,
+            18
+        ],
+        [
+            15,
+            16,
+            9,
+            10,
+            11,
+            12,
+            13
+        ],
+        [
+            15,
+            16,
+            17,
+            18,
+            9,
+            10,
+            11,
+            12,
+            13
+        ],
+        [
+            16,
+            9,
+            10,
+            11,
+            15
+        ],
+        [
+            16,
+            17,
+            18,
+            9,
+            10,
+            11,
+            15
+        ],
+        [
+            17,
+            18,
+            9,
+            10,
+            11,
+            15,
+            16
+        ],
+        [
+            1,
+            22,
+            5,
+            6,
+            8,
+            20
+        ],
+        [
+            1,
+            22,
+            5,
+            6,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13
+        ],
+        [
+            1,
+            22,
+            5,
+            6,
+            8,
+            9,
+            10,
+            11,
+            15,
+            16,
+            17,
+            18
+        ]
+    ],
+    "missing_prime_paths_linenumbers": [],
+    "num_total_prime_paths": 16,
+    "num_covered_paths": 16,
+    "prime_path_coverage": 1.0,
+    "cfg_png": "/home/yang/share_repo/StaticAnalysis/cfglogshumaneval/HumanEval_20__0_CFG.png",
+    "cfg_dot": "/home/yang/share_repo/StaticAnalysis/cfglogshumaneval/HumanEval_20__0_CFG.dot"
+}

@@ -1,0 +1,573 @@
+{
+    "humaneval_id": "HumanEval_161",
+    "python_file": "HumanEval_161/main.py",
+    "input_file": "HumanEval_161/input.txt",
+    "prime_paths_nodes": [
+        [
+            "6",
+            "9",
+            "10",
+            "5",
+            "7",
+            "12",
+            "13"
+        ],
+        [
+            "6",
+            "10",
+            "5",
+            "7",
+            "12",
+            "13"
+        ],
+        [
+            "6",
+            "9",
+            "10",
+            "5",
+            "7",
+            "12",
+            "14",
+            "15"
+        ],
+        [
+            "6",
+            "10",
+            "5",
+            "7",
+            "12",
+            "14",
+            "15"
+        ],
+        [
+            "6",
+            "9",
+            "10",
+            "5",
+            "7",
+            "12",
+            "14",
+            "16"
+        ],
+        [
+            "6",
+            "10",
+            "5",
+            "7",
+            "12",
+            "14",
+            "16"
+        ],
+        [
+            "9",
+            "10",
+            "5",
+            "6"
+        ],
+        [
+            "10",
+            "5",
+            "6",
+            "9"
+        ],
+        [
+            "13",
+            "12",
+            "14",
+            "15"
+        ],
+        [
+            "13",
+            "12",
+            "14",
+            "16"
+        ],
+        [
+            "1",
+            "20",
+            "3",
+            "5",
+            "6",
+            "9",
+            "10"
+        ],
+        [
+            "1",
+            "20",
+            "3",
+            "5",
+            "6",
+            "10"
+        ],
+        [
+            "1",
+            "20",
+            "3",
+            "5",
+            "7",
+            "12",
+            "13"
+        ],
+        [
+            "1",
+            "20",
+            "3",
+            "5",
+            "7",
+            "12",
+            "14",
+            "15"
+        ],
+        [
+            "1",
+            "20",
+            "3",
+            "5",
+            "7",
+            "12",
+            "14",
+            "16"
+        ]
+    ],
+    "prime_paths_statements": [
+        [
+            "if i.isalpha():\\l",
+            "new_str[idx] = i.swapcase()\\lflg = 1\\l",
+            "idx += 1\\l",
+            "for i in s:\\l",
+            "s = ''\\l",
+            "for i in new_str:\\l",
+            "s += i\\l"
+        ],
+        [
+            "if i.isalpha():\\l",
+            "idx += 1\\l",
+            "for i in s:\\l",
+            "s = ''\\l",
+            "for i in new_str:\\l",
+            "s += i\\l"
+        ],
+        [
+            "if i.isalpha():\\l",
+            "new_str[idx] = i.swapcase()\\lflg = 1\\l",
+            "idx += 1\\l",
+            "for i in s:\\l",
+            "s = ''\\l",
+            "for i in new_str:\\l",
+            "if flg == 0:\\l",
+            "return s[len(s)::-1]\\l"
+        ],
+        [
+            "if i.isalpha():\\l",
+            "idx += 1\\l",
+            "for i in s:\\l",
+            "s = ''\\l",
+            "for i in new_str:\\l",
+            "if flg == 0:\\l",
+            "return s[len(s)::-1]\\l"
+        ],
+        [
+            "if i.isalpha():\\l",
+            "new_str[idx] = i.swapcase()\\lflg = 1\\l",
+            "idx += 1\\l",
+            "for i in s:\\l",
+            "s = ''\\l",
+            "for i in new_str:\\l",
+            "if flg == 0:\\l",
+            "return s\\l"
+        ],
+        [
+            "if i.isalpha():\\l",
+            "idx += 1\\l",
+            "for i in s:\\l",
+            "s = ''\\l",
+            "for i in new_str:\\l",
+            "if flg == 0:\\l",
+            "return s\\l"
+        ],
+        [
+            "new_str[idx] = i.swapcase()\\lflg = 1\\l",
+            "idx += 1\\l",
+            "for i in s:\\l",
+            "if i.isalpha():\\l"
+        ],
+        [
+            "idx += 1\\l",
+            "for i in s:\\l",
+            "if i.isalpha():\\l",
+            "new_str[idx] = i.swapcase()\\lflg = 1\\l"
+        ],
+        [
+            "s += i\\l",
+            "for i in new_str:\\l",
+            "if flg == 0:\\l",
+            "return s[len(s)::-1]\\l"
+        ],
+        [
+            "s += i\\l",
+            "for i in new_str:\\l",
+            "if flg == 0:\\l",
+            "return s\\l"
+        ],
+        [
+            "from typing import *\\ldef solve(s):...\\lsolve('AsDf')\\l",
+            "solve",
+            "flg = 0\\lidx = 0\\lnew_str = list(s)\\l",
+            "for i in s:\\l",
+            "if i.isalpha():\\l",
+            "new_str[idx] = i.swapcase()\\lflg = 1\\l",
+            "idx += 1\\l"
+        ],
+        [
+            "from typing import *\\ldef solve(s):...\\lsolve('AsDf')\\l",
+            "solve",
+            "flg = 0\\lidx = 0\\lnew_str = list(s)\\l",
+            "for i in s:\\l",
+            "if i.isalpha():\\l",
+            "idx += 1\\l"
+        ],
+        [
+            "from typing import *\\ldef solve(s):...\\lsolve('AsDf')\\l",
+            "solve",
+            "flg = 0\\lidx = 0\\lnew_str = list(s)\\l",
+            "for i in s:\\l",
+            "s = ''\\l",
+            "for i in new_str:\\l",
+            "s += i\\l"
+        ],
+        [
+            "from typing import *\\ldef solve(s):...\\lsolve('AsDf')\\l",
+            "solve",
+            "flg = 0\\lidx = 0\\lnew_str = list(s)\\l",
+            "for i in s:\\l",
+            "s = ''\\l",
+            "for i in new_str:\\l",
+            "if flg == 0:\\l",
+            "return s[len(s)::-1]\\l"
+        ],
+        [
+            "from typing import *\\ldef solve(s):...\\lsolve('AsDf')\\l",
+            "solve",
+            "flg = 0\\lidx = 0\\lnew_str = list(s)\\l",
+            "for i in s:\\l",
+            "s = ''\\l",
+            "for i in new_str:\\l",
+            "if flg == 0:\\l",
+            "return s\\l"
+        ]
+    ],
+    "prime_paths_linenumbers": [
+        [
+            7,
+            8,
+            9,
+            10,
+            6,
+            11,
+            12,
+            13
+        ],
+        [
+            7,
+            10,
+            6,
+            11,
+            12,
+            13
+        ],
+        [
+            7,
+            8,
+            9,
+            10,
+            6,
+            11,
+            12,
+            14,
+            15
+        ],
+        [
+            7,
+            10,
+            6,
+            11,
+            12,
+            14,
+            15
+        ],
+        [
+            7,
+            8,
+            9,
+            10,
+            6,
+            11,
+            12,
+            14,
+            16
+        ],
+        [
+            7,
+            10,
+            6,
+            11,
+            12,
+            14,
+            16
+        ],
+        [
+            8,
+            9,
+            10,
+            6,
+            7
+        ],
+        [
+            10,
+            6,
+            7,
+            8,
+            9
+        ],
+        [
+            13,
+            12,
+            14,
+            15
+        ],
+        [
+            13,
+            12,
+            14,
+            16
+        ],
+        [
+            1,
+            18,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10
+        ],
+        [
+            1,
+            18,
+            3,
+            4,
+            5,
+            6,
+            7,
+            10
+        ],
+        [
+            1,
+            18,
+            3,
+            4,
+            5,
+            6,
+            11,
+            12,
+            13
+        ],
+        [
+            1,
+            18,
+            3,
+            4,
+            5,
+            6,
+            11,
+            12,
+            14,
+            15
+        ],
+        [
+            1,
+            18,
+            3,
+            4,
+            5,
+            6,
+            11,
+            12,
+            14,
+            16
+        ]
+    ],
+    "covered_statements_linenumbers": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        16,
+        18
+    ],
+    "missing_statements_linenumbers": [
+        15
+    ],
+    "covered_prime_paths_linenumbers": [
+        [
+            7,
+            8,
+            9,
+            10,
+            6,
+            11,
+            12,
+            13
+        ],
+        [
+            7,
+            10,
+            6,
+            11,
+            12,
+            13
+        ],
+        [
+            7,
+            8,
+            9,
+            10,
+            6,
+            11,
+            12,
+            14,
+            16
+        ],
+        [
+            7,
+            10,
+            6,
+            11,
+            12,
+            14,
+            16
+        ],
+        [
+            8,
+            9,
+            10,
+            6,
+            7
+        ],
+        [
+            10,
+            6,
+            7,
+            8,
+            9
+        ],
+        [
+            13,
+            12,
+            14,
+            16
+        ],
+        [
+            1,
+            18,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10
+        ],
+        [
+            1,
+            18,
+            3,
+            4,
+            5,
+            6,
+            7,
+            10
+        ],
+        [
+            1,
+            18,
+            3,
+            4,
+            5,
+            6,
+            11,
+            12,
+            13
+        ],
+        [
+            1,
+            18,
+            3,
+            4,
+            5,
+            6,
+            11,
+            12,
+            14,
+            16
+        ]
+    ],
+    "missing_prime_paths_linenumbers": [
+        [
+            7,
+            8,
+            9,
+            10,
+            6,
+            11,
+            12,
+            14,
+            15
+        ],
+        [
+            7,
+            10,
+            6,
+            11,
+            12,
+            14,
+            15
+        ],
+        [
+            13,
+            12,
+            14,
+            15
+        ],
+        [
+            1,
+            18,
+            3,
+            4,
+            5,
+            6,
+            11,
+            12,
+            14,
+            15
+        ]
+    ],
+    "num_total_prime_paths": 15,
+    "num_covered_paths": 11,
+    "prime_path_coverage": 0.73,
+    "cfg_png": "/home/yang/share_repo/StaticAnalysis/cfglogshumaneval/HumanEval_161_CFG.png",
+    "cfg_dot": "/home/yang/share_repo/StaticAnalysis/cfglogshumaneval/HumanEval_161_CFG.dot"
+}

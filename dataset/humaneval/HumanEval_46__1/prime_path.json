@@ -1,0 +1,150 @@
+{
+    "humaneval_id": "HumanEval_46__1",
+    "python_file": "HumanEval_46__1/main.py",
+    "input_file": "HumanEval_46__1/input.txt",
+    "prime_paths_nodes": [
+        [
+            "9",
+            "6",
+            "10"
+        ],
+        [
+            "1",
+            "15",
+            "3",
+            "4",
+            "5"
+        ],
+        [
+            "1",
+            "15",
+            "3",
+            "4",
+            "6",
+            "9"
+        ],
+        [
+            "1",
+            "15",
+            "3",
+            "4",
+            "6",
+            "10"
+        ]
+    ],
+    "prime_paths_statements": [
+        [
+            "results.append(results[-1] + results[-2] + results[-3] + results[-4])\\lresults.pop(0)\\l",
+            "for _ in range(4, n + 1):\\l",
+            "return results[-1]\\l"
+        ],
+        [
+            "from typing import *\\ldef fib4(n: int):...\\lfib4(12)\\l",
+            "fib4",
+            "results = [0, 0, 2, 0]\\l",
+            "if n < 4:\\l",
+            "return results[n]\\l"
+        ],
+        [
+            "from typing import *\\ldef fib4(n: int):...\\lfib4(12)\\l",
+            "fib4",
+            "results = [0, 0, 2, 0]\\l",
+            "if n < 4:\\l",
+            "for _ in range(4, n + 1):\\l",
+            "results.append(results[-1] + results[-2] + results[-3] + results[-4])\\lresults.pop(0)\\l"
+        ],
+        [
+            "from typing import *\\ldef fib4(n: int):...\\lfib4(12)\\l",
+            "fib4",
+            "results = [0, 0, 2, 0]\\l",
+            "if n < 4:\\l",
+            "for _ in range(4, n + 1):\\l",
+            "return results[-1]\\l"
+        ]
+    ],
+    "prime_paths_linenumbers": [
+        [
+            10,
+            11,
+            9,
+            13
+        ],
+        [
+            1,
+            15,
+            5,
+            6,
+            7
+        ],
+        [
+            1,
+            15,
+            5,
+            6,
+            9,
+            10,
+            11
+        ],
+        [
+            1,
+            15,
+            5,
+            6,
+            9,
+            13
+        ]
+    ],
+    "covered_statements_linenumbers": [
+        1,
+        4,
+        5,
+        6,
+        9,
+        10,
+        11,
+        13,
+        15
+    ],
+    "missing_statements_linenumbers": [
+        7
+    ],
+    "covered_prime_paths_linenumbers": [
+        [
+            10,
+            11,
+            9,
+            13
+        ],
+        [
+            1,
+            15,
+            5,
+            6,
+            9,
+            10,
+            11
+        ],
+        [
+            1,
+            15,
+            5,
+            6,
+            9,
+            13
+        ]
+    ],
+    "missing_prime_paths_linenumbers": [
+        [
+            1,
+            15,
+            5,
+            6,
+            7
+        ]
+    ],
+    "num_total_prime_paths": 4,
+    "num_covered_paths": 3,
+    "prime_path_coverage": 0.75,
+    "cfg_png": "/home/yang/share_repo/StaticAnalysis/cfglogshumaneval/HumanEval_46__1_CFG.png",
+    "cfg_dot": "/home/yang/share_repo/StaticAnalysis/cfglogshumaneval/HumanEval_46__1_CFG.dot"
+}

@@ -1,0 +1,600 @@
+{
+    "humaneval_id": "HumanEval_1",
+    "python_file": "HumanEval_1/main.py",
+    "input_file": "HumanEval_1/input.txt",
+    "prime_paths_nodes": [
+        [
+            "5",
+            "7",
+            "4",
+            "6"
+        ],
+        [
+            "5",
+            "9",
+            "4",
+            "6"
+        ],
+        [
+            "5",
+            "9",
+            "10",
+            "13",
+            "4",
+            "6"
+        ],
+        [
+            "5",
+            "9",
+            "10",
+            "13",
+            "14",
+            "4",
+            "6"
+        ],
+        [
+            "7",
+            "4",
+            "5",
+            "9",
+            "10",
+            "13",
+            "14"
+        ],
+        [
+            "9",
+            "4",
+            "5",
+            "7"
+        ],
+        [
+            "9",
+            "10",
+            "13",
+            "4",
+            "5",
+            "7"
+        ],
+        [
+            "9",
+            "10",
+            "13",
+            "14",
+            "4",
+            "5",
+            "7"
+        ],
+        [
+            "10",
+            "13",
+            "4",
+            "5",
+            "9"
+        ],
+        [
+            "10",
+            "13",
+            "14",
+            "4",
+            "5",
+            "9"
+        ],
+        [
+            "13",
+            "4",
+            "5",
+            "9",
+            "10"
+        ],
+        [
+            "13",
+            "14",
+            "4",
+            "5",
+            "9",
+            "10"
+        ],
+        [
+            "14",
+            "4",
+            "5",
+            "9",
+            "10",
+            "13"
+        ],
+        [
+            "1",
+            "22",
+            "3",
+            "4",
+            "6"
+        ],
+        [
+            "1",
+            "22",
+            "3",
+            "4",
+            "5",
+            "7"
+        ],
+        [
+            "1",
+            "22",
+            "3",
+            "4",
+            "5",
+            "9",
+            "10",
+            "13",
+            "14"
+        ]
+    ],
+    "prime_paths_statements": [
+        [
+            "if c == '(':\\l",
+            "current_depth += 1\\lcurrent_string.append(c)\\l",
+            "for c in paren_string:\\l",
+            "return result\\l"
+        ],
+        [
+            "if c == '(':\\l",
+            "if c == ')':\\l",
+            "for c in paren_string:\\l",
+            "return result\\l"
+        ],
+        [
+            "if c == '(':\\l",
+            "if c == ')':\\l",
+            "current_depth -= 1\\lcurrent_string.append(c)\\l",
+            "if current_depth == 0:\\l",
+            "for c in paren_string:\\l",
+            "return result\\l"
+        ],
+        [
+            "if c == '(':\\l",
+            "if c == ')':\\l",
+            "current_depth -= 1\\lcurrent_string.append(c)\\l",
+            "if current_depth == 0:\\l",
+            "result.append(''.join(current_string))\\lcurrent_string.clear()\\l",
+            "for c in paren_string:\\l",
+            "return result\\l"
+        ],
+        [
+            "current_depth += 1\\lcurrent_string.append(c)\\l",
+            "for c in paren_string:\\l",
+            "if c == '(':\\l",
+            "if c == ')':\\l",
+            "current_depth -= 1\\lcurrent_string.append(c)\\l",
+            "if current_depth == 0:\\l",
+            "result.append(''.join(current_string))\\lcurrent_string.clear()\\l"
+        ],
+        [
+            "if c == ')':\\l",
+            "for c in paren_string:\\l",
+            "if c == '(':\\l",
+            "current_depth += 1\\lcurrent_string.append(c)\\l"
+        ],
+        [
+            "if c == ')':\\l",
+            "current_depth -= 1\\lcurrent_string.append(c)\\l",
+            "if current_depth == 0:\\l",
+            "for c in paren_string:\\l",
+            "if c == '(':\\l",
+            "current_depth += 1\\lcurrent_string.append(c)\\l"
+        ],
+        [
+            "if c == ')':\\l",
+            "current_depth -= 1\\lcurrent_string.append(c)\\l",
+            "if current_depth == 0:\\l",
+            "result.append(''.join(current_string))\\lcurrent_string.clear()\\l",
+            "for c in paren_string:\\l",
+            "if c == '(':\\l",
+            "current_depth += 1\\lcurrent_string.append(c)\\l"
+        ],
+        [
+            "current_depth -= 1\\lcurrent_string.append(c)\\l",
+            "if current_depth == 0:\\l",
+            "for c in paren_string:\\l",
+            "if c == '(':\\l",
+            "if c == ')':\\l"
+        ],
+        [
+            "current_depth -= 1\\lcurrent_string.append(c)\\l",
+            "if current_depth == 0:\\l",
+            "result.append(''.join(current_string))\\lcurrent_string.clear()\\l",
+            "for c in paren_string:\\l",
+            "if c == '(':\\l",
+            "if c == ')':\\l"
+        ],
+        [
+            "if current_depth == 0:\\l",
+            "for c in paren_string:\\l",
+            "if c == '(':\\l",
+            "if c == ')':\\l",
+            "current_depth -= 1\\lcurrent_string.append(c)\\l"
+        ],
+        [
+            "if current_depth == 0:\\l",
+            "result.append(''.join(current_string))\\lcurrent_string.clear()\\l",
+            "for c in paren_string:\\l",
+            "if c == '(':\\l",
+            "if c == ')':\\l",
+            "current_depth -= 1\\lcurrent_string.append(c)\\l"
+        ],
+        [
+            "result.append(''.join(current_string))\\lcurrent_string.clear()\\l",
+            "for c in paren_string:\\l",
+            "if c == '(':\\l",
+            "if c == ')':\\l",
+            "current_depth -= 1\\lcurrent_string.append(c)\\l",
+            "if current_depth == 0:\\l"
+        ],
+        [
+            "from typing import *\\lfrom typing import *\\ldef separate_paren_groups(paren_string: str) ->List[str]:...\\lseparate_paren_groups('(()()) ((())) () (((...')\\l",
+            "separate_paren_groups",
+            "result = []\\lcurrent_string = []\\lcurrent_depth = 0\\l",
+            "for c in paren_string:\\l",
+            "return result\\l"
+        ],
+        [
+            "from typing import *\\lfrom typing import *\\ldef separate_paren_groups(paren_string: str) ->List[str]:...\\lseparate_paren_groups('(()()) ((())) () (((...')\\l",
+            "separate_paren_groups",
+            "result = []\\lcurrent_string = []\\lcurrent_depth = 0\\l",
+            "for c in paren_string:\\l",
+            "if c == '(':\\l",
+            "current_depth += 1\\lcurrent_string.append(c)\\l"
+        ],
+        [
+            "from typing import *\\lfrom typing import *\\ldef separate_paren_groups(paren_string: str) ->List[str]:...\\lseparate_paren_groups('(()()) ((())) () (((...')\\l",
+            "separate_paren_groups",
+            "result = []\\lcurrent_string = []\\lcurrent_depth = 0\\l",
+            "for c in paren_string:\\l",
+            "if c == '(':\\l",
+            "if c == ')':\\l",
+            "current_depth -= 1\\lcurrent_string.append(c)\\l",
+            "if current_depth == 0:\\l",
+            "result.append(''.join(current_string))\\lcurrent_string.clear()\\l"
+        ]
+    ],
+    "prime_paths_linenumbers": [
+        [
+            9,
+            10,
+            11,
+            8,
+            20
+        ],
+        [
+            9,
+            12,
+            8,
+            20
+        ],
+        [
+            9,
+            12,
+            13,
+            14,
+            16,
+            8,
+            20
+        ],
+        [
+            9,
+            12,
+            13,
+            14,
+            16,
+            17,
+            18,
+            8,
+            20
+        ],
+        [
+            10,
+            11,
+            8,
+            9,
+            12,
+            13,
+            14,
+            16,
+            17,
+            18
+        ],
+        [
+            12,
+            8,
+            9,
+            10,
+            11
+        ],
+        [
+            12,
+            13,
+            14,
+            16,
+            8,
+            9,
+            10,
+            11
+        ],
+        [
+            12,
+            13,
+            14,
+            16,
+            17,
+            18,
+            8,
+            9,
+            10,
+            11
+        ],
+        [
+            13,
+            14,
+            16,
+            8,
+            9,
+            12
+        ],
+        [
+            13,
+            14,
+            16,
+            17,
+            18,
+            8,
+            9,
+            12
+        ],
+        [
+            16,
+            8,
+            9,
+            12,
+            13,
+            14
+        ],
+        [
+            16,
+            17,
+            18,
+            8,
+            9,
+            12,
+            13,
+            14
+        ],
+        [
+            17,
+            18,
+            8,
+            9,
+            12,
+            13,
+            14,
+            16
+        ],
+        [
+            1,
+            22,
+            4,
+            5,
+            6,
+            8,
+            20
+        ],
+        [
+            1,
+            22,
+            4,
+            5,
+            6,
+            8,
+            9,
+            10,
+            11
+        ],
+        [
+            1,
+            22,
+            4,
+            5,
+            6,
+            8,
+            9,
+            12,
+            13,
+            14,
+            16,
+            17,
+            18
+        ]
+    ],
+    "covered_statements_linenumbers": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        16,
+        17,
+        18,
+        20,
+        22
+    ],
+    "missing_statements_linenumbers": [],
+    "covered_prime_paths_linenumbers": [
+        [
+            9,
+            10,
+            11,
+            8,
+            20
+        ],
+        [
+            9,
+            12,
+            8,
+            20
+        ],
+        [
+            9,
+            12,
+            13,
+            14,
+            16,
+            8,
+            20
+        ],
+        [
+            9,
+            12,
+            13,
+            14,
+            16,
+            17,
+            18,
+            8,
+            20
+        ],
+        [
+            10,
+            11,
+            8,
+            9,
+            12,
+            13,
+            14,
+            16,
+            17,
+            18
+        ],
+        [
+            12,
+            8,
+            9,
+            10,
+            11
+        ],
+        [
+            12,
+            13,
+            14,
+            16,
+            8,
+            9,
+            10,
+            11
+        ],
+        [
+            12,
+            13,
+            14,
+            16,
+            17,
+            18,
+            8,
+            9,
+            10,
+            11
+        ],
+        [
+            13,
+            14,
+            16,
+            8,
+            9,
+            12
+        ],
+        [
+            13,
+            14,
+            16,
+            17,
+            18,
+            8,
+            9,
+            12
+        ],
+        [
+            16,
+            8,
+            9,
+            12,
+            13,
+            14
+        ],
+        [
+            16,
+            17,
+            18,
+            8,
+            9,
+            12,
+            13,
+            14
+        ],
+        [
+            17,
+            18,
+            8,
+            9,
+            12,
+            13,
+            14,
+            16
+        ],
+        [
+            1,
+            22,
+            4,
+            5,
+            6,
+            8,
+            20
+        ],
+        [
+            1,
+            22,
+            4,
+            5,
+            6,
+            8,
+            9,
+            10,
+            11
+        ],
+        [
+            1,
+            22,
+            4,
+            5,
+            6,
+            8,
+            9,
+            12,
+            13,
+            14,
+            16,
+            17,
+            18
+        ]
+    ],
+    "missing_prime_paths_linenumbers": [],
+    "num_total_prime_paths": 16,
+    "num_covered_paths": 16,
+    "prime_path_coverage": 1.0,
+    "cfg_png": "/home/yang/share_repo/StaticAnalysis/cfglogshumaneval/HumanEval_1_CFG.png",
+    "cfg_dot": "/home/yang/share_repo/StaticAnalysis/cfglogshumaneval/HumanEval_1_CFG.dot"
+}

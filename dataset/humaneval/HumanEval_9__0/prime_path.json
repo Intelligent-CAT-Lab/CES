@@ -1,0 +1,251 @@
+{
+    "humaneval_id": "HumanEval_9__0",
+    "python_file": "HumanEval_9__0/main.py",
+    "input_file": "HumanEval_9__0/input.txt",
+    "prime_paths_nodes": [
+        [
+            "5",
+            "7",
+            "8",
+            "4",
+            "6"
+        ],
+        [
+            "5",
+            "9",
+            "8",
+            "4",
+            "6"
+        ],
+        [
+            "7",
+            "8",
+            "4",
+            "5",
+            "9"
+        ],
+        [
+            "9",
+            "8",
+            "4",
+            "5",
+            "7"
+        ],
+        [
+            "1",
+            "14",
+            "3",
+            "4",
+            "6"
+        ],
+        [
+            "1",
+            "14",
+            "3",
+            "4",
+            "5",
+            "7",
+            "8"
+        ],
+        [
+            "1",
+            "14",
+            "3",
+            "4",
+            "5",
+            "9",
+            "8"
+        ]
+    ],
+    "prime_paths_statements": [
+        [
+            "if running_max is None:\\l",
+            "running_max = n\\l",
+            "result.append(running_max)\\l",
+            "for n in numbers:\\l",
+            "return result\\l"
+        ],
+        [
+            "if running_max is None:\\l",
+            "running_max = max(running_max, n)\\l",
+            "result.append(running_max)\\l",
+            "for n in numbers:\\l",
+            "return result\\l"
+        ],
+        [
+            "running_max = n\\l",
+            "result.append(running_max)\\l",
+            "for n in numbers:\\l",
+            "if running_max is None:\\l",
+            "running_max = max(running_max, n)\\l"
+        ],
+        [
+            "running_max = max(running_max, n)\\l",
+            "result.append(running_max)\\l",
+            "for n in numbers:\\l",
+            "if running_max is None:\\l",
+            "running_max = n\\l"
+        ],
+        [
+            "from typing import *\\ldef rolling_max(numbers: List[int]) ->List[int]:...\\lrolling_max([4, 3, 2, 1])\\l",
+            "rolling_max",
+            "running_max = None\\lresult = []\\l",
+            "for n in numbers:\\l",
+            "return result\\l"
+        ],
+        [
+            "from typing import *\\ldef rolling_max(numbers: List[int]) ->List[int]:...\\lrolling_max([4, 3, 2, 1])\\l",
+            "rolling_max",
+            "running_max = None\\lresult = []\\l",
+            "for n in numbers:\\l",
+            "if running_max is None:\\l",
+            "running_max = n\\l",
+            "result.append(running_max)\\l"
+        ],
+        [
+            "from typing import *\\ldef rolling_max(numbers: List[int]) ->List[int]:...\\lrolling_max([4, 3, 2, 1])\\l",
+            "rolling_max",
+            "running_max = None\\lresult = []\\l",
+            "for n in numbers:\\l",
+            "if running_max is None:\\l",
+            "running_max = max(running_max, n)\\l",
+            "result.append(running_max)\\l"
+        ]
+    ],
+    "prime_paths_linenumbers": [
+        [
+            9,
+            10,
+            14,
+            8,
+            16
+        ],
+        [
+            9,
+            12,
+            14,
+            8,
+            16
+        ],
+        [
+            10,
+            14,
+            8,
+            9,
+            12
+        ],
+        [
+            12,
+            14,
+            8,
+            9,
+            10
+        ],
+        [
+            1,
+            18,
+            5,
+            6,
+            8,
+            16
+        ],
+        [
+            1,
+            18,
+            5,
+            6,
+            8,
+            9,
+            10,
+            14
+        ],
+        [
+            1,
+            18,
+            5,
+            6,
+            8,
+            9,
+            12,
+            14
+        ]
+    ],
+    "covered_statements_linenumbers": [
+        1,
+        4,
+        5,
+        6,
+        8,
+        9,
+        10,
+        12,
+        14,
+        16,
+        18
+    ],
+    "missing_statements_linenumbers": [],
+    "covered_prime_paths_linenumbers": [
+        [
+            9,
+            10,
+            14,
+            8,
+            16
+        ],
+        [
+            9,
+            12,
+            14,
+            8,
+            16
+        ],
+        [
+            10,
+            14,
+            8,
+            9,
+            12
+        ],
+        [
+            12,
+            14,
+            8,
+            9,
+            10
+        ],
+        [
+            1,
+            18,
+            5,
+            6,
+            8,
+            16
+        ],
+        [
+            1,
+            18,
+            5,
+            6,
+            8,
+            9,
+            10,
+            14
+        ],
+        [
+            1,
+            18,
+            5,
+            6,
+            8,
+            9,
+            12,
+            14
+        ]
+    ],
+    "missing_prime_paths_linenumbers": [],
+    "num_total_prime_paths": 7,
+    "num_covered_paths": 7,
+    "prime_path_coverage": 1.0,
+    "cfg_png": "/home/yang/share_repo/StaticAnalysis/cfglogshumaneval/HumanEval_9__0_CFG.png",
+    "cfg_dot": "/home/yang/share_repo/StaticAnalysis/cfglogshumaneval/HumanEval_9__0_CFG.dot"
+}

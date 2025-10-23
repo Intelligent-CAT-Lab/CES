@@ -1,0 +1,857 @@
+{
+    "humaneval_id": "HumanEval_95",
+    "python_file": "HumanEval_95/main.py",
+    "input_file": "HumanEval_95/input.txt",
+    "prime_paths_nodes": [
+        [
+            "11",
+            "15",
+            "17",
+            "26",
+            "9",
+            "12"
+        ],
+        [
+            "11",
+            "15",
+            "17",
+            "28",
+            "30",
+            "9",
+            "12"
+        ],
+        [
+            "15",
+            "17",
+            "26",
+            "9",
+            "11",
+            "14",
+            "12"
+        ],
+        [
+            "15",
+            "17",
+            "28",
+            "30",
+            "9",
+            "11",
+            "14",
+            "12"
+        ],
+        [
+            "17",
+            "26",
+            "9",
+            "11",
+            "15",
+            "19",
+            "20",
+            "12"
+        ],
+        [
+            "17",
+            "26",
+            "9",
+            "11",
+            "15",
+            "19",
+            "22",
+            "12"
+        ],
+        [
+            "17",
+            "28",
+            "30",
+            "9",
+            "11",
+            "15",
+            "19",
+            "20",
+            "12"
+        ],
+        [
+            "17",
+            "28",
+            "30",
+            "9",
+            "11",
+            "15",
+            "19",
+            "22",
+            "12"
+        ],
+        [
+            "26",
+            "9",
+            "11",
+            "15",
+            "17",
+            "28",
+            "32",
+            "12"
+        ],
+        [
+            "26",
+            "9",
+            "11",
+            "15",
+            "17",
+            "28",
+            "30"
+        ],
+        [
+            "28",
+            "30",
+            "9",
+            "11",
+            "15",
+            "17",
+            "26"
+        ],
+        [
+            "30",
+            "9",
+            "11",
+            "15",
+            "17",
+            "28",
+            "32",
+            "12"
+        ],
+        [
+            "1",
+            "37",
+            "3",
+            "6"
+        ],
+        [
+            "1",
+            "37",
+            "3",
+            "8",
+            "9",
+            "11",
+            "14",
+            "12"
+        ],
+        [
+            "1",
+            "37",
+            "3",
+            "8",
+            "9",
+            "11",
+            "15",
+            "17",
+            "28",
+            "32",
+            "12"
+        ],
+        [
+            "1",
+            "37",
+            "3",
+            "8",
+            "9",
+            "11",
+            "15",
+            "19",
+            "20",
+            "12"
+        ],
+        [
+            "1",
+            "37",
+            "3",
+            "8",
+            "9",
+            "11",
+            "15",
+            "19",
+            "22",
+            "12"
+        ],
+        [
+            "1",
+            "37",
+            "3",
+            "8",
+            "9",
+            "12"
+        ],
+        [
+            "1",
+            "37",
+            "3",
+            "8",
+            "9",
+            "11",
+            "15",
+            "17",
+            "26"
+        ],
+        [
+            "1",
+            "37",
+            "3",
+            "8",
+            "9",
+            "11",
+            "15",
+            "17",
+            "28",
+            "30"
+        ]
+    ],
+    "prime_paths_statements": [
+        [
+            "if isinstance(key, str) == False:\\l",
+            "if state == 'start':\\l",
+            "if key.isupper():\\l",
+            "state = 'upper'\\l",
+            "for key in dict.keys():\\l",
+            "return state == 'upper' or state == 'lower'\\l"
+        ],
+        [
+            "if isinstance(key, str) == False:\\l",
+            "if state == 'start':\\l",
+            "if key.isupper():\\l",
+            "if key.islower():\\l",
+            "state = 'lower'\\l",
+            "for key in dict.keys():\\l",
+            "return state == 'upper' or state == 'lower'\\l"
+        ],
+        [
+            "if state == 'start':\\l",
+            "if key.isupper():\\l",
+            "state = 'upper'\\l",
+            "for key in dict.keys():\\l",
+            "if isinstance(key, str) == False:\\l",
+            "state = 'mixed'\\lbreak\\l",
+            "return state == 'upper' or state == 'lower'\\l"
+        ],
+        [
+            "if state == 'start':\\l",
+            "if key.isupper():\\l",
+            "if key.islower():\\l",
+            "state = 'lower'\\l",
+            "for key in dict.keys():\\l",
+            "if isinstance(key, str) == False:\\l",
+            "state = 'mixed'\\lbreak\\l",
+            "return state == 'upper' or state == 'lower'\\l"
+        ],
+        [
+            "if key.isupper():\\l",
+            "state = 'upper'\\l",
+            "for key in dict.keys():\\l",
+            "if isinstance(key, str) == False:\\l",
+            "if state == 'start':\\l",
+            "if state == 'upper' and not key.isupper(\\l",
+            "state = 'mixed'\\lbreak\\l",
+            "return state == 'upper' or state == 'lower'\\l"
+        ],
+        [
+            "if key.isupper():\\l",
+            "state = 'upper'\\l",
+            "for key in dict.keys():\\l",
+            "if isinstance(key, str) == False:\\l",
+            "if state == 'start':\\l",
+            "if state == 'upper' and not key.isupper(\\l",
+            "break\\l",
+            "return state == 'upper' or state == 'lower'\\l"
+        ],
+        [
+            "if key.isupper():\\l",
+            "if key.islower():\\l",
+            "state = 'lower'\\l",
+            "for key in dict.keys():\\l",
+            "if isinstance(key, str) == False:\\l",
+            "if state == 'start':\\l",
+            "if state == 'upper' and not key.isupper(\\l",
+            "state = 'mixed'\\lbreak\\l",
+            "return state == 'upper' or state == 'lower'\\l"
+        ],
+        [
+            "if key.isupper():\\l",
+            "if key.islower():\\l",
+            "state = 'lower'\\l",
+            "for key in dict.keys():\\l",
+            "if isinstance(key, str) == False:\\l",
+            "if state == 'start':\\l",
+            "if state == 'upper' and not key.isupper(\\l",
+            "break\\l",
+            "return state == 'upper' or state == 'lower'\\l"
+        ],
+        [
+            "state = 'upper'\\l",
+            "for key in dict.keys():\\l",
+            "if isinstance(key, str) == False:\\l",
+            "if state == 'start':\\l",
+            "if key.isupper():\\l",
+            "if key.islower():\\l",
+            "break\\l",
+            "return state == 'upper' or state == 'lower'\\l"
+        ],
+        [
+            "state = 'upper'\\l",
+            "for key in dict.keys():\\l",
+            "if isinstance(key, str) == False:\\l",
+            "if state == 'start':\\l",
+            "if key.isupper():\\l",
+            "if key.islower():\\l",
+            "state = 'lower'\\l"
+        ],
+        [
+            "if key.islower():\\l",
+            "state = 'lower'\\l",
+            "for key in dict.keys():\\l",
+            "if isinstance(key, str) == False:\\l",
+            "if state == 'start':\\l",
+            "if key.isupper():\\l",
+            "state = 'upper'\\l"
+        ],
+        [
+            "state = 'lower'\\l",
+            "for key in dict.keys():\\l",
+            "if isinstance(key, str) == False:\\l",
+            "if state == 'start':\\l",
+            "if key.isupper():\\l",
+            "if key.islower():\\l",
+            "break\\l",
+            "return state == 'upper' or state == 'lower'\\l"
+        ],
+        [
+            "from typing import *\\ldef check_dict_case(dict):...\\lcheck_dict_case({'p': 'pineapple', 'b': 'banana'})\\l",
+            "check_dict_case",
+            "if len(dict.keys()) == 0:\\l",
+            "return False\\l"
+        ],
+        [
+            "from typing import *\\ldef check_dict_case(dict):...\\lcheck_dict_case({'p': 'pineapple', 'b': 'banana'})\\l",
+            "check_dict_case",
+            "if len(dict.keys()) == 0:\\l",
+            "state = 'start'\\l",
+            "for key in dict.keys():\\l",
+            "if isinstance(key, str) == False:\\l",
+            "state = 'mixed'\\lbreak\\l",
+            "return state == 'upper' or state == 'lower'\\l"
+        ],
+        [
+            "from typing import *\\ldef check_dict_case(dict):...\\lcheck_dict_case({'p': 'pineapple', 'b': 'banana'})\\l",
+            "check_dict_case",
+            "if len(dict.keys()) == 0:\\l",
+            "state = 'start'\\l",
+            "for key in dict.keys():\\l",
+            "if isinstance(key, str) == False:\\l",
+            "if state == 'start':\\l",
+            "if key.isupper():\\l",
+            "if key.islower():\\l",
+            "break\\l",
+            "return state == 'upper' or state == 'lower'\\l"
+        ],
+        [
+            "from typing import *\\ldef check_dict_case(dict):...\\lcheck_dict_case({'p': 'pineapple', 'b': 'banana'})\\l",
+            "check_dict_case",
+            "if len(dict.keys()) == 0:\\l",
+            "state = 'start'\\l",
+            "for key in dict.keys():\\l",
+            "if isinstance(key, str) == False:\\l",
+            "if state == 'start':\\l",
+            "if state == 'upper' and not key.isupper(\\l",
+            "state = 'mixed'\\lbreak\\l",
+            "return state == 'upper' or state == 'lower'\\l"
+        ],
+        [
+            "from typing import *\\ldef check_dict_case(dict):...\\lcheck_dict_case({'p': 'pineapple', 'b': 'banana'})\\l",
+            "check_dict_case",
+            "if len(dict.keys()) == 0:\\l",
+            "state = 'start'\\l",
+            "for key in dict.keys():\\l",
+            "if isinstance(key, str) == False:\\l",
+            "if state == 'start':\\l",
+            "if state == 'upper' and not key.isupper(\\l",
+            "break\\l",
+            "return state == 'upper' or state == 'lower'\\l"
+        ],
+        [
+            "from typing import *\\ldef check_dict_case(dict):...\\lcheck_dict_case({'p': 'pineapple', 'b': 'banana'})\\l",
+            "check_dict_case",
+            "if len(dict.keys()) == 0:\\l",
+            "state = 'start'\\l",
+            "for key in dict.keys():\\l",
+            "return state == 'upper' or state == 'lower'\\l"
+        ],
+        [
+            "from typing import *\\ldef check_dict_case(dict):...\\lcheck_dict_case({'p': 'pineapple', 'b': 'banana'})\\l",
+            "check_dict_case",
+            "if len(dict.keys()) == 0:\\l",
+            "state = 'start'\\l",
+            "for key in dict.keys():\\l",
+            "if isinstance(key, str) == False:\\l",
+            "if state == 'start':\\l",
+            "if key.isupper():\\l",
+            "state = 'upper'\\l"
+        ],
+        [
+            "from typing import *\\ldef check_dict_case(dict):...\\lcheck_dict_case({'p': 'pineapple', 'b': 'banana'})\\l",
+            "check_dict_case",
+            "if len(dict.keys()) == 0:\\l",
+            "state = 'start'\\l",
+            "for key in dict.keys():\\l",
+            "if isinstance(key, str) == False:\\l",
+            "if state == 'start':\\l",
+            "if key.isupper():\\l",
+            "if key.islower():\\l",
+            "state = 'lower'\\l"
+        ]
+    ],
+    "prime_paths_linenumbers": [
+        [
+            9,
+            12,
+            13,
+            14,
+            7,
+            24
+        ],
+        [
+            9,
+            12,
+            13,
+            15,
+            16,
+            7,
+            24
+        ],
+        [
+            12,
+            13,
+            14,
+            7,
+            9,
+            10,
+            11,
+            24
+        ],
+        [
+            12,
+            13,
+            15,
+            16,
+            7,
+            9,
+            10,
+            11,
+            24
+        ],
+        [
+            13,
+            14,
+            7,
+            9,
+            12,
+            19,
+            20,
+            21,
+            24
+        ],
+        [
+            13,
+            14,
+            7,
+            9,
+            12,
+            19,
+            23,
+            24
+        ],
+        [
+            13,
+            15,
+            16,
+            7,
+            9,
+            12,
+            19,
+            20,
+            21,
+            24
+        ],
+        [
+            13,
+            15,
+            16,
+            7,
+            9,
+            12,
+            19,
+            23,
+            24
+        ],
+        [
+            14,
+            7,
+            9,
+            12,
+            13,
+            15,
+            18,
+            24
+        ],
+        [
+            14,
+            7,
+            9,
+            12,
+            13,
+            15,
+            16
+        ],
+        [
+            15,
+            16,
+            7,
+            9,
+            12,
+            13,
+            14
+        ],
+        [
+            16,
+            7,
+            9,
+            12,
+            13,
+            15,
+            18,
+            24
+        ],
+        [
+            1,
+            26,
+            3,
+            4
+        ],
+        [
+            1,
+            26,
+            3,
+            6,
+            7,
+            9,
+            10,
+            11,
+            24
+        ],
+        [
+            1,
+            26,
+            3,
+            6,
+            7,
+            9,
+            12,
+            13,
+            15,
+            18,
+            24
+        ],
+        [
+            1,
+            26,
+            3,
+            6,
+            7,
+            9,
+            12,
+            19,
+            20,
+            21,
+            24
+        ],
+        [
+            1,
+            26,
+            3,
+            6,
+            7,
+            9,
+            12,
+            19,
+            23,
+            24
+        ],
+        [
+            1,
+            26,
+            3,
+            6,
+            7,
+            24
+        ],
+        [
+            1,
+            26,
+            3,
+            6,
+            7,
+            9,
+            12,
+            13,
+            14
+        ],
+        [
+            1,
+            26,
+            3,
+            6,
+            7,
+            9,
+            12,
+            13,
+            15,
+            16
+        ]
+    ],
+    "covered_statements_linenumbers": [
+        1,
+        2,
+        3,
+        6,
+        7,
+        9,
+        12,
+        13,
+        15,
+        16,
+        19,
+        23,
+        24,
+        26
+    ],
+    "missing_statements_linenumbers": [
+        4,
+        10,
+        11,
+        14,
+        18,
+        20,
+        21
+    ],
+    "covered_prime_paths_linenumbers": [
+        [
+            9,
+            12,
+            13,
+            15,
+            16,
+            7,
+            24
+        ],
+        [
+            13,
+            15,
+            16,
+            7,
+            9,
+            12,
+            19,
+            23,
+            24
+        ],
+        [
+            1,
+            26,
+            3,
+            6,
+            7,
+            9,
+            12,
+            19,
+            23,
+            24
+        ],
+        [
+            1,
+            26,
+            3,
+            6,
+            7,
+            24
+        ],
+        [
+            1,
+            26,
+            3,
+            6,
+            7,
+            9,
+            12,
+            13,
+            15,
+            16
+        ]
+    ],
+    "missing_prime_paths_linenumbers": [
+        [
+            9,
+            12,
+            13,
+            14,
+            7,
+            24
+        ],
+        [
+            12,
+            13,
+            14,
+            7,
+            9,
+            10,
+            11,
+            24
+        ],
+        [
+            12,
+            13,
+            15,
+            16,
+            7,
+            9,
+            10,
+            11,
+            24
+        ],
+        [
+            13,
+            14,
+            7,
+            9,
+            12,
+            19,
+            20,
+            21,
+            24
+        ],
+        [
+            13,
+            14,
+            7,
+            9,
+            12,
+            19,
+            23,
+            24
+        ],
+        [
+            13,
+            15,
+            16,
+            7,
+            9,
+            12,
+            19,
+            20,
+            21,
+            24
+        ],
+        [
+            14,
+            7,
+            9,
+            12,
+            13,
+            15,
+            18,
+            24
+        ],
+        [
+            14,
+            7,
+            9,
+            12,
+            13,
+            15,
+            16
+        ],
+        [
+            15,
+            16,
+            7,
+            9,
+            12,
+            13,
+            14
+        ],
+        [
+            16,
+            7,
+            9,
+            12,
+            13,
+            15,
+            18,
+            24
+        ],
+        [
+            1,
+            26,
+            3,
+            4
+        ],
+        [
+            1,
+            26,
+            3,
+            6,
+            7,
+            9,
+            10,
+            11,
+            24
+        ],
+        [
+            1,
+            26,
+            3,
+            6,
+            7,
+            9,
+            12,
+            13,
+            15,
+            18,
+            24
+        ],
+        [
+            1,
+            26,
+            3,
+            6,
+            7,
+            9,
+            12,
+            19,
+            20,
+            21,
+            24
+        ],
+        [
+            1,
+            26,
+            3,
+            6,
+            7,
+            9,
+            12,
+            13,
+            14
+        ]
+    ],
+    "num_total_prime_paths": 20,
+    "num_covered_paths": 5,
+    "prime_path_coverage": 0.25,
+    "cfg_png": "/home/yang/share_repo/StaticAnalysis/cfglogshumaneval/HumanEval_95_CFG.png",
+    "cfg_dot": "/home/yang/share_repo/StaticAnalysis/cfglogshumaneval/HumanEval_95_CFG.dot"
+}

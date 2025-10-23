@@ -1,0 +1,255 @@
+{
+    "humaneval_id": "HumanEval_61__1",
+    "python_file": "HumanEval_61__1/main.py",
+    "input_file": "HumanEval_61__1/input.txt",
+    "prime_paths_nodes": [
+        [
+            "5",
+            "7",
+            "8",
+            "4",
+            "6"
+        ],
+        [
+            "5",
+            "9",
+            "8",
+            "4",
+            "6"
+        ],
+        [
+            "7",
+            "8",
+            "4",
+            "5",
+            "9"
+        ],
+        [
+            "9",
+            "8",
+            "4",
+            "5",
+            "7"
+        ],
+        [
+            "1",
+            "15",
+            "3",
+            "4",
+            "6"
+        ],
+        [
+            "1",
+            "15",
+            "3",
+            "4",
+            "5",
+            "7",
+            "8",
+            "10"
+        ],
+        [
+            "1",
+            "15",
+            "3",
+            "4",
+            "5",
+            "9",
+            "8",
+            "10"
+        ]
+    ],
+    "prime_paths_statements": [
+        [
+            "if b == '(':\\l",
+            "depth += 1\\l",
+            "if depth < 0:\\l",
+            "for b in brackets:\\l",
+            "return depth == 0\\l"
+        ],
+        [
+            "if b == '(':\\l",
+            "depth -= 1\\l",
+            "if depth < 0:\\l",
+            "for b in brackets:\\l",
+            "return depth == 0\\l"
+        ],
+        [
+            "depth += 1\\l",
+            "if depth < 0:\\l",
+            "for b in brackets:\\l",
+            "if b == '(':\\l",
+            "depth -= 1\\l"
+        ],
+        [
+            "depth -= 1\\l",
+            "if depth < 0:\\l",
+            "for b in brackets:\\l",
+            "if b == '(':\\l",
+            "depth += 1\\l"
+        ],
+        [
+            "from typing import *\\ldef correct_bracketing(brackets: str):...\\lcorrect_bracketing('(')\\l",
+            "correct_bracketing",
+            "depth = 0\\l",
+            "for b in brackets:\\l",
+            "return depth == 0\\l"
+        ],
+        [
+            "from typing import *\\ldef correct_bracketing(brackets: str):...\\lcorrect_bracketing('(')\\l",
+            "correct_bracketing",
+            "depth = 0\\l",
+            "for b in brackets:\\l",
+            "if b == '(':\\l",
+            "depth += 1\\l",
+            "if depth < 0:\\l",
+            "return False\\l"
+        ],
+        [
+            "from typing import *\\ldef correct_bracketing(brackets: str):...\\lcorrect_bracketing('(')\\l",
+            "correct_bracketing",
+            "depth = 0\\l",
+            "for b in brackets:\\l",
+            "if b == '(':\\l",
+            "depth -= 1\\l",
+            "if depth < 0:\\l",
+            "return False\\l"
+        ]
+    ],
+    "prime_paths_linenumbers": [
+        [
+            7,
+            8,
+            11,
+            6,
+            13
+        ],
+        [
+            7,
+            10,
+            11,
+            6,
+            13
+        ],
+        [
+            8,
+            11,
+            6,
+            7,
+            10
+        ],
+        [
+            10,
+            11,
+            6,
+            7,
+            8
+        ],
+        [
+            1,
+            15,
+            5,
+            6,
+            13
+        ],
+        [
+            1,
+            15,
+            5,
+            6,
+            7,
+            8,
+            11,
+            12
+        ],
+        [
+            1,
+            15,
+            5,
+            6,
+            7,
+            10,
+            11,
+            12
+        ]
+    ],
+    "covered_statements_linenumbers": [
+        1,
+        4,
+        5,
+        6,
+        7,
+        8,
+        11,
+        13,
+        15
+    ],
+    "missing_statements_linenumbers": [
+        10,
+        12
+    ],
+    "covered_prime_paths_linenumbers": [
+        [
+            7,
+            8,
+            11,
+            6,
+            13
+        ],
+        [
+            1,
+            15,
+            5,
+            6,
+            13
+        ]
+    ],
+    "missing_prime_paths_linenumbers": [
+        [
+            7,
+            10,
+            11,
+            6,
+            13
+        ],
+        [
+            8,
+            11,
+            6,
+            7,
+            10
+        ],
+        [
+            10,
+            11,
+            6,
+            7,
+            8
+        ],
+        [
+            1,
+            15,
+            5,
+            6,
+            7,
+            8,
+            11,
+            12
+        ],
+        [
+            1,
+            15,
+            5,
+            6,
+            7,
+            10,
+            11,
+            12
+        ]
+    ],
+    "num_total_prime_paths": 7,
+    "num_covered_paths": 2,
+    "prime_path_coverage": 0.29,
+    "cfg_png": "/home/yang/share_repo/StaticAnalysis/cfglogshumaneval/HumanEval_61__1_CFG.png",
+    "cfg_dot": "/home/yang/share_repo/StaticAnalysis/cfglogshumaneval/HumanEval_61__1_CFG.dot"
+}

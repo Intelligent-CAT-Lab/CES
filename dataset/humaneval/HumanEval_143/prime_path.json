@@ -1,0 +1,1124 @@
+{
+    "humaneval_id": "HumanEval_143",
+    "python_file": "HumanEval_143/main.py",
+    "input_file": "HumanEval_143/input.txt",
+    "prime_paths_nodes": [
+        [
+            "6",
+            "8",
+            "10",
+            "11",
+            "15",
+            "4",
+            "7"
+        ],
+        [
+            "6",
+            "8",
+            "10",
+            "11",
+            "15",
+            "19",
+            "4",
+            "7"
+        ],
+        [
+            "6",
+            "8",
+            "11",
+            "15",
+            "4",
+            "7"
+        ],
+        [
+            "6",
+            "8",
+            "11",
+            "15",
+            "19",
+            "4",
+            "7"
+        ],
+        [
+            "8",
+            "10",
+            "11",
+            "15",
+            "4",
+            "6"
+        ],
+        [
+            "8",
+            "10",
+            "11",
+            "15",
+            "19",
+            "4",
+            "6"
+        ],
+        [
+            "8",
+            "11",
+            "15",
+            "4",
+            "6"
+        ],
+        [
+            "8",
+            "11",
+            "15",
+            "19",
+            "4",
+            "6"
+        ],
+        [
+            "10",
+            "11",
+            "15",
+            "4",
+            "6",
+            "8"
+        ],
+        [
+            "10",
+            "11",
+            "15",
+            "19",
+            "4",
+            "6",
+            "8"
+        ],
+        [
+            "14",
+            "11",
+            "15",
+            "4",
+            "7"
+        ],
+        [
+            "14",
+            "11",
+            "15",
+            "19",
+            "4",
+            "7"
+        ],
+        [
+            "14",
+            "17",
+            "11",
+            "15",
+            "4",
+            "7"
+        ],
+        [
+            "14",
+            "17",
+            "11",
+            "15",
+            "19",
+            "4",
+            "7"
+        ],
+        [
+            "14",
+            "11",
+            "15",
+            "4",
+            "6",
+            "8",
+            "10"
+        ],
+        [
+            "14",
+            "11",
+            "15",
+            "19",
+            "4",
+            "6",
+            "8",
+            "10"
+        ],
+        [
+            "14",
+            "17",
+            "11",
+            "15",
+            "4",
+            "6",
+            "8",
+            "10"
+        ],
+        [
+            "14",
+            "17",
+            "11",
+            "15",
+            "19",
+            "4",
+            "6",
+            "8",
+            "10"
+        ],
+        [
+            "15",
+            "4",
+            "6",
+            "8",
+            "10",
+            "11",
+            "14",
+            "17"
+        ],
+        [
+            "15",
+            "4",
+            "6",
+            "8",
+            "11",
+            "14",
+            "17"
+        ],
+        [
+            "15",
+            "19",
+            "4",
+            "6",
+            "8",
+            "10",
+            "11",
+            "14",
+            "17"
+        ],
+        [
+            "15",
+            "19",
+            "4",
+            "6",
+            "8",
+            "11",
+            "14",
+            "17"
+        ],
+        [
+            "17",
+            "11",
+            "14"
+        ],
+        [
+            "19",
+            "4",
+            "6",
+            "8",
+            "10",
+            "11",
+            "15"
+        ],
+        [
+            "19",
+            "4",
+            "6",
+            "8",
+            "11",
+            "15"
+        ],
+        [
+            "1",
+            "24",
+            "3",
+            "4",
+            "7"
+        ],
+        [
+            "1",
+            "24",
+            "3",
+            "4",
+            "6",
+            "8",
+            "10",
+            "11",
+            "14",
+            "17"
+        ],
+        [
+            "1",
+            "24",
+            "3",
+            "4",
+            "6",
+            "8",
+            "11",
+            "14",
+            "17"
+        ],
+        [
+            "1",
+            "24",
+            "3",
+            "4",
+            "6",
+            "8",
+            "10",
+            "11",
+            "15",
+            "19"
+        ],
+        [
+            "1",
+            "24",
+            "3",
+            "4",
+            "6",
+            "8",
+            "11",
+            "15",
+            "19"
+        ]
+    ],
+    "prime_paths_statements": [
+        [
+            "flg = 0\\l",
+            "if len(word) == 1:\\l",
+            "flg = 1\\l",
+            "for i in range(2, len(word)):\\l",
+            "if flg == 0 or len(word) == 2:\\l",
+            "for word in sentence.split():\\l",
+            "return ' '.join(new_lst)\\l"
+        ],
+        [
+            "flg = 0\\l",
+            "if len(word) == 1:\\l",
+            "flg = 1\\l",
+            "for i in range(2, len(word)):\\l",
+            "if flg == 0 or len(word) == 2:\\l",
+            "new_lst.append(word)\\l",
+            "for word in sentence.split():\\l",
+            "return ' '.join(new_lst)\\l"
+        ],
+        [
+            "flg = 0\\l",
+            "if len(word) == 1:\\l",
+            "for i in range(2, len(word)):\\l",
+            "if flg == 0 or len(word) == 2:\\l",
+            "for word in sentence.split():\\l",
+            "return ' '.join(new_lst)\\l"
+        ],
+        [
+            "flg = 0\\l",
+            "if len(word) == 1:\\l",
+            "for i in range(2, len(word)):\\l",
+            "if flg == 0 or len(word) == 2:\\l",
+            "new_lst.append(word)\\l",
+            "for word in sentence.split():\\l",
+            "return ' '.join(new_lst)\\l"
+        ],
+        [
+            "if len(word) == 1:\\l",
+            "flg = 1\\l",
+            "for i in range(2, len(word)):\\l",
+            "if flg == 0 or len(word) == 2:\\l",
+            "for word in sentence.split():\\l",
+            "flg = 0\\l"
+        ],
+        [
+            "if len(word) == 1:\\l",
+            "flg = 1\\l",
+            "for i in range(2, len(word)):\\l",
+            "if flg == 0 or len(word) == 2:\\l",
+            "new_lst.append(word)\\l",
+            "for word in sentence.split():\\l",
+            "flg = 0\\l"
+        ],
+        [
+            "if len(word) == 1:\\l",
+            "for i in range(2, len(word)):\\l",
+            "if flg == 0 or len(word) == 2:\\l",
+            "for word in sentence.split():\\l",
+            "flg = 0\\l"
+        ],
+        [
+            "if len(word) == 1:\\l",
+            "for i in range(2, len(word)):\\l",
+            "if flg == 0 or len(word) == 2:\\l",
+            "new_lst.append(word)\\l",
+            "for word in sentence.split():\\l",
+            "flg = 0\\l"
+        ],
+        [
+            "flg = 1\\l",
+            "for i in range(2, len(word)):\\l",
+            "if flg == 0 or len(word) == 2:\\l",
+            "for word in sentence.split():\\l",
+            "flg = 0\\l",
+            "if len(word) == 1:\\l"
+        ],
+        [
+            "flg = 1\\l",
+            "for i in range(2, len(word)):\\l",
+            "if flg == 0 or len(word) == 2:\\l",
+            "new_lst.append(word)\\l",
+            "for word in sentence.split():\\l",
+            "flg = 0\\l",
+            "if len(word) == 1:\\l"
+        ],
+        [
+            "if len(word) % i == 0:\\l",
+            "for i in range(2, len(word)):\\l",
+            "if flg == 0 or len(word) == 2:\\l",
+            "for word in sentence.split():\\l",
+            "return ' '.join(new_lst)\\l"
+        ],
+        [
+            "if len(word) % i == 0:\\l",
+            "for i in range(2, len(word)):\\l",
+            "if flg == 0 or len(word) == 2:\\l",
+            "new_lst.append(word)\\l",
+            "for word in sentence.split():\\l",
+            "return ' '.join(new_lst)\\l"
+        ],
+        [
+            "if len(word) % i == 0:\\l",
+            "flg = 1\\l",
+            "for i in range(2, len(word)):\\l",
+            "if flg == 0 or len(word) == 2:\\l",
+            "for word in sentence.split():\\l",
+            "return ' '.join(new_lst)\\l"
+        ],
+        [
+            "if len(word) % i == 0:\\l",
+            "flg = 1\\l",
+            "for i in range(2, len(word)):\\l",
+            "if flg == 0 or len(word) == 2:\\l",
+            "new_lst.append(word)\\l",
+            "for word in sentence.split():\\l",
+            "return ' '.join(new_lst)\\l"
+        ],
+        [
+            "if len(word) % i == 0:\\l",
+            "for i in range(2, len(word)):\\l",
+            "if flg == 0 or len(word) == 2:\\l",
+            "for word in sentence.split():\\l",
+            "flg = 0\\l",
+            "if len(word) == 1:\\l",
+            "flg = 1\\l"
+        ],
+        [
+            "if len(word) % i == 0:\\l",
+            "for i in range(2, len(word)):\\l",
+            "if flg == 0 or len(word) == 2:\\l",
+            "new_lst.append(word)\\l",
+            "for word in sentence.split():\\l",
+            "flg = 0\\l",
+            "if len(word) == 1:\\l",
+            "flg = 1\\l"
+        ],
+        [
+            "if len(word) % i == 0:\\l",
+            "flg = 1\\l",
+            "for i in range(2, len(word)):\\l",
+            "if flg == 0 or len(word) == 2:\\l",
+            "for word in sentence.split():\\l",
+            "flg = 0\\l",
+            "if len(word) == 1:\\l",
+            "flg = 1\\l"
+        ],
+        [
+            "if len(word) % i == 0:\\l",
+            "flg = 1\\l",
+            "for i in range(2, len(word)):\\l",
+            "if flg == 0 or len(word) == 2:\\l",
+            "new_lst.append(word)\\l",
+            "for word in sentence.split():\\l",
+            "flg = 0\\l",
+            "if len(word) == 1:\\l",
+            "flg = 1\\l"
+        ],
+        [
+            "if flg == 0 or len(word) == 2:\\l",
+            "for word in sentence.split():\\l",
+            "flg = 0\\l",
+            "if len(word) == 1:\\l",
+            "flg = 1\\l",
+            "for i in range(2, len(word)):\\l",
+            "if len(word) % i == 0:\\l",
+            "flg = 1\\l"
+        ],
+        [
+            "if flg == 0 or len(word) == 2:\\l",
+            "for word in sentence.split():\\l",
+            "flg = 0\\l",
+            "if len(word) == 1:\\l",
+            "for i in range(2, len(word)):\\l",
+            "if len(word) % i == 0:\\l",
+            "flg = 1\\l"
+        ],
+        [
+            "if flg == 0 or len(word) == 2:\\l",
+            "new_lst.append(word)\\l",
+            "for word in sentence.split():\\l",
+            "flg = 0\\l",
+            "if len(word) == 1:\\l",
+            "flg = 1\\l",
+            "for i in range(2, len(word)):\\l",
+            "if len(word) % i == 0:\\l",
+            "flg = 1\\l"
+        ],
+        [
+            "if flg == 0 or len(word) == 2:\\l",
+            "new_lst.append(word)\\l",
+            "for word in sentence.split():\\l",
+            "flg = 0\\l",
+            "if len(word) == 1:\\l",
+            "for i in range(2, len(word)):\\l",
+            "if len(word) % i == 0:\\l",
+            "flg = 1\\l"
+        ],
+        [
+            "flg = 1\\l",
+            "for i in range(2, len(word)):\\l",
+            "if len(word) % i == 0:\\l"
+        ],
+        [
+            "new_lst.append(word)\\l",
+            "for word in sentence.split():\\l",
+            "flg = 0\\l",
+            "if len(word) == 1:\\l",
+            "flg = 1\\l",
+            "for i in range(2, len(word)):\\l",
+            "if flg == 0 or len(word) == 2:\\l"
+        ],
+        [
+            "new_lst.append(word)\\l",
+            "for word in sentence.split():\\l",
+            "flg = 0\\l",
+            "if len(word) == 1:\\l",
+            "for i in range(2, len(word)):\\l",
+            "if flg == 0 or len(word) == 2:\\l"
+        ],
+        [
+            "from typing import *\\ldef words_in_sentence(sentence):...\\lwords_in_sentence('This is a test')\\l",
+            "words_in_sentence",
+            "new_lst = []\\l",
+            "for word in sentence.split():\\l",
+            "return ' '.join(new_lst)\\l"
+        ],
+        [
+            "from typing import *\\ldef words_in_sentence(sentence):...\\lwords_in_sentence('This is a test')\\l",
+            "words_in_sentence",
+            "new_lst = []\\l",
+            "for word in sentence.split():\\l",
+            "flg = 0\\l",
+            "if len(word) == 1:\\l",
+            "flg = 1\\l",
+            "for i in range(2, len(word)):\\l",
+            "if len(word) % i == 0:\\l",
+            "flg = 1\\l"
+        ],
+        [
+            "from typing import *\\ldef words_in_sentence(sentence):...\\lwords_in_sentence('This is a test')\\l",
+            "words_in_sentence",
+            "new_lst = []\\l",
+            "for word in sentence.split():\\l",
+            "flg = 0\\l",
+            "if len(word) == 1:\\l",
+            "for i in range(2, len(word)):\\l",
+            "if len(word) % i == 0:\\l",
+            "flg = 1\\l"
+        ],
+        [
+            "from typing import *\\ldef words_in_sentence(sentence):...\\lwords_in_sentence('This is a test')\\l",
+            "words_in_sentence",
+            "new_lst = []\\l",
+            "for word in sentence.split():\\l",
+            "flg = 0\\l",
+            "if len(word) == 1:\\l",
+            "flg = 1\\l",
+            "for i in range(2, len(word)):\\l",
+            "if flg == 0 or len(word) == 2:\\l",
+            "new_lst.append(word)\\l"
+        ],
+        [
+            "from typing import *\\ldef words_in_sentence(sentence):...\\lwords_in_sentence('This is a test')\\l",
+            "words_in_sentence",
+            "new_lst = []\\l",
+            "for word in sentence.split():\\l",
+            "flg = 0\\l",
+            "if len(word) == 1:\\l",
+            "for i in range(2, len(word)):\\l",
+            "if flg == 0 or len(word) == 2:\\l",
+            "new_lst.append(word)\\l"
+        ]
+    ],
+    "prime_paths_linenumbers": [
+        [
+            5,
+            6,
+            7,
+            8,
+            11,
+            4,
+            13
+        ],
+        [
+            5,
+            6,
+            7,
+            8,
+            11,
+            12,
+            4,
+            13
+        ],
+        [
+            5,
+            6,
+            8,
+            11,
+            4,
+            13
+        ],
+        [
+            5,
+            6,
+            8,
+            11,
+            12,
+            4,
+            13
+        ],
+        [
+            6,
+            7,
+            8,
+            11,
+            4,
+            5
+        ],
+        [
+            6,
+            7,
+            8,
+            11,
+            12,
+            4,
+            5
+        ],
+        [
+            6,
+            8,
+            11,
+            4,
+            5
+        ],
+        [
+            6,
+            8,
+            11,
+            12,
+            4,
+            5
+        ],
+        [
+            7,
+            8,
+            11,
+            4,
+            5,
+            6
+        ],
+        [
+            7,
+            8,
+            11,
+            12,
+            4,
+            5,
+            6
+        ],
+        [
+            9,
+            8,
+            11,
+            4,
+            13
+        ],
+        [
+            9,
+            8,
+            11,
+            12,
+            4,
+            13
+        ],
+        [
+            9,
+            10,
+            8,
+            11,
+            4,
+            13
+        ],
+        [
+            9,
+            10,
+            8,
+            11,
+            12,
+            4,
+            13
+        ],
+        [
+            9,
+            8,
+            11,
+            4,
+            5,
+            6,
+            7
+        ],
+        [
+            9,
+            8,
+            11,
+            12,
+            4,
+            5,
+            6,
+            7
+        ],
+        [
+            9,
+            10,
+            8,
+            11,
+            4,
+            5,
+            6,
+            7
+        ],
+        [
+            9,
+            10,
+            8,
+            11,
+            12,
+            4,
+            5,
+            6,
+            7
+        ],
+        [
+            11,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10
+        ],
+        [
+            11,
+            4,
+            5,
+            6,
+            8,
+            9,
+            10
+        ],
+        [
+            11,
+            12,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10
+        ],
+        [
+            11,
+            12,
+            4,
+            5,
+            6,
+            8,
+            9,
+            10
+        ],
+        [
+            10,
+            8,
+            9
+        ],
+        [
+            12,
+            4,
+            5,
+            6,
+            7,
+            8,
+            11
+        ],
+        [
+            12,
+            4,
+            5,
+            6,
+            8,
+            11
+        ],
+        [
+            1,
+            15,
+            3,
+            4,
+            13
+        ],
+        [
+            1,
+            15,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10
+        ],
+        [
+            1,
+            15,
+            3,
+            4,
+            5,
+            6,
+            8,
+            9,
+            10
+        ],
+        [
+            1,
+            15,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            11,
+            12
+        ],
+        [
+            1,
+            15,
+            3,
+            4,
+            5,
+            6,
+            8,
+            11,
+            12
+        ]
+    ],
+    "covered_statements_linenumbers": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        15
+    ],
+    "missing_statements_linenumbers": [],
+    "covered_prime_paths_linenumbers": [
+        [
+            5,
+            6,
+            7,
+            8,
+            11,
+            4,
+            13
+        ],
+        [
+            5,
+            6,
+            7,
+            8,
+            11,
+            12,
+            4,
+            13
+        ],
+        [
+            5,
+            6,
+            8,
+            11,
+            4,
+            13
+        ],
+        [
+            5,
+            6,
+            8,
+            11,
+            12,
+            4,
+            13
+        ],
+        [
+            6,
+            7,
+            8,
+            11,
+            4,
+            5
+        ],
+        [
+            6,
+            7,
+            8,
+            11,
+            12,
+            4,
+            5
+        ],
+        [
+            6,
+            8,
+            11,
+            4,
+            5
+        ],
+        [
+            6,
+            8,
+            11,
+            12,
+            4,
+            5
+        ],
+        [
+            7,
+            8,
+            11,
+            4,
+            5,
+            6
+        ],
+        [
+            7,
+            8,
+            11,
+            12,
+            4,
+            5,
+            6
+        ],
+        [
+            9,
+            8,
+            11,
+            4,
+            13
+        ],
+        [
+            9,
+            8,
+            11,
+            12,
+            4,
+            13
+        ],
+        [
+            9,
+            10,
+            8,
+            11,
+            4,
+            13
+        ],
+        [
+            9,
+            10,
+            8,
+            11,
+            12,
+            4,
+            13
+        ],
+        [
+            9,
+            8,
+            11,
+            4,
+            5,
+            6,
+            7
+        ],
+        [
+            9,
+            8,
+            11,
+            12,
+            4,
+            5,
+            6,
+            7
+        ],
+        [
+            9,
+            10,
+            8,
+            11,
+            4,
+            5,
+            6,
+            7
+        ],
+        [
+            9,
+            10,
+            8,
+            11,
+            12,
+            4,
+            5,
+            6,
+            7
+        ],
+        [
+            11,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10
+        ],
+        [
+            11,
+            4,
+            5,
+            6,
+            8,
+            9,
+            10
+        ],
+        [
+            11,
+            12,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10
+        ],
+        [
+            11,
+            12,
+            4,
+            5,
+            6,
+            8,
+            9,
+            10
+        ],
+        [
+            10,
+            8,
+            9
+        ],
+        [
+            12,
+            4,
+            5,
+            6,
+            7,
+            8,
+            11
+        ],
+        [
+            12,
+            4,
+            5,
+            6,
+            8,
+            11
+        ],
+        [
+            1,
+            15,
+            3,
+            4,
+            13
+        ],
+        [
+            1,
+            15,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10
+        ],
+        [
+            1,
+            15,
+            3,
+            4,
+            5,
+            6,
+            8,
+            9,
+            10
+        ],
+        [
+            1,
+            15,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            11,
+            12
+        ],
+        [
+            1,
+            15,
+            3,
+            4,
+            5,
+            6,
+            8,
+            11,
+            12
+        ]
+    ],
+    "missing_prime_paths_linenumbers": [],
+    "num_total_prime_paths": 30,
+    "num_covered_paths": 30,
+    "prime_path_coverage": 1.0,
+    "cfg_png": "/home/yang/share_repo/StaticAnalysis/cfglogshumaneval/HumanEval_143_CFG.png",
+    "cfg_dot": "/home/yang/share_repo/StaticAnalysis/cfglogshumaneval/HumanEval_143_CFG.dot"
+}

@@ -1,0 +1,236 @@
+{
+    "humaneval_id": "HumanEval_135__0",
+    "python_file": "HumanEval_135__0/main.py",
+    "input_file": "HumanEval_135__0/input.txt",
+    "prime_paths_nodes": [
+        [
+            "5",
+            "7",
+            "8",
+            "4",
+            "6"
+        ],
+        [
+            "5",
+            "8",
+            "4",
+            "6"
+        ],
+        [
+            "7",
+            "8",
+            "4",
+            "5"
+        ],
+        [
+            "8",
+            "4",
+            "5",
+            "7"
+        ],
+        [
+            "1",
+            "11",
+            "3",
+            "4",
+            "6"
+        ],
+        [
+            "1",
+            "11",
+            "3",
+            "4",
+            "5",
+            "7",
+            "8"
+        ],
+        [
+            "1",
+            "11",
+            "3",
+            "4",
+            "5",
+            "8"
+        ]
+    ],
+    "prime_paths_statements": [
+        [
+            "if arr[i] < arr[i - 1]:\\l",
+            "ind = i\\l",
+            "i += 1\\l",
+            "while i < len(arr):\\l",
+            "return ind\\l"
+        ],
+        [
+            "if arr[i] < arr[i - 1]:\\l",
+            "i += 1\\l",
+            "while i < len(arr):\\l",
+            "return ind\\l"
+        ],
+        [
+            "ind = i\\l",
+            "i += 1\\l",
+            "while i < len(arr):\\l",
+            "if arr[i] < arr[i - 1]:\\l"
+        ],
+        [
+            "i += 1\\l",
+            "while i < len(arr):\\l",
+            "if arr[i] < arr[i - 1]:\\l",
+            "ind = i\\l"
+        ],
+        [
+            "from typing import *\\ldef can_arrange(arr):...\\lcan_arrange([1, 2, 4, 5])\\l",
+            "can_arrange",
+            "ind = -1\\li = 1\\l",
+            "while i < len(arr):\\l",
+            "return ind\\l"
+        ],
+        [
+            "from typing import *\\ldef can_arrange(arr):...\\lcan_arrange([1, 2, 4, 5])\\l",
+            "can_arrange",
+            "ind = -1\\li = 1\\l",
+            "while i < len(arr):\\l",
+            "if arr[i] < arr[i - 1]:\\l",
+            "ind = i\\l",
+            "i += 1\\l"
+        ],
+        [
+            "from typing import *\\ldef can_arrange(arr):...\\lcan_arrange([1, 2, 4, 5])\\l",
+            "can_arrange",
+            "ind = -1\\li = 1\\l",
+            "while i < len(arr):\\l",
+            "if arr[i] < arr[i - 1]:\\l",
+            "i += 1\\l"
+        ]
+    ],
+    "prime_paths_linenumbers": [
+        [
+            8,
+            9,
+            10,
+            7,
+            11
+        ],
+        [
+            8,
+            10,
+            7,
+            11
+        ],
+        [
+            9,
+            10,
+            7,
+            8
+        ],
+        [
+            10,
+            7,
+            8,
+            9
+        ],
+        [
+            1,
+            13,
+            5,
+            6,
+            7,
+            11
+        ],
+        [
+            1,
+            13,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10
+        ],
+        [
+            1,
+            13,
+            5,
+            6,
+            7,
+            8,
+            10
+        ]
+    ],
+    "covered_statements_linenumbers": [
+        1,
+        4,
+        5,
+        6,
+        7,
+        8,
+        10,
+        11,
+        13
+    ],
+    "missing_statements_linenumbers": [
+        9
+    ],
+    "covered_prime_paths_linenumbers": [
+        [
+            8,
+            10,
+            7,
+            11
+        ],
+        [
+            1,
+            13,
+            5,
+            6,
+            7,
+            11
+        ],
+        [
+            1,
+            13,
+            5,
+            6,
+            7,
+            8,
+            10
+        ]
+    ],
+    "missing_prime_paths_linenumbers": [
+        [
+            8,
+            9,
+            10,
+            7,
+            11
+        ],
+        [
+            9,
+            10,
+            7,
+            8
+        ],
+        [
+            10,
+            7,
+            8,
+            9
+        ],
+        [
+            1,
+            13,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10
+        ]
+    ],
+    "num_total_prime_paths": 7,
+    "num_covered_paths": 3,
+    "prime_path_coverage": 0.43,
+    "cfg_png": "/home/yang/share_repo/StaticAnalysis/cfglogshumaneval/HumanEval_135__0_CFG.png",
+    "cfg_dot": "/home/yang/share_repo/StaticAnalysis/cfglogshumaneval/HumanEval_135__0_CFG.dot"
+}

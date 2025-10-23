@@ -1,0 +1,112 @@
+{
+    "humaneval_id": "HumanEval_145",
+    "python_file": "HumanEval_145/main.py",
+    "input_file": "HumanEval_145/input.txt",
+    "prime_paths_nodes": [
+        [
+            "5",
+            "6",
+            "7",
+            "8",
+            "11"
+        ],
+        [
+            "5",
+            "6",
+            "8",
+            "11"
+        ],
+        [
+            "1",
+            "17",
+            "3",
+            "14"
+        ]
+    ],
+    "prime_paths_statements": [
+        [
+            "neg = 1\\l",
+            "if n < 0:\\l",
+            "n, neg = -1 * n, -1\\l",
+            "n = [int(i) for i in str(n)]\\ln[0] = n[0] * neg\\l",
+            "return sum(n)\\l"
+        ],
+        [
+            "neg = 1\\l",
+            "if n < 0:\\l",
+            "n = [int(i) for i in str(n)]\\ln[0] = n[0] * neg\\l",
+            "return sum(n)\\l"
+        ],
+        [
+            "from typing import *\\ldef order_by_points(nums):...\\lorder_by_points([1, 11, -1, -11, -12])\\l",
+            "order_by_points",
+            "def digits_sum(n):...\\l",
+            "return sorted(nums, key=digits_sum)\\l"
+        ]
+    ],
+    "prime_paths_linenumbers": [
+        [
+            4,
+            5,
+            5,
+            6,
+            7,
+            8
+        ],
+        [
+            4,
+            5,
+            6,
+            7,
+            8
+        ],
+        [
+            1,
+            11,
+            3,
+            9
+        ]
+    ],
+    "covered_statements_linenumbers": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        11
+    ],
+    "missing_statements_linenumbers": [],
+    "covered_prime_paths_linenumbers": [
+        [
+            4,
+            5,
+            5,
+            6,
+            7,
+            8
+        ],
+        [
+            4,
+            5,
+            6,
+            7,
+            8
+        ],
+        [
+            1,
+            11,
+            3,
+            9
+        ]
+    ],
+    "missing_prime_paths_linenumbers": [],
+    "num_total_prime_paths": 3,
+    "num_covered_paths": 3,
+    "prime_path_coverage": 1.0,
+    "cfg_png": "/home/yang/share_repo/StaticAnalysis/cfglogshumaneval/HumanEval_145_CFG.png",
+    "cfg_dot": "/home/yang/share_repo/StaticAnalysis/cfglogshumaneval/HumanEval_145_CFG.dot"
+}

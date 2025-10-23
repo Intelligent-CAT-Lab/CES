@@ -1,0 +1,51 @@
+{
+    "humaneval_id": "HumanEval_90",
+    "python_file": "HumanEval_90/main.py",
+    "input_file": "HumanEval_90/input.txt",
+    "prime_paths_nodes": [
+        [
+            "1",
+            "9",
+            "3",
+            "6"
+        ]
+    ],
+    "prime_paths_statements": [
+        [
+            "from typing import *\\ldef next_smallest(lst):...\\lnext_smallest([1, 2, 3, 4, 5])\\l",
+            "next_smallest",
+            "lst = sorted(set(lst))\\l",
+            "return None if len(lst) < 2 else lst[1]\\l"
+        ]
+    ],
+    "prime_paths_linenumbers": [
+        [
+            1,
+            6,
+            3,
+            4
+        ]
+    ],
+    "covered_statements_linenumbers": [
+        1,
+        2,
+        3,
+        4,
+        6
+    ],
+    "missing_statements_linenumbers": [],
+    "covered_prime_paths_linenumbers": [
+        [
+            1,
+            6,
+            3,
+            4
+        ]
+    ],
+    "missing_prime_paths_linenumbers": [],
+    "num_total_prime_paths": 1,
+    "num_covered_paths": 1,
+    "prime_path_coverage": 1.0,
+    "cfg_png": "/home/yang/share_repo/StaticAnalysis/cfglogshumaneval/HumanEval_90_CFG.png",
+    "cfg_dot": "/home/yang/share_repo/StaticAnalysis/cfglogshumaneval/HumanEval_90_CFG.dot"
+}

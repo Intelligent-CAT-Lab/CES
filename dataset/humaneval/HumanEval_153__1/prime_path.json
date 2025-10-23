@@ -1,0 +1,244 @@
+{
+    "humaneval_id": "HumanEval_153__1",
+    "python_file": "HumanEval_153__1/main.py",
+    "input_file": "HumanEval_153__1/input.txt",
+    "prime_paths_nodes": [
+        [
+            "11",
+            "19",
+            "10",
+            "12",
+            "22"
+        ],
+        [
+            "11",
+            "19",
+            "20",
+            "10",
+            "12",
+            "22"
+        ],
+        [
+            "19",
+            "10",
+            "11"
+        ],
+        [
+            "19",
+            "20",
+            "10",
+            "11"
+        ],
+        [
+            "20",
+            "10",
+            "11",
+            "19"
+        ],
+        [
+            "1",
+            "25",
+            "3",
+            "10",
+            "11",
+            "19",
+            "20"
+        ],
+        [
+            "1",
+            "25",
+            "3",
+            "10",
+            "12",
+            "22"
+        ]
+    ],
+    "prime_paths_statements": [
+        [
+            "val = len([x for x in s if x.isalpha() and x.isupper()]) - len([x for x in\\l    s if x.isalpha() and x.islower()])\\l",
+            "if val > my_val:\\l",
+            "for s in extensions:\\l",
+            "ans = class_name + '.' + strong\\l",
+            "return ans\\l"
+        ],
+        [
+            "val = len([x for x in s if x.isalpha() and x.isupper()]) - len([x for x in\\l    s if x.isalpha() and x.islower()])\\l",
+            "if val > my_val:\\l",
+            "strong = s\\lmy_val = val\\l",
+            "for s in extensions:\\l",
+            "ans = class_name + '.' + strong\\l",
+            "return ans\\l"
+        ],
+        [
+            "if val > my_val:\\l",
+            "for s in extensions:\\l",
+            "val = len([x for x in s if x.isalpha() and x.isupper()]) - len([x for x in\\l    s if x.isalpha() and x.islower()])\\l"
+        ],
+        [
+            "if val > my_val:\\l",
+            "strong = s\\lmy_val = val\\l",
+            "for s in extensions:\\l",
+            "val = len([x for x in s if x.isalpha() and x.isupper()]) - len([x for x in\\l    s if x.isalpha() and x.islower()])\\l"
+        ],
+        [
+            "strong = s\\lmy_val = val\\l",
+            "for s in extensions:\\l",
+            "val = len([x for x in s if x.isalpha() and x.isupper()]) - len([x for x in\\l    s if x.isalpha() and x.islower()])\\l",
+            "if val > my_val:\\l"
+        ],
+        [
+            "from typing import *\\ldef Strongest_Extension(class_name, extensions):...\\lStrongest_Extension('finNNalLLly', ['Die', 'NowW', 'Wow', 'WoW'])\\l",
+            "Strongest_Extension",
+            "strong = extensions[0]\\lmy_val = len([x for x in extensions[0] if x.isalpha() and x.isupper()]) - len([\\l    x for x in extensions[0] if x.isalpha() and x.islower()])\\l",
+            "for s in extensions:\\l",
+            "val = len([x for x in s if x.isalpha() and x.isupper()]) - len([x for x in\\l    s if x.isalpha() and x.islower()])\\l",
+            "if val > my_val:\\l",
+            "strong = s\\lmy_val = val\\l"
+        ],
+        [
+            "from typing import *\\ldef Strongest_Extension(class_name, extensions):...\\lStrongest_Extension('finNNalLLly', ['Die', 'NowW', 'Wow', 'WoW'])\\l",
+            "Strongest_Extension",
+            "strong = extensions[0]\\lmy_val = len([x for x in extensions[0] if x.isalpha() and x.isupper()]) - len([\\l    x for x in extensions[0] if x.isalpha() and x.islower()])\\l",
+            "for s in extensions:\\l",
+            "ans = class_name + '.' + strong\\l",
+            "return ans\\l"
+        ]
+    ],
+    "prime_paths_linenumbers": [
+        [
+            9,
+            11,
+            8,
+            15,
+            16
+        ],
+        [
+            9,
+            11,
+            12,
+            13,
+            8,
+            15,
+            16
+        ],
+        [
+            11,
+            8,
+            9
+        ],
+        [
+            11,
+            12,
+            13,
+            8,
+            9
+        ],
+        [
+            12,
+            13,
+            8,
+            9,
+            11
+        ],
+        [
+            1,
+            18,
+            5,
+            6,
+            8,
+            9,
+            11,
+            12,
+            13
+        ],
+        [
+            1,
+            18,
+            5,
+            6,
+            8,
+            15,
+            16
+        ]
+    ],
+    "covered_statements_linenumbers": [
+        1,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        15,
+        16,
+        18
+    ],
+    "missing_statements_linenumbers": [],
+    "covered_prime_paths_linenumbers": [
+        [
+            9,
+            11,
+            8,
+            15,
+            16
+        ],
+        [
+            9,
+            11,
+            12,
+            13,
+            8,
+            15,
+            16
+        ],
+        [
+            11,
+            8,
+            9
+        ],
+        [
+            11,
+            12,
+            13,
+            8,
+            9
+        ],
+        [
+            12,
+            13,
+            8,
+            9,
+            11
+        ],
+        [
+            1,
+            18,
+            5,
+            6,
+            8,
+            9,
+            11,
+            12,
+            13
+        ],
+        [
+            1,
+            18,
+            5,
+            6,
+            8,
+            15,
+            16
+        ]
+    ],
+    "missing_prime_paths_linenumbers": [],
+    "num_total_prime_paths": 7,
+    "num_covered_paths": 7,
+    "prime_path_coverage": 1.0,
+    "cfg_png": "/home/yang/share_repo/StaticAnalysis/cfglogshumaneval/HumanEval_153__1_CFG.png",
+    "cfg_dot": "/home/yang/share_repo/StaticAnalysis/cfglogshumaneval/HumanEval_153__1_CFG.dot"
+}

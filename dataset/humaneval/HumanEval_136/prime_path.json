@@ -1,0 +1,54 @@
+{
+    "humaneval_id": "HumanEval_136",
+    "python_file": "HumanEval_136/main.py",
+    "input_file": "HumanEval_136/input.txt",
+    "prime_paths_nodes": [
+        [
+            "1",
+            "11",
+            "3",
+            "8"
+        ]
+    ],
+    "prime_paths_statements": [
+        [
+            "from typing import *\\ldef largest_smallest_integers(lst):...\\llargest_smallest_integers([2, 4, 1, 3, 5, 7])\\l",
+            "largest_smallest_integers",
+            "smallest = list(filter(lambda x: x < 0, lst))\\llargest = list(filter(lambda x: x > 0, lst))\\l",
+            "return max(smallest) if smallest else None, min(largest) if largest else None\\l"
+        ]
+    ],
+    "prime_paths_linenumbers": [
+        [
+            1,
+            7,
+            3,
+            4,
+            5
+        ]
+    ],
+    "covered_statements_linenumbers": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        7
+    ],
+    "missing_statements_linenumbers": [],
+    "covered_prime_paths_linenumbers": [
+        [
+            1,
+            7,
+            3,
+            4,
+            5
+        ]
+    ],
+    "missing_prime_paths_linenumbers": [],
+    "num_total_prime_paths": 1,
+    "num_covered_paths": 1,
+    "prime_path_coverage": 1.0,
+    "cfg_png": "/home/yang/share_repo/StaticAnalysis/cfglogshumaneval/HumanEval_136_CFG.png",
+    "cfg_dot": "/home/yang/share_repo/StaticAnalysis/cfglogshumaneval/HumanEval_136_CFG.dot"
+}

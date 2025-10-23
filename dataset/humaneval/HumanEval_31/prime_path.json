@@ -1,0 +1,137 @@
+{
+    "humaneval_id": "HumanEval_31",
+    "python_file": "HumanEval_31/main.py",
+    "input_file": "HumanEval_31/input.txt",
+    "prime_paths_nodes": [
+        [
+            "8",
+            "5",
+            "9"
+        ],
+        [
+            "1",
+            "15",
+            "3",
+            "4"
+        ],
+        [
+            "1",
+            "15",
+            "3",
+            "5",
+            "9"
+        ],
+        [
+            "1",
+            "15",
+            "3",
+            "5",
+            "8",
+            "10"
+        ]
+    ],
+    "prime_paths_statements": [
+        [
+            "if n % k == 0:\\l",
+            "for k in range(2, n - 1):\\l",
+            "return True\\l"
+        ],
+        [
+            "from typing import *\\ldef is_prime(n):...\\lis_prime(6)\\l",
+            "is_prime",
+            "if n < 2:\\l",
+            "return False\\l"
+        ],
+        [
+            "from typing import *\\ldef is_prime(n):...\\lis_prime(6)\\l",
+            "is_prime",
+            "if n < 2:\\l",
+            "for k in range(2, n - 1):\\l",
+            "return True\\l"
+        ],
+        [
+            "from typing import *\\ldef is_prime(n):...\\lis_prime(6)\\l",
+            "is_prime",
+            "if n < 2:\\l",
+            "for k in range(2, n - 1):\\l",
+            "if n % k == 0:\\l",
+            "return False\\l"
+        ]
+    ],
+    "prime_paths_linenumbers": [
+        [
+            6,
+            5,
+            8
+        ],
+        [
+            1,
+            10,
+            3,
+            4
+        ],
+        [
+            1,
+            10,
+            3,
+            5,
+            8
+        ],
+        [
+            1,
+            10,
+            3,
+            5,
+            6,
+            7
+        ]
+    ],
+    "covered_statements_linenumbers": [
+        1,
+        2,
+        3,
+        5,
+        6,
+        7,
+        10
+    ],
+    "missing_statements_linenumbers": [
+        4,
+        8
+    ],
+    "covered_prime_paths_linenumbers": [
+        [
+            1,
+            10,
+            3,
+            5,
+            6,
+            7
+        ]
+    ],
+    "missing_prime_paths_linenumbers": [
+        [
+            6,
+            5,
+            8
+        ],
+        [
+            1,
+            10,
+            3,
+            4
+        ],
+        [
+            1,
+            10,
+            3,
+            5,
+            8
+        ]
+    ],
+    "num_total_prime_paths": 4,
+    "num_covered_paths": 1,
+    "prime_path_coverage": 0.25,
+    "cfg_png": "/home/yang/share_repo/StaticAnalysis/cfglogshumaneval/HumanEval_31_CFG.png",
+    "cfg_dot": "/home/yang/share_repo/StaticAnalysis/cfglogshumaneval/HumanEval_31_CFG.dot"
+}

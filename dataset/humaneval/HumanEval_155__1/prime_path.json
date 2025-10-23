@@ -1,0 +1,226 @@
+{
+    "humaneval_id": "HumanEval_155__1",
+    "python_file": "HumanEval_155__1/main.py",
+    "input_file": "HumanEval_155__1/input.txt",
+    "prime_paths_nodes": [
+        [
+            "7",
+            "10",
+            "4",
+            "8"
+        ],
+        [
+            "7",
+            "12",
+            "4",
+            "8"
+        ],
+        [
+            "10",
+            "4",
+            "7",
+            "12"
+        ],
+        [
+            "12",
+            "4",
+            "7",
+            "10"
+        ],
+        [
+            "1",
+            "15",
+            "3",
+            "4",
+            "8"
+        ],
+        [
+            "1",
+            "15",
+            "3",
+            "4",
+            "7",
+            "10"
+        ],
+        [
+            "1",
+            "15",
+            "3",
+            "4",
+            "7",
+            "12"
+        ]
+    ],
+    "prime_paths_statements": [
+        [
+            "if int(i) % 2 == 0:\\l",
+            "even_count += 1\\l",
+            "for i in str(abs(num)):\\l",
+            "return even_count, odd_count\\l"
+        ],
+        [
+            "if int(i) % 2 == 0:\\l",
+            "odd_count += 1\\l",
+            "for i in str(abs(num)):\\l",
+            "return even_count, odd_count\\l"
+        ],
+        [
+            "even_count += 1\\l",
+            "for i in str(abs(num)):\\l",
+            "if int(i) % 2 == 0:\\l",
+            "odd_count += 1\\l"
+        ],
+        [
+            "odd_count += 1\\l",
+            "for i in str(abs(num)):\\l",
+            "if int(i) % 2 == 0:\\l",
+            "even_count += 1\\l"
+        ],
+        [
+            "from typing import *\\ldef even_odd_count(num):...\\leven_odd_count(-78)\\l",
+            "even_odd_count",
+            "even_count = 0\\lodd_count = 0\\l",
+            "for i in str(abs(num)):\\l",
+            "return even_count, odd_count\\l"
+        ],
+        [
+            "from typing import *\\ldef even_odd_count(num):...\\leven_odd_count(-78)\\l",
+            "even_odd_count",
+            "even_count = 0\\lodd_count = 0\\l",
+            "for i in str(abs(num)):\\l",
+            "if int(i) % 2 == 0:\\l",
+            "even_count += 1\\l"
+        ],
+        [
+            "from typing import *\\ldef even_odd_count(num):...\\leven_odd_count(-78)\\l",
+            "even_odd_count",
+            "even_count = 0\\lodd_count = 0\\l",
+            "for i in str(abs(num)):\\l",
+            "if int(i) % 2 == 0:\\l",
+            "odd_count += 1\\l"
+        ]
+    ],
+    "prime_paths_linenumbers": [
+        [
+            8,
+            9,
+            7,
+            12
+        ],
+        [
+            8,
+            11,
+            7,
+            12
+        ],
+        [
+            9,
+            7,
+            8,
+            11
+        ],
+        [
+            11,
+            7,
+            8,
+            9
+        ],
+        [
+            1,
+            14,
+            5,
+            6,
+            7,
+            12
+        ],
+        [
+            1,
+            14,
+            5,
+            6,
+            7,
+            8,
+            9
+        ],
+        [
+            1,
+            14,
+            5,
+            6,
+            7,
+            8,
+            11
+        ]
+    ],
+    "covered_statements_linenumbers": [
+        1,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        11,
+        12,
+        14
+    ],
+    "missing_statements_linenumbers": [],
+    "covered_prime_paths_linenumbers": [
+        [
+            8,
+            9,
+            7,
+            12
+        ],
+        [
+            8,
+            11,
+            7,
+            12
+        ],
+        [
+            9,
+            7,
+            8,
+            11
+        ],
+        [
+            11,
+            7,
+            8,
+            9
+        ],
+        [
+            1,
+            14,
+            5,
+            6,
+            7,
+            12
+        ],
+        [
+            1,
+            14,
+            5,
+            6,
+            7,
+            8,
+            9
+        ],
+        [
+            1,
+            14,
+            5,
+            6,
+            7,
+            8,
+            11
+        ]
+    ],
+    "missing_prime_paths_linenumbers": [],
+    "num_total_prime_paths": 7,
+    "num_covered_paths": 7,
+    "prime_path_coverage": 1.0,
+    "cfg_png": "/home/yang/share_repo/StaticAnalysis/cfglogshumaneval/HumanEval_155__1_CFG.png",
+    "cfg_dot": "/home/yang/share_repo/StaticAnalysis/cfglogshumaneval/HumanEval_155__1_CFG.dot"
+}

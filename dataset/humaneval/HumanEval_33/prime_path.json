@@ -1,0 +1,54 @@
+{
+    "humaneval_id": "HumanEval_33",
+    "python_file": "HumanEval_33/main.py",
+    "input_file": "HumanEval_33/input.txt",
+    "prime_paths_nodes": [
+        [
+            "1",
+            "9",
+            "3",
+            "6"
+        ]
+    ],
+    "prime_paths_statements": [
+        [
+            "from typing import *\\ldef sort_third(l: list):...\\lsort_third([1, 2, 3])\\l",
+            "sort_third",
+            "l = list(l)\\ll[::3] = sorted(l[::3])\\l",
+            "return l\\l"
+        ]
+    ],
+    "prime_paths_linenumbers": [
+        [
+            1,
+            7,
+            3,
+            4,
+            5
+        ]
+    ],
+    "covered_statements_linenumbers": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        7
+    ],
+    "missing_statements_linenumbers": [],
+    "covered_prime_paths_linenumbers": [
+        [
+            1,
+            7,
+            3,
+            4,
+            5
+        ]
+    ],
+    "missing_prime_paths_linenumbers": [],
+    "num_total_prime_paths": 1,
+    "num_covered_paths": 1,
+    "prime_path_coverage": 1.0,
+    "cfg_png": "/home/yang/share_repo/StaticAnalysis/cfglogshumaneval/HumanEval_33_CFG.png",
+    "cfg_dot": "/home/yang/share_repo/StaticAnalysis/cfglogshumaneval/HumanEval_33_CFG.dot"
+}

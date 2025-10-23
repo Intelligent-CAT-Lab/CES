@@ -1,0 +1,237 @@
+{
+    "humaneval_id": "HumanEval_6__0",
+    "python_file": "HumanEval_6__0/main.py",
+    "input_file": "HumanEval_6__0/input.txt",
+    "prime_paths_nodes": [
+        [
+            "5",
+            "6",
+            "8"
+        ],
+        [
+            "5",
+            "6",
+            "7",
+            "9"
+        ],
+        [
+            "5",
+            "6",
+            "7",
+            "11"
+        ],
+        [
+            "7",
+            "9",
+            "6",
+            "8"
+        ],
+        [
+            "7",
+            "11",
+            "6",
+            "8"
+        ],
+        [
+            "9",
+            "6",
+            "7",
+            "11"
+        ],
+        [
+            "11",
+            "6",
+            "7",
+            "9"
+        ],
+        [
+            "1",
+            "18",
+            "3",
+            "15"
+        ]
+    ],
+    "prime_paths_statements": [
+        [
+            "depth = 0\\lmax_depth = 0\\l",
+            "for c in s:\\l",
+            "return max_depth\\l"
+        ],
+        [
+            "depth = 0\\lmax_depth = 0\\l",
+            "for c in s:\\l",
+            "if c == '(':\\l",
+            "depth += 1\\lmax_depth = max(depth, max_depth)\\l"
+        ],
+        [
+            "depth = 0\\lmax_depth = 0\\l",
+            "for c in s:\\l",
+            "if c == '(':\\l",
+            "depth -= 1\\l"
+        ],
+        [
+            "if c == '(':\\l",
+            "depth += 1\\lmax_depth = max(depth, max_depth)\\l",
+            "for c in s:\\l",
+            "return max_depth\\l"
+        ],
+        [
+            "if c == '(':\\l",
+            "depth -= 1\\l",
+            "for c in s:\\l",
+            "return max_depth\\l"
+        ],
+        [
+            "depth += 1\\lmax_depth = max(depth, max_depth)\\l",
+            "for c in s:\\l",
+            "if c == '(':\\l",
+            "depth -= 1\\l"
+        ],
+        [
+            "depth -= 1\\l",
+            "for c in s:\\l",
+            "if c == '(':\\l",
+            "depth += 1\\lmax_depth = max(depth, max_depth)\\l"
+        ],
+        [
+            "from typing import *\\ldef parse_nested_parens(paren_string: str) ->List[int]:...\\lparse_nested_parens('((()))')\\l",
+            "parse_nested_parens",
+            "def parse_paren_group(s):...\\l",
+            "return [parse_paren_group(x) for x in paren_string.split(' ') if x]\\l"
+        ]
+    ],
+    "prime_paths_linenumbers": [
+        [
+            6,
+            7,
+            8,
+            15
+        ],
+        [
+            6,
+            7,
+            8,
+            9,
+            10,
+            11
+        ],
+        [
+            6,
+            7,
+            8,
+            9,
+            13
+        ],
+        [
+            9,
+            10,
+            11,
+            8,
+            15
+        ],
+        [
+            9,
+            13,
+            8,
+            15
+        ],
+        [
+            10,
+            11,
+            8,
+            9,
+            13
+        ],
+        [
+            13,
+            8,
+            9,
+            10,
+            11
+        ],
+        [
+            1,
+            19,
+            5,
+            17
+        ]
+    ],
+    "covered_statements_linenumbers": [
+        1,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        13,
+        15,
+        17,
+        19
+    ],
+    "missing_statements_linenumbers": [],
+    "covered_prime_paths_linenumbers": [
+        [
+            6,
+            7,
+            8,
+            15
+        ],
+        [
+            6,
+            7,
+            8,
+            9,
+            10,
+            11
+        ],
+        [
+            6,
+            7,
+            8,
+            9,
+            13
+        ],
+        [
+            9,
+            10,
+            11,
+            8,
+            15
+        ],
+        [
+            9,
+            13,
+            8,
+            15
+        ],
+        [
+            10,
+            11,
+            8,
+            9,
+            13
+        ],
+        [
+            13,
+            8,
+            9,
+            10,
+            11
+        ],
+        [
+            1,
+            19,
+            5,
+            17
+        ]
+    ],
+    "missing_prime_paths_linenumbers": [],
+    "num_total_prime_paths": 8,
+    "num_covered_paths": 8,
+    "prime_path_coverage": 1.0,
+    "cfg_png": "/home/yang/share_repo/StaticAnalysis/cfglogshumaneval/HumanEval_6__0_CFG.png",
+    "cfg_dot": "/home/yang/share_repo/StaticAnalysis/cfglogshumaneval/HumanEval_6__0_CFG.dot"
+}

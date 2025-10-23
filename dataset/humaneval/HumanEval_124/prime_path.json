@@ -1,0 +1,59 @@
+{
+    "humaneval_id": "HumanEval_124",
+    "python_file": "HumanEval_124/main.py",
+    "input_file": "HumanEval_124/input.txt",
+    "prime_paths_nodes": [
+        [
+            "1",
+            "28",
+            "3"
+        ]
+    ],
+    "prime_paths_statements": [
+        [
+            "from typing import *\\ldef valid_date(date):...\\lvalid_date('03-11-2000')\\l",
+            "valid_date",
+            ""
+        ]
+    ],
+    "prime_paths_linenumbers": [
+        [
+            1,
+            20
+        ]
+    ],
+    "covered_statements_linenumbers": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        9,
+        11,
+        13,
+        18,
+        20
+    ],
+    "missing_statements_linenumbers": [
+        8,
+        10,
+        12,
+        14,
+        15,
+        16
+    ],
+    "covered_prime_paths_linenumbers": [
+        [
+            1,
+            20
+        ]
+    ],
+    "missing_prime_paths_linenumbers": [],
+    "num_total_prime_paths": 1,
+    "num_covered_paths": 1,
+    "prime_path_coverage": 1.0,
+    "cfg_png": "/home/yang/share_repo/StaticAnalysis/cfglogshumaneval/HumanEval_124_CFG.png",
+    "cfg_dot": "/home/yang/share_repo/StaticAnalysis/cfglogshumaneval/HumanEval_124_CFG.dot"
+}

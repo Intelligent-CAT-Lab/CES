@@ -1,0 +1,169 @@
+{
+    "humaneval_id": "HumanEval_105__0",
+    "python_file": "HumanEval_105__0/main.py",
+    "input_file": "HumanEval_105__0/input.txt",
+    "prime_paths_nodes": [
+        [
+            "8",
+            "5",
+            "7"
+        ],
+        [
+            "10",
+            "5",
+            "7"
+        ],
+        [
+            "10",
+            "5",
+            "8"
+        ],
+        [
+            "1",
+            "14",
+            "3",
+            "5",
+            "7"
+        ],
+        [
+            "1",
+            "14",
+            "3",
+            "5",
+            "8"
+        ]
+    ],
+    "prime_paths_statements": [
+        [
+            "new_arr.append(dic[var])\\l",
+            "for var in sorted_arr:\\l",
+            "return new_arr\\l"
+        ],
+        [
+            "",
+            "for var in sorted_arr:\\l",
+            "return new_arr\\l"
+        ],
+        [
+            "",
+            "for var in sorted_arr:\\l",
+            "new_arr.append(dic[var])\\l"
+        ],
+        [
+            "from typing import *\\ldef by_length(arr):...\\lby_length([1, -1, 3, 2])\\l",
+            "by_length",
+            "dic = {(1): 'One', (2): 'Two', (3): 'Three', (4): 'Four', (5): 'Five', (6):\\l    'Six', (7): 'Seven', (8): 'Eight', (9): 'Nine'}\\lsorted_arr = sorted(arr, reverse=True)\\lnew_arr = []\\l",
+            "for var in sorted_arr:\\l",
+            "return new_arr\\l"
+        ],
+        [
+            "from typing import *\\ldef by_length(arr):...\\lby_length([1, -1, 3, 2])\\l",
+            "by_length",
+            "dic = {(1): 'One', (2): 'Two', (3): 'Three', (4): 'Four', (5): 'Five', (6):\\l    'Six', (7): 'Seven', (8): 'Eight', (9): 'Nine'}\\lsorted_arr = sorted(arr, reverse=True)\\lnew_arr = []\\l",
+            "for var in sorted_arr:\\l",
+            "new_arr.append(dic[var])\\l"
+        ]
+    ],
+    "prime_paths_linenumbers": [
+        [
+            19,
+            20,
+            18,
+            23
+        ],
+        [
+            18,
+            23
+        ],
+        [
+            18,
+            19,
+            20
+        ],
+        [
+            1,
+            25,
+            5,
+            16,
+            17,
+            18,
+            23
+        ],
+        [
+            1,
+            25,
+            5,
+            16,
+            17,
+            18,
+            19,
+            20
+        ]
+    ],
+    "covered_statements_linenumbers": [
+        1,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        25
+    ],
+    "missing_statements_linenumbers": [],
+    "covered_prime_paths_linenumbers": [
+        [
+            19,
+            20,
+            18,
+            23
+        ],
+        [
+            18,
+            23
+        ],
+        [
+            18,
+            19,
+            20
+        ],
+        [
+            1,
+            25,
+            5,
+            16,
+            17,
+            18,
+            23
+        ],
+        [
+            1,
+            25,
+            5,
+            16,
+            17,
+            18,
+            19,
+            20
+        ]
+    ],
+    "missing_prime_paths_linenumbers": [],
+    "num_total_prime_paths": 5,
+    "num_covered_paths": 5,
+    "prime_path_coverage": 1.0,
+    "cfg_png": "/home/yang/share_repo/StaticAnalysis/cfglogshumaneval/HumanEval_105__0_CFG.png",
+    "cfg_dot": "/home/yang/share_repo/StaticAnalysis/cfglogshumaneval/HumanEval_105__0_CFG.dot"
+}

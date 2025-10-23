@@ -1,0 +1,310 @@
+{
+    "humaneval_id": "HumanEval_36__1",
+    "python_file": "HumanEval_36__1/main.py",
+    "input_file": "HumanEval_36__1/input.txt",
+    "prime_paths_nodes": [
+        [
+            "6",
+            "4",
+            "7",
+            "14",
+            "15"
+        ],
+        [
+            "6",
+            "8",
+            "4",
+            "7",
+            "14",
+            "15"
+        ],
+        [
+            "6",
+            "4",
+            "7",
+            "14",
+            "16"
+        ],
+        [
+            "6",
+            "8",
+            "4",
+            "7",
+            "14",
+            "16"
+        ],
+        [
+            "8",
+            "4",
+            "6"
+        ],
+        [
+            "15",
+            "14",
+            "16"
+        ],
+        [
+            "1",
+            "19",
+            "3",
+            "4",
+            "6",
+            "8"
+        ],
+        [
+            "1",
+            "19",
+            "3",
+            "4",
+            "7",
+            "14",
+            "15"
+        ],
+        [
+            "1",
+            "19",
+            "3",
+            "4",
+            "7",
+            "14",
+            "16"
+        ]
+    ],
+    "prime_paths_statements": [
+        [
+            "if i % 11 == 0 or i % 13 == 0:\\l",
+            "for i in range(n):\\l",
+            "s = ''.join(list(map(str, ns)))\\lans = 0\\l",
+            "for c in s:\\l",
+            "ans += c == '7'\\l"
+        ],
+        [
+            "if i % 11 == 0 or i % 13 == 0:\\l",
+            "ns.append(i)\\l",
+            "for i in range(n):\\l",
+            "s = ''.join(list(map(str, ns)))\\lans = 0\\l",
+            "for c in s:\\l",
+            "ans += c == '7'\\l"
+        ],
+        [
+            "if i % 11 == 0 or i % 13 == 0:\\l",
+            "for i in range(n):\\l",
+            "s = ''.join(list(map(str, ns)))\\lans = 0\\l",
+            "for c in s:\\l",
+            "return ans\\l"
+        ],
+        [
+            "if i % 11 == 0 or i % 13 == 0:\\l",
+            "ns.append(i)\\l",
+            "for i in range(n):\\l",
+            "s = ''.join(list(map(str, ns)))\\lans = 0\\l",
+            "for c in s:\\l",
+            "return ans\\l"
+        ],
+        [
+            "ns.append(i)\\l",
+            "for i in range(n):\\l",
+            "if i % 11 == 0 or i % 13 == 0:\\l"
+        ],
+        [
+            "ans += c == '7'\\l",
+            "for c in s:\\l",
+            "return ans\\l"
+        ],
+        [
+            "from typing import *\\ldef fizz_buzz(n: int):...\\lfizz_buzz(200)\\l",
+            "fizz_buzz",
+            "ns = []\\l",
+            "for i in range(n):\\l",
+            "if i % 11 == 0 or i % 13 == 0:\\l",
+            "ns.append(i)\\l"
+        ],
+        [
+            "from typing import *\\ldef fizz_buzz(n: int):...\\lfizz_buzz(200)\\l",
+            "fizz_buzz",
+            "ns = []\\l",
+            "for i in range(n):\\l",
+            "s = ''.join(list(map(str, ns)))\\lans = 0\\l",
+            "for c in s:\\l",
+            "ans += c == '7'\\l"
+        ],
+        [
+            "from typing import *\\ldef fizz_buzz(n: int):...\\lfizz_buzz(200)\\l",
+            "fizz_buzz",
+            "ns = []\\l",
+            "for i in range(n):\\l",
+            "s = ''.join(list(map(str, ns)))\\lans = 0\\l",
+            "for c in s:\\l",
+            "return ans\\l"
+        ]
+    ],
+    "prime_paths_linenumbers": [
+        [
+            7,
+            6,
+            9,
+            10,
+            11,
+            12
+        ],
+        [
+            7,
+            8,
+            6,
+            9,
+            10,
+            11,
+            12
+        ],
+        [
+            7,
+            6,
+            9,
+            10,
+            11,
+            13
+        ],
+        [
+            7,
+            8,
+            6,
+            9,
+            10,
+            11,
+            13
+        ],
+        [
+            8,
+            6,
+            7
+        ],
+        [
+            12,
+            11,
+            13
+        ],
+        [
+            1,
+            15,
+            5,
+            6,
+            7,
+            8
+        ],
+        [
+            1,
+            15,
+            5,
+            6,
+            9,
+            10,
+            11,
+            12
+        ],
+        [
+            1,
+            15,
+            5,
+            6,
+            9,
+            10,
+            11,
+            13
+        ]
+    ],
+    "covered_statements_linenumbers": [
+        1,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        15
+    ],
+    "missing_statements_linenumbers": [],
+    "covered_prime_paths_linenumbers": [
+        [
+            7,
+            6,
+            9,
+            10,
+            11,
+            12
+        ],
+        [
+            7,
+            8,
+            6,
+            9,
+            10,
+            11,
+            12
+        ],
+        [
+            7,
+            6,
+            9,
+            10,
+            11,
+            13
+        ],
+        [
+            7,
+            8,
+            6,
+            9,
+            10,
+            11,
+            13
+        ],
+        [
+            8,
+            6,
+            7
+        ],
+        [
+            12,
+            11,
+            13
+        ],
+        [
+            1,
+            15,
+            5,
+            6,
+            7,
+            8
+        ],
+        [
+            1,
+            15,
+            5,
+            6,
+            9,
+            10,
+            11,
+            12
+        ],
+        [
+            1,
+            15,
+            5,
+            6,
+            9,
+            10,
+            11,
+            13
+        ]
+    ],
+    "missing_prime_paths_linenumbers": [],
+    "num_total_prime_paths": 9,
+    "num_covered_paths": 9,
+    "prime_path_coverage": 1.0,
+    "cfg_png": "/home/yang/share_repo/StaticAnalysis/cfglogshumaneval/HumanEval_36__1_CFG.png",
+    "cfg_dot": "/home/yang/share_repo/StaticAnalysis/cfglogshumaneval/HumanEval_36__1_CFG.dot"
+}

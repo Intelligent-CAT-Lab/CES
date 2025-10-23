@@ -1,0 +1,46 @@
+{
+    "humaneval_id": "HumanEval_121",
+    "python_file": "HumanEval_121/main.py",
+    "input_file": "HumanEval_121/input.txt",
+    "prime_paths_nodes": [
+        [
+            "1",
+            "6",
+            "3"
+        ]
+    ],
+    "prime_paths_statements": [
+        [
+            "from typing import *\\ldef solution(lst):...\\lsolution([5, 8, 7, 1])\\l",
+            "solution",
+            "return sum([x for idx, x in enumerate(lst) if idx % 2 == 0 and x % 2 == 1])\\l"
+        ]
+    ],
+    "prime_paths_linenumbers": [
+        [
+            1,
+            5,
+            3
+        ]
+    ],
+    "covered_statements_linenumbers": [
+        1,
+        2,
+        3,
+        5
+    ],
+    "missing_statements_linenumbers": [],
+    "covered_prime_paths_linenumbers": [
+        [
+            1,
+            5,
+            3
+        ]
+    ],
+    "missing_prime_paths_linenumbers": [],
+    "num_total_prime_paths": 1,
+    "num_covered_paths": 1,
+    "prime_path_coverage": 1.0,
+    "cfg_png": "/home/yang/share_repo/StaticAnalysis/cfglogshumaneval/HumanEval_121_CFG.png",
+    "cfg_dot": "/home/yang/share_repo/StaticAnalysis/cfglogshumaneval/HumanEval_121_CFG.dot"
+}

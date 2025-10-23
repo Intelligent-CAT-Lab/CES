@@ -1,0 +1,272 @@
+{
+    "humaneval_id": "HumanEval_101",
+    "python_file": "HumanEval_101/main.py",
+    "input_file": "HumanEval_101/input.txt",
+    "prime_paths_nodes": [
+        [
+            "8",
+            "10",
+            "7",
+            "9",
+            "16"
+        ],
+        [
+            "8",
+            "12",
+            "7",
+            "9",
+            "16"
+        ],
+        [
+            "10",
+            "7",
+            "8",
+            "12"
+        ],
+        [
+            "12",
+            "7",
+            "8",
+            "10"
+        ],
+        [
+            "1",
+            "19",
+            "3",
+            "4"
+        ],
+        [
+            "1",
+            "19",
+            "3",
+            "5",
+            "7",
+            "8",
+            "10"
+        ],
+        [
+            "1",
+            "19",
+            "3",
+            "5",
+            "7",
+            "8",
+            "12"
+        ],
+        [
+            "1",
+            "19",
+            "3",
+            "5",
+            "7",
+            "9",
+            "16"
+        ]
+    ],
+    "prime_paths_statements": [
+        [
+            "if letter == ',':\\l",
+            "s_list.append(' ')\\l",
+            "for letter in s:\\l",
+            "s_list = ''.join(s_list)\\l",
+            "return s_list.split()\\l"
+        ],
+        [
+            "if letter == ',':\\l",
+            "s_list.append(letter)\\l",
+            "for letter in s:\\l",
+            "s_list = ''.join(s_list)\\l",
+            "return s_list.split()\\l"
+        ],
+        [
+            "s_list.append(' ')\\l",
+            "for letter in s:\\l",
+            "if letter == ',':\\l",
+            "s_list.append(letter)\\l"
+        ],
+        [
+            "s_list.append(letter)\\l",
+            "for letter in s:\\l",
+            "if letter == ',':\\l",
+            "s_list.append(' ')\\l"
+        ],
+        [
+            "from typing import *\\ldef words_string(s):...\\lwords_string('Hi, my name is John')\\l",
+            "words_string",
+            "if not s:\\l",
+            "return []\\l"
+        ],
+        [
+            "from typing import *\\ldef words_string(s):...\\lwords_string('Hi, my name is John')\\l",
+            "words_string",
+            "if not s:\\l",
+            "s_list = []\\l",
+            "for letter in s:\\l",
+            "if letter == ',':\\l",
+            "s_list.append(' ')\\l"
+        ],
+        [
+            "from typing import *\\ldef words_string(s):...\\lwords_string('Hi, my name is John')\\l",
+            "words_string",
+            "if not s:\\l",
+            "s_list = []\\l",
+            "for letter in s:\\l",
+            "if letter == ',':\\l",
+            "s_list.append(letter)\\l"
+        ],
+        [
+            "from typing import *\\ldef words_string(s):...\\lwords_string('Hi, my name is John')\\l",
+            "words_string",
+            "if not s:\\l",
+            "s_list = []\\l",
+            "for letter in s:\\l",
+            "s_list = ''.join(s_list)\\l",
+            "return s_list.split()\\l"
+        ]
+    ],
+    "prime_paths_linenumbers": [
+        [
+            9,
+            10,
+            8,
+            14,
+            15
+        ],
+        [
+            9,
+            12,
+            8,
+            14,
+            15
+        ],
+        [
+            10,
+            8,
+            9,
+            12
+        ],
+        [
+            12,
+            8,
+            9,
+            10
+        ],
+        [
+            1,
+            17,
+            3,
+            4
+        ],
+        [
+            1,
+            17,
+            3,
+            6,
+            8,
+            9,
+            10
+        ],
+        [
+            1,
+            17,
+            3,
+            6,
+            8,
+            9,
+            12
+        ],
+        [
+            1,
+            17,
+            3,
+            6,
+            8,
+            14,
+            15
+        ]
+    ],
+    "covered_statements_linenumbers": [
+        1,
+        2,
+        3,
+        6,
+        8,
+        9,
+        10,
+        12,
+        14,
+        15,
+        17
+    ],
+    "missing_statements_linenumbers": [
+        4
+    ],
+    "covered_prime_paths_linenumbers": [
+        [
+            9,
+            10,
+            8,
+            14,
+            15
+        ],
+        [
+            9,
+            12,
+            8,
+            14,
+            15
+        ],
+        [
+            10,
+            8,
+            9,
+            12
+        ],
+        [
+            12,
+            8,
+            9,
+            10
+        ],
+        [
+            1,
+            17,
+            3,
+            6,
+            8,
+            9,
+            10
+        ],
+        [
+            1,
+            17,
+            3,
+            6,
+            8,
+            9,
+            12
+        ],
+        [
+            1,
+            17,
+            3,
+            6,
+            8,
+            14,
+            15
+        ]
+    ],
+    "missing_prime_paths_linenumbers": [
+        [
+            1,
+            17,
+            3,
+            4
+        ]
+    ],
+    "num_total_prime_paths": 8,
+    "num_covered_paths": 7,
+    "prime_path_coverage": 0.88,
+    "cfg_png": "/home/yang/share_repo/StaticAnalysis/cfglogshumaneval/HumanEval_101_CFG.png",
+    "cfg_dot": "/home/yang/share_repo/StaticAnalysis/cfglogshumaneval/HumanEval_101_CFG.dot"
+}

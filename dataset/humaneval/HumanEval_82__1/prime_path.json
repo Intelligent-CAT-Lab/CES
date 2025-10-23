@@ -1,0 +1,150 @@
+{
+    "humaneval_id": "HumanEval_82__1",
+    "python_file": "HumanEval_82__1/main.py",
+    "input_file": "HumanEval_82__1/input.txt",
+    "prime_paths_nodes": [
+        [
+            "10",
+            "7",
+            "11"
+        ],
+        [
+            "1",
+            "17",
+            "3",
+            "5",
+            "6"
+        ],
+        [
+            "1",
+            "17",
+            "3",
+            "5",
+            "7",
+            "11"
+        ],
+        [
+            "1",
+            "17",
+            "3",
+            "5",
+            "7",
+            "10",
+            "12"
+        ]
+    ],
+    "prime_paths_statements": [
+        [
+            "if l % i == 0:\\l",
+            "for i in range(2, l):\\l",
+            "return True\\l"
+        ],
+        [
+            "from typing import *\\ldef prime_length(string):...\\lprime_length('0')\\l",
+            "prime_length",
+            "l = len(string)\\l",
+            "if l == 0 or l == 1:\\l",
+            "return False\\l"
+        ],
+        [
+            "from typing import *\\ldef prime_length(string):...\\lprime_length('0')\\l",
+            "prime_length",
+            "l = len(string)\\l",
+            "if l == 0 or l == 1:\\l",
+            "for i in range(2, l):\\l",
+            "return True\\l"
+        ],
+        [
+            "from typing import *\\ldef prime_length(string):...\\lprime_length('0')\\l",
+            "prime_length",
+            "l = len(string)\\l",
+            "if l == 0 or l == 1:\\l",
+            "for i in range(2, l):\\l",
+            "if l % i == 0:\\l",
+            "return False\\l"
+        ]
+    ],
+    "prime_paths_linenumbers": [
+        [
+            9,
+            8,
+            11
+        ],
+        [
+            1,
+            13,
+            5,
+            6,
+            7
+        ],
+        [
+            1,
+            13,
+            5,
+            6,
+            8,
+            11
+        ],
+        [
+            1,
+            13,
+            5,
+            6,
+            8,
+            9,
+            10
+        ]
+    ],
+    "covered_statements_linenumbers": [
+        1,
+        4,
+        5,
+        6,
+        7,
+        13
+    ],
+    "missing_statements_linenumbers": [
+        8,
+        9,
+        10,
+        11
+    ],
+    "covered_prime_paths_linenumbers": [
+        [
+            1,
+            13,
+            5,
+            6,
+            7
+        ]
+    ],
+    "missing_prime_paths_linenumbers": [
+        [
+            9,
+            8,
+            11
+        ],
+        [
+            1,
+            13,
+            5,
+            6,
+            8,
+            11
+        ],
+        [
+            1,
+            13,
+            5,
+            6,
+            8,
+            9,
+            10
+        ]
+    ],
+    "num_total_prime_paths": 4,
+    "num_covered_paths": 1,
+    "prime_path_coverage": 0.25,
+    "cfg_png": "/home/yang/share_repo/StaticAnalysis/cfglogshumaneval/HumanEval_82__1_CFG.png",
+    "cfg_dot": "/home/yang/share_repo/StaticAnalysis/cfglogshumaneval/HumanEval_82__1_CFG.dot"
+}

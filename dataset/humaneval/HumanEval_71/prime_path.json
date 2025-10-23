@@ -1,0 +1,89 @@
+{
+    "humaneval_id": "HumanEval_71",
+    "python_file": "HumanEval_71/main.py",
+    "input_file": "HumanEval_71/input.txt",
+    "prime_paths_nodes": [
+        [
+            "1",
+            "11",
+            "3",
+            "4"
+        ],
+        [
+            "1",
+            "11",
+            "3",
+            "5",
+            "8"
+        ]
+    ],
+    "prime_paths_statements": [
+        [
+            "from typing import *\\ldef triangle_area(a, b, c):...\\ltriangle_area(3, 4, 5)\\l",
+            "triangle_area",
+            "if a + b <= c or a + c <= b or b + c <= a:\\l",
+            "return -1\\l"
+        ],
+        [
+            "from typing import *\\ldef triangle_area(a, b, c):...\\ltriangle_area(3, 4, 5)\\l",
+            "triangle_area",
+            "if a + b <= c or a + c <= b or b + c <= a:\\l",
+            "s = (a + b + c) / 2\\larea = (s * (s - a) * (s - b) * (s - c)) ** 0.5\\larea = round(area, 2)\\l",
+            "return area\\l"
+        ]
+    ],
+    "prime_paths_linenumbers": [
+        [
+            1,
+            10,
+            3,
+            4
+        ],
+        [
+            1,
+            10,
+            3,
+            5,
+            6,
+            7,
+            8
+        ]
+    ],
+    "covered_statements_linenumbers": [
+        1,
+        2,
+        3,
+        5,
+        6,
+        7,
+        8,
+        10
+    ],
+    "missing_statements_linenumbers": [
+        4
+    ],
+    "covered_prime_paths_linenumbers": [
+        [
+            1,
+            10,
+            3,
+            5,
+            6,
+            7,
+            8
+        ]
+    ],
+    "missing_prime_paths_linenumbers": [
+        [
+            1,
+            10,
+            3,
+            4
+        ]
+    ],
+    "num_total_prime_paths": 2,
+    "num_covered_paths": 1,
+    "prime_path_coverage": 0.5,
+    "cfg_png": "/home/yang/share_repo/StaticAnalysis/cfglogshumaneval/HumanEval_71_CFG.png",
+    "cfg_dot": "/home/yang/share_repo/StaticAnalysis/cfglogshumaneval/HumanEval_71_CFG.dot"
+}
