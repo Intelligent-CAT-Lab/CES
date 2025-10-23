@@ -50,13 +50,13 @@ bash scripts/run_ces.sh $MODEL_ID $DATASET $CACHE_DIR
 ### RQ2. Reasoning Consistency Across Tests
 To reproduce the results in RQ2, please run the following command:
 ```
-bash scripts/run_consistency.sh $MODEL_ID$ $DATASET$
+bash scripts/run_consistency.sh $MODEL_ID $DATASET
 ```
 
 ### RQ3. Diagnostic Analysis
 After prompting LLMs on CES, run the follwoing command to locate the simulation divergence:
 ```
-bash scripts/run_divergence_localization.sh $MODEL_ID$ $DATASET$
+bash scripts/run_divergence_localization.sh $MODEL_ID $DATASET
 ```
 Annlysis results will be written into `Experiment_Results/summary/incorrect_output/{model_id}_{dataset}.json`
 And we will also print results, for example
