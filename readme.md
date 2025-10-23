@@ -5,7 +5,7 @@ Authors are Changshu Liu, Yang Chen, and Reyhaneh Jabbarvand.
 <p align="center">
 <a href="#-run-ces">🔥 Run CES</a>•
 <a href="">🏆 Leaderboard</a>
-<a href="#-Evaluate New Models">⚙️ Evaluate New LLMs</a> • 
+<a href="#-evaluate-new-models">⚙️ Evaluate New LLMs</a> • 
 <a href="#️-add-new-datasets">⚙️ Add New Benchmarks</a> • 
 <a href="#-citation">📝 Citation</a>
 </p>
@@ -48,6 +48,8 @@ bash scripts/run_ces.sh $MODEL_ID $DATASET $CACHE_DIR
 
 
 ### RQ2. Reasoning Consistency Across Tests
+For each reasoning problem, you can find the covered prime paths corresponding to its input in `dataset/{$DATASET}/{$Problem_ID}/prime_path.json`
+
 To reproduce the results in RQ2, please run the following command:
 ```
 bash scripts/run_consistency.sh $MODEL_ID $DATASET
@@ -149,6 +151,12 @@ Then run the following command:
 bash scripts/extract_properties.sh $DATASET_NAME
 ```
 Ground truth values of program properties will be exported under `dataset/summary`
+
+To obtain the prime path coverage for each reasoing problem in the new dataset, run the following command:
+```
+bash script/extract_prime_path.sh $DATASET_NAME
+```
+You can check the generated control graph under `./src/prime_path_extraction/logs_{$DATASET_NAME}`.
 
 
 ## 📝 Citation
