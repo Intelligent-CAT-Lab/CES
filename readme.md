@@ -1,6 +1,6 @@
 # Assessing Coherency and Consistency of Code Execution Reasoning by Large Language Models
 Artifact for the paper Assessing Coherency and Consistency of Code Execution Reasoning by Large Language Models, accepted by  the 48th IEEE/ACM International Conference on Software Engineering (ICSE 2026).
-Authors are [Changshu Liu](https://topgunlcs98.github.io/profile/), [Yang Chen](https://yangc9.github.io), [and Reyhaneh Jabbarvand](https://reyhaneh.cs.illinois.edu).
+Authors are [Changshu Liu](https://topgunlcs98.github.io/profile/), [Yang Chen](https://yangc9.github.io), and [Reyhaneh Jabbarvand](https://reyhaneh.cs.illinois.edu).
 
 <p align="center">
 <a href="#-run-ces">🔥 Run CES</a>•
