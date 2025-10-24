@@ -4,7 +4,7 @@ Authors are Changshu Liu, Yang Chen, and Reyhaneh Jabbarvand.
 
 <p align="center">
 <a href="#-run-ces">🔥 Run CES</a>•
-<a href="">🏆 Leaderboard</a>
+<a href="https://topgunlcs98.github.io/ces-leaderboard/">🏆 Leaderboard</a>
 <a href="#-evaluate-new-models">⚙️ Evaluate New LLMs</a> • 
 <a href="#️-add-new-datasets">⚙️ Add New Benchmarks</a> • 
 <a href="#-citation">📝 Citation</a>
