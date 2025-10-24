@@ -163,10 +163,10 @@ You can check the generated control graph under `./src/prime_path_extraction/log
 If you find this repository useful, please cite this as
 ```
 @article{liu2025assessing,
-  title={Assessing Coherency and Consistency of Code Execution Reasoning by Large Language Models}, 
-  author={Changshu Liu and Yang Chen and Reyhaneh Jabbarvand},
-  year={2025},
-  journal = {the 48th IEEE/ACM International Conference on Software Engineering (ICSE 2026)},
+  title={Assessing Coherency and Consistency of Code Execution Reasoning by Large Language Models},
+  author={Liu, Changshu and Chen, Yang and Jabbarvand, Reyhaneh},
+  journal={arXiv preprint arXiv:2510.15079},
+  year={2025}
 }
 ```
 
