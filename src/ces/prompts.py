@@ -2,7 +2,7 @@ import openai
 import time
 import os
 from litellm import completion
-import google.generativeai as genai
+# import google.generativeai as genai
 from vllm import LLM, SamplingParams
 import json
 
@@ -130,10 +130,10 @@ def generator_lllm(model, prompt):
     print(f"failed after {retries} attempts")
     return ""
 
-def generator_gemini(model, prompt):
-    model = genai.GenerativeModel(model)
-    response = model.generate_content(prompt)
-    return response.text
+# def generator_gemini(model, prompt):
+#     model = genai.GenerativeModel(model)
+#     response = model.generate_content(prompt)
+#     return response.text
 
 
 def generator_vllm(model, prompt, max_tokens):
