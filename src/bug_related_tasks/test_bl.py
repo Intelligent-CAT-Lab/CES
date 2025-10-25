@@ -37,6 +37,8 @@ def check_output(result_root, dataset):
         hf_id = d
         path_bl = os.path.join(result_root, d, 'predict.txt')
         path_gt = os.path.join(dataset_root, hf_id, 'buggy_line.txt')
+        if not os.path.exists(path_bl) or not os.path.exists(path_gt):
+            continue
         pred = open(path_bl, 'r').read().strip('\n').strip().replace(" ",'')
         gt = open(path_gt, 'r').read().strip('\n').strip().replace(" ",'')
         if pred == gt:
@@ -44,8 +46,7 @@ def check_output(result_root, dataset):
             results[d] = 1
         else:
             results[d] = 0
-            
-    print(correct, total, correct/total)
+    print(f"Bug Localization:{correct/total}")
     with open(wr_path, 'w') as wr:
         json.dump(results, wr, indent=4)        
         

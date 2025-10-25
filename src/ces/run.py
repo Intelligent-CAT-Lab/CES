@@ -2,9 +2,10 @@ import os
 import json
 from create_prompts import create_prompt
 from transformers import AutoModelForCausalLM, AutoTokenizer
-from prompts import chatgpt_generator, huggingface_generator, huggingface_generator_chat, generator_gemini, generator_lllm, generator_vllm
+from prompts import chatgpt_generator, huggingface_generator, generator_lllm, generator_vllm
 from tqdm import tqdm
 import argparse
+from vllm import LLM, SamplingParams
 
 AUTH_TOKEN = os.getenv('AUTH_TOKEN')
 MAX_NEW_TOKEN = 2048
@@ -115,16 +116,21 @@ def annotate_code(code_path, loop_data, condition_data, branch_data):
 
 def load_model(model_id, cache_dir, api_type):
     ## openai models:
-    if api_type != "vllm":
-        return model_id, None
+    if api_type == "vllm":
+        return LLM(model_id,
+                   download_dir=cache_dir, 
+                   tensor_parallel_size=1
+                   ), None
     ## huggingface models
+    elif api_type == "litellm":
+        return model_id, None
     else:
         model = AutoModelForCausalLM.from_pretrained(model_id, device_map="auto", cache_dir=cache_dir)
         tokenizer = AutoTokenizer.from_pretrained(model_id, device_map="auto", cache_dir=cache_dir)
         return model, tokenizer
 
 def main(dataset, pl, model_id, cache_dir, write_dir, direct, no_nl):
-    json_path = "config/model_config.json"
+    json_path = "./config/model_config.json"
     model_config = json.load(open(json_path, 'r'))
     api_type = model_config[model_id]["api"]
 
@@ -158,6 +164,10 @@ def main(dataset, pl, model_id, cache_dir, write_dir, direct, no_nl):
         if not os.path.exists(write_folder):
             os.makedirs(write_folder)
         write_path = os.path.join(write_folder, 'response.txt')
+        
+        if os.path.exists(write_path):
+            # print(f"{write_path} exists, skip")
+            continue
 
         if direct:
             prompt = create_prompt(code_path, model_id, source_code, code_input, dataset, pl, direct, no_nl)
@@ -172,12 +182,6 @@ def main(dataset, pl, model_id, cache_dir, write_dir, direct, no_nl):
         if not prompt:
             print(f"skip {d}")
             continue
-        if api_type == "huggingface":
-            response = huggingface_generator((model, tokenizer), prompt, MAX_NEW_TOKEN)
-        elif api_type == "openai":
-            err_flg, response = chatgpt_generator(model_id, prompt)
-            if err_flg:
-                response = 'ERR: reaches maximum context length'
         elif api_type == "litellm":
             response = generator_lllm(model_id, prompt)
         elif api_type == "vllm":

@@ -15,6 +15,9 @@ def cleanup(result_root, dataset):
         tests_path = os.path.join(root_dataset, d, 'test.txt')
         ut_path = os.path.join(result_root, d, 'ut.py')
         
+        if not os.path.exists(tests_path):
+            continue
+        
         response = open(response_path, 'r').read()
         if 'starcoder' in response_path:
             fixed_code = response.split("<fim_suffix><fim_middle>")[-1].split('```python')[1].split("```")[0]
@@ -84,8 +87,7 @@ def test_code(result_root, dataset):
             results[d] = 0
     with open(wr_path, 'w') as wr:
         json.dump(results, wr, indent=4)
-        
-    print(pass_count, total_count, pass_count/total_count)
+    print(f"Bug Repair:{pass_count/total_count}")
 
 
 if __name__ == "__main__":

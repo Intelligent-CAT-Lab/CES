@@ -270,5 +270,5 @@ if __name__ == "__main__":
     args = parser.parse_args()
     model = args.model
     dataset = args.dataset
-    path = f"./Experiment_Results/{model}/{dataset}"
+    path = f"./Experiment_Results/{model.split('/')[-1]}/{dataset}"
     parse_all(path)

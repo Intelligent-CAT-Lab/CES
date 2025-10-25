@@ -13,3 +13,5 @@ tqdm==4.67.1
 transformers==4.56.2
 tree_sitter==0.20.4
 vllm==0.10.2
+accelerate==1.11.0
+gdown==5.2.0

@@ -7,7 +7,7 @@ def load_task_label(model, task, dataset):
     return task_labels
 
 def load_ces_labels(model, dataset):
-    path_ces = f"./Experiment_Results//summary/{model}_{dataset}.json"
+    path_ces = f"./Experiment_Results/summary/{model}_{dataset}.json"
     ces_labels = json.load(open(path_ces, 'r'))
     return ces_labels
 

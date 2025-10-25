@@ -204,7 +204,7 @@ if __name__ =="__main__":
 
     summary_dir = "./Experiment_Results/summary"
     os.makedirs(summary_dir, exist_ok=True)
-    write_path = f"{summary_dir}/{model}_{dataset}.json"
+    write_path = f"{summary_dir}/{model.split('/')[-1]}_{dataset}.json"
     
     summary = {}
     for program_id in os.listdir(dataset_root):
@@ -218,7 +218,8 @@ if __name__ =="__main__":
             # print(pred_output_path)
             continue
         else:
-            print(pred_output_path)
+            # print(pred_output_path)
+            pass
         pred_output = open(pred_output_path, 'r').read().lstrip().strip('\n')
         gt_output = open(gt_output_path, 'r').read().lstrip().strip('\n')
         pred_output = convert_value(pred_output)
@@ -291,7 +292,7 @@ if __name__ =="__main__":
             overall_results['reasoning'] = 0
         summary[program_id] = overall_results
         # print(overall_results)
-    
-    with open(write_path, 'w') as wr:
-        json.dump(summary, wr, indent=4)
+    if not os.path.exists(write_path):
+        with open(write_path, 'w') as wr:
+            json.dump(summary, wr, indent=4)
         

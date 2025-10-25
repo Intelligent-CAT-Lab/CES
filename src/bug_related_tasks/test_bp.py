@@ -50,7 +50,8 @@ def check_output(result_root, dataset):
             results[d] = 0
     with open(wr_path, 'w') as wr:
         json.dump(results, wr, indent=4)
-    print(correct, total, correct/total)
+    # print(correct, total, correct/total)
+    print(f"Bug Prediction:{correct/total}")
 
 
 if __name__ == "__main__":

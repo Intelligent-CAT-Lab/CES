@@ -81,7 +81,6 @@ def main(model_id, dataset, cache_dir, write_dir, with_tests):
         if api_type == "vllm":
             response = generator_vllm(model, prompt, MAX_NEW_TOKEN)
 
-        print(write_path)
         with open(write_path, 'w') as wr:
             wr.write(response)
 

@@ -1,8 +1,8 @@
 __pycache__
-
 /config
 /dataset/summary
 /Experiment_Results
 /cached
 *coverage.txt
 *model_config.json
+/dataset/humaneval/*

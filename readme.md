@@ -13,7 +13,7 @@ Authors are [Changshu Liu](https://topgunlcs98.github.io/profile/), [Yang Chen](
 ## 📋 Getting Started
 step 1. Run the following commands to install all the dependencies on your local machine:
 ```
-conda create -n ces python=3.8
+conda create -n ces python=3.12
 conda activate ces
 pip install -r requirements.txt
 ```
@@ -46,6 +46,33 @@ bash scripts/run_ces.sh $MODEL_ID $DATASET $CACHE_DIR
 
 ```CACHE_DIR```: the directory to save huggingface model checkpoints.
 
+This command will print LLMs' reasoning coherency in the console as follows:
+```
+====== CO 72 ======
+(Coherent Reasoning, Correct Output),   Ratio
+11 0.8194444444444444
+01 0.09722222222222222
+10 0.08333333333333333
+====== LO 36 ======
+(Coherent Reasoning, Correct Output),   Ratio
+01 0.3888888888888889
+11 0.5555555555555556
+10 0.05555555555555555
+====== LC 225 ======
+(Coherent Reasoning, Correct Output),   Ratio
+10 0.18666666666666668
+01 0.4533333333333333
+11 0.36
+====== Other 153 ======
+(Coherent Reasoning, Correct Output),   Ratio
+11 0.8805031446540881
+10 0.08176100628930817
+====== Overall 486 ======
+(Coherent Reasoning, Correct Output),   Ratio
+01 0.25
+11 0.6097560975609756
+10 0.12804878048780488
+``` 
 
 ### RQ2. Reasoning Consistency Across Tests
 For each reasoning problem, you can find the covered prime paths corresponding to its input in `dataset/{$DATASET}/{$Problem_ID}/prime_path.json`
@@ -53,6 +80,12 @@ For each reasoning problem, you can find the covered prime paths corresponding t
 To reproduce the results in RQ2, please run the following command:
 ```
 bash scripts/run_consistency.sh $MODEL_ID $DATASET
+```
+This command will print the summary of the reasoning consistency of the assessed LLM:
+```
+Strong Reasoning: 0.09146341463414634
+Weak Reasoning: 0.6463414634146342
+Random Reasoning: 0.2621951219512195
 ```
 
 ### RQ3. Diagnostic Analysis
@@ -82,10 +115,17 @@ To compare an LLM’s performance on bug repair, bug prediction, bug localizatio
 ```
 bash scripts/run_bug_tasks.sh $MODEL_ID HumanEvalFix $CACHE_DIR
 ```
+This command will print the performance of the LLMs on bug related tasks:
+```
+Bug Repair:0.93125
+Bug Prediction:0.8875
+Bug Localization:0.7125
+```
 Then use the CES framework to perform a reliable analysis of the model’s performance on bug-related tasks:
 ```
 bash scripts/analyze_bug_tasks.sh $MODEL_ID HumanEvalFix
 ```
+
 This command generate JSON reports under `./Experiment_Results/summary/bug_task_analysis`, and  print key statistics in the console, for example:
 ```
 ======Bug Repair gpt-4-turbo  HumanEvalFix ======

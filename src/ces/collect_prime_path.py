@@ -1,8 +1,8 @@
 import re
 import os
-
-def extract_prime_path():
-    root = "/home/changshu/CODEMIND/dataset/humaneval"
+import json 
+def extract_prime_path_bk():
+    root = "./dataset/humaneval"
     pattern = r'\d+%'
     coverage_set = {}
     for d in os.listdir(root):
@@ -13,6 +13,20 @@ def extract_prime_path():
                 result = re.findall(pattern, line)
         coverage_set[d] = result[0]
     
+    return coverage_set
+
+
+def extract_prime_path():
+    root = "./dataset/humaneval"
+    coverage_set = {}
+    for d in os.listdir(root):
+        coverage_path = os.path.join(root, d, 'prime_path.json')
+        if os.path.exists(coverage_path):
+            coverage_data= json.load(open(coverage_path, 'r'))
+            coverage = coverage_data['prime_path_coverage']
+            coverage_set[d] = coverage
+        else:
+            coverage_set[d] = 1
     return coverage_set
 
 def find_strong():

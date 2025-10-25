@@ -2,7 +2,6 @@ import openai
 import time
 import os
 from litellm import completion
-import google.generativeai as genai
 from vllm import LLM, SamplingParams
 import json
 

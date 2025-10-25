@@ -2,7 +2,7 @@ import ast
 import os
 import astunparse
 import json
-import javalang
+
 from subprocess import PIPE, Popen
 from tqdm import tqdm
 from func_timeout import func_set_timeout
