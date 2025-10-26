@@ -153,11 +153,6 @@ likely success: 52
 incoherent: 31
 ```
 
-### RQ5. Assessing Coherency and Consistency of Code Execution Reasoning by Large Language Models
-
-To compare LLMs' performance on CES with REVAL, we have provided LLMs' performance on 82 overlapped problems under `src/REval`.
-
-
 ## ⚙️ Evaluate New Models
 If you want to eleluate new LLMs with CES:
 
@@ -206,13 +201,15 @@ bash script/extract_prime_path.sh $DATASET_NAME
 ```
 You can check the generated control graph under `./src/prime_path_extraction/logs_{$DATASET_NAME}`.
 
-## Artifiacts
+## 📀 Artifiacts
 Please download `CES-Artifact.zip` from our [Zenodo](https://zenodo.org/records/17451159) repo. We have organized our experiment results as follows:
 
 1. RQ1: This directory contains results of LLMs on CES. We have uploaded json reports to show models' performance on each individual reasoning problem.
 2. RQ2: This directory contains an excel file which includes statistics on the reasoning consistenncy of LLMs. We use this excel to create Figure 6 in the paper.
 3. RQ3: This directory contains an excel sheet which includes detailed breakdown on LLMs' reasoning divergence. We use this excel to create Figure 7 in the paper.
 4. RQ4: This direcory contains result of LLMs on CES, Bug Repair, Bug Localization, and Bug Prediction. We also uploaed json files to report models' performance on each problem in HumanEvalPack.
+
+5. RQ5: This directory contains reports of LLMs' performance on REVAL and CodeMind.
 
 ## 📝 Citation
 If you find this repository useful, please cite this as
