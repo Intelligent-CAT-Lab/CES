@@ -1,5 +1,5 @@
 # Assessing Coherency and Consistency of Code Execution Reasoning by Large Language Models
-Artifact for the paper Assessing Coherency and Consistency of Code Execution Reasoning by Large Language Models, accepted by  the 48th IEEE/ACM International Conference on Software Engineering (ICSE 2026).
+Artifact for the paper [Assessing Coherency and Consistency of Code Execution Reasoning by Large Language Models](https://arxiv.org/abs/2510.15079), accepted by  the 48th IEEE/ACM International Conference on Software Engineering ([ICSE 2026](https://conf.researchr.org/home/icse-2026)).
 Authors are [Changshu Liu](https://topgunlcs98.github.io/profile/), [Yang Chen](https://yangc9.github.io), and [Reyhaneh Jabbarvand](https://reyhaneh.cs.illinois.edu).
 
 <p align="center">
@@ -35,6 +35,10 @@ docker run -it ces bash
 > [!NOTE]
 > If you are using MacOS with an Apple chip, please consider adding `--platform=linux/amd64` in `docker build`.
 
+You can also use the following command to pull the buit image in case you have difficulty in building the image locally and then run `docker run`:
+```
+docker image pull ericliuuiuc/ces
+```
 ## 🔥 Run CES (**C**ode **E**xecuation **S**imulation)
 We provided a demo video to walk through CES.👇
 [![watch the video](demo-cover.png)](https://youtu.be/-0LT4EZmQHE)
