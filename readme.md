@@ -34,6 +34,8 @@ docker run -it ces bash
 ```
 
 ## 🔥 Run CES (**C**ode **E**xecuation **S**imulation)
+We provided a demo video to walk through CES.👇
+[![watch the video](demo-cover.png)](https://youtu.be/-0LT4EZmQHE)
 ### RQ1. Performance in CES
 To reprodeuce LLMs' performance on CES, please run the folliwing command:
 ```
