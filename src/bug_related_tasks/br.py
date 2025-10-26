@@ -90,7 +90,7 @@ if __name__ == "__main__":
     parser.add_argument("--model", type=str, default='none')
     parser.add_argument("--dataset", type=str, default='none', help="select one from [CodeNet, Avatar, cruxeval, mbpp, humaneval]")
     parser.add_argument("--cache", type=str, default="./cache")
-    parser.add_argument("--writePath", type=str, default="../Experiment_Results")
+    parser.add_argument("--writePath", type=str, default="./Experiment_Results")
     parser.add_argument("--add_tests", action='store_true' )
     args = parser.parse_args()
 

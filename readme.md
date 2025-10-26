@@ -26,12 +26,14 @@ bash scripts/setup_data.sh
 ```
 
 Alternatively, we provide a Dockerfile to reproduce the results of CES.
-Please download [Docker](https://www.docker.com/) and and then execute the following to create a docker image and execute the container in interactive mode:
+Please first finishi step 2 and step 3 and then download [Docker](https://www.docker.com/), and execute the following to create a docker image and execute the container in interactive mode:
 
 ```
 docker build -t ces .
 docker run -it ces bash
 ```
+> [!NOTE]
+> If you are using MacOS with an Apple chip, please consider adding `--platform=linux/amd64` in `docker build`.
 
 ## 🔥 Run CES (**C**ode **E**xecuation **S**imulation)
 We provided a demo video to walk through CES.👇
