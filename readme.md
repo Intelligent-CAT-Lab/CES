@@ -37,7 +37,7 @@ docker run -it ces bash
 
 You can also use the following command to pull the buit image in case you have difficulty in building the image locally and then run `docker run`:
 ```
-docker image pull ericliuuiuc/ces
+docker pull ericliuuiuc/ces:v0.0
 ```
 ## 🔥 Run CES (**C**ode **E**xecuation **S**imulation)
 We provided a demo video to walk through CES.👇
@@ -56,26 +56,26 @@ bash scripts/run_ces.sh $MODEL_ID $DATASET $CACHE_DIR
 
 This command will print LLMs' reasoning coherency in the console as follows:
 ```
-====== CO 72 ======
+====== CO ======
 (Coherent Reasoning, Correct Output),   Ratio
 11 0.8194444444444444
 01 0.09722222222222222
 10 0.08333333333333333
-====== LO 36 ======
+====== LO ======
 (Coherent Reasoning, Correct Output),   Ratio
 01 0.3888888888888889
 11 0.5555555555555556
 10 0.05555555555555555
-====== LC 225 ======
+====== LC ======
 (Coherent Reasoning, Correct Output),   Ratio
 10 0.18666666666666668
 01 0.4533333333333333
 11 0.36
-====== Other 153 ======
+====== Other ======
 (Coherent Reasoning, Correct Output),   Ratio
 11 0.8805031446540881
 10 0.08176100628930817
-====== Overall 486 ======
+====== Overall ======
 (Coherent Reasoning, Correct Output),   Ratio
 01 0.25
 11 0.6097560975609756
@@ -206,6 +206,13 @@ bash script/extract_prime_path.sh $DATASET_NAME
 ```
 You can check the generated control graph under `./src/prime_path_extraction/logs_{$DATASET_NAME}`.
 
+## Artifiacts
+Please download `CES-Artifact.zip` from our [Zenodo](https://zenodo.org/records/17451159) repo. We have organized our experiment results as follows:
+
+1. RQ1: This directory contains results of LLMs on CES. We have uploaded json reports to show models' performance on each individual reasoning problem.
+2. RQ2: This directory contains an excel file which includes statistics on the reasoning consistenncy of LLMs. We use this excel to create Figure 6 in the paper.
+3. RQ3: This directory contains an excel sheet which includes detailed breakdown on LLMs' reasoning divergence. We use this excel to create Figure 7 in the paper.
+4. RQ4: This direcory contains result of LLMs on CES, Bug Repair, Bug Localization, and Bug Prediction. We also uploaed json files to report models' performance on each problem in HumanEvalPack.
 
 ## 📝 Citation
 If you find this repository useful, please cite this as
