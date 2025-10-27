@@ -11,22 +11,27 @@ Authors are [Changshu Liu](https://topgunlcs98.github.io/profile/), [Yang Chen](
 </p>
 
 ## 📋 Getting Started
-step 1. Run the following commands to install all the dependencies on your local machine:
+**Step 0**.  Please start by cloning this repository:
+```
+git clone git@github.com:Intelligent-CAT-Lab/CES.git
+```
+**Step 1**. Run the following commands to install all the dependencies on your local machine:
 ```
 conda create -n ces python=3.12
 conda activate ces
+cd CES
 pip install -r requirements.txt
 ```
 
-Step 2. Go to `config/model_config.json` and edit the file with your OpenAI/Google AI Studio key/DeepSeek key.
+**Step 2.** Go to `config/model_config.json` and edit the file with your OpenAI/Google AI Studio key/DeepSeek key.
 
-Step 3. Download the meta-data required by the experiments:
+**Step 3.** Download the meta-data required by the experiments:
 ```
 bash scripts/setup_data.sh
 ```
 
 Alternatively, we provide a Dockerfile to reproduce the results of CES.
-Please first finishi step 2 and step 3 and then download [Docker](https://www.docker.com/), and execute the following to create a docker image and execute the container in interactive mode:
+Please first finishi step 0, 2 and 3, then download [Docker](https://www.docker.com/) and execute the following commands to create a docker image and run the container in the interactive mode:
 
 ```
 docker build -t ces .
@@ -43,7 +48,7 @@ docker pull ericliuuiuc/ces:v0.0
 We provided a demo video to walk through CES.👇
 [![watch the video](demo-cover.png)](https://youtu.be/6tyOwASc_vw)
 ### RQ1. Performance in CES
-To reprodeuce LLMs' performance on CES, please run the folliwing command:
+To evaluate LLMs on CES, please run the folliwing command:
 ```
 bash scripts/run_ces.sh $MODEL_ID $DATASET $CACHE_DIR
 ```
@@ -116,10 +121,10 @@ X_X_0_0: 11
 0_0_X_X: 5
 1_0_X_X: 7
 ```
-Definations of symbols can be found in the RQ3 in the paper.
+Definations of symbols ($V_l$, $I_l$, $P_c$, and $B_c$) can be found in the RQ3 of the paper.
 
 ### RQ4. CES and Bug-Related Tasks
-To compare an LLM’s performance on bug repair, bug prediction, bug localization, and CES, run:
+To compare an LLM’s performance on bug repair, bug prediction, bug localization, with CES, run:
 ```
 bash scripts/run_bug_tasks.sh $MODEL_ID HumanEvalFix $CACHE_DIR
 ```
@@ -129,7 +134,7 @@ Bug Repair:0.93125
 Bug Prediction:0.8875
 Bug Localization:0.7125
 ```
-Then use the CES framework to perform a reliable analysis of the model’s performance on bug-related tasks:
+Then use the following command to perform a reliable analysis of the model’s performance on bug-related tasks:
 ```
 bash scripts/analyze_bug_tasks.sh $MODEL_ID HumanEvalFix
 ```
@@ -156,7 +161,7 @@ incoherent: 31
 ## ⚙️ Evaluate New Models
 If you want to eleluate new LLMs with CES:
 
-(1) Update configuration in [model_config.json](./config/model_config.json)
+(1) Update the configuration in [model_config.json](./config/model_config.json)
 
 (2) Add new prompts in [create_prompts.py](./src/ces/create_prompts.py), if necessary.
 
@@ -193,7 +198,7 @@ Then run the following command:
 ```
 bash scripts/extract_properties.sh $DATASET_NAME
 ```
-Ground truth values of program properties will be exported under `dataset/summary`
+Ground truth values of program properties will be exported to `dataset/summary`
 
 To obtain the prime path coverage for each reasoing problem in the new dataset, run the following command:
 ```
@@ -208,7 +213,6 @@ Please download `CES-Artifact.zip` from our [Zenodo](https://zenodo.org/records/
 2. RQ2: This directory contains an excel file which includes statistics on the reasoning consistenncy of LLMs. We use this excel to create Figure 6 in the paper.
 3. RQ3: This directory contains an excel sheet which includes detailed breakdown on LLMs' reasoning divergence. We use this excel to create Figure 7 in the paper.
 4. RQ4: This direcory contains result of LLMs on CES, Bug Repair, Bug Localization, and Bug Prediction. We also uploaed json files to report models' performance on each problem in HumanEvalPack.
-
 5. RQ5: This directory contains reports of LLMs' performance on REVAL and CodeMind.
 
 ## 📝 Citation
