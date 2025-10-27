@@ -6,3 +6,4 @@ __pycache__
 *coverage.txt
 *model_config.json
 /dataset/humaneval/*
+/build
