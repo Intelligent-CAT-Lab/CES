@@ -24,27 +24,27 @@ def pprint(model, dataset):
         statistics["Overall"][label] += 1
     
     s1 = sum([statistics["CO"][t] for t in statistics["CO"]])
-    print("="*6, "CO",  s1, "="*6)
+    print("="*6, "CO", "="*6)
     print("(Coherent Reasoning, Correct Output),   Ratio")
     for k in statistics["CO"]:
         print(k, statistics["CO"][k]/s1)
     s2 = sum([statistics["LO"][t] for t in statistics["LO"]])
-    print("="*6, "LO", s2, "="*6)
+    print("="*6, "LO", "="*6)
     print("(Coherent Reasoning, Correct Output),   Ratio")
     for k in statistics["LO"]:
         print(k, statistics["LO"][k]/s2)
     s3 = sum([statistics["LC"][t] for t in statistics["LC"]])
-    print("="*6, "LC", s3, "="*6)
+    print("="*6, "LC", "="*6)
     print("(Coherent Reasoning, Correct Output),   Ratio")
     for k in statistics["LC"]:
         print(k, statistics["LC"][k]/s3)    
     s4 = sum([statistics["Other"][t] for t in statistics["Other"]])
-    print("="*6,"Other", s4, "="*6)
+    print("="*6,"Other", "="*6)
     print("(Coherent Reasoning, Correct Output),   Ratio")
     for k in statistics["Other"]:
         print(k, statistics["Other"][k]/(53*3))      
     s5 = sum([statistics["Overall"][t] for t in statistics["Overall"]])
-    print("="*6,"Overall", s5, "="*6)
+    print("="*6,"Overall", "="*6)
     print("(Coherent Reasoning, Correct Output),   Ratio")
     for k in statistics["Overall"]:
         print(k, statistics["Overall"][k]/(164*3))
