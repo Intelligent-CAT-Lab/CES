@@ -117,10 +117,11 @@ def annotate_code(code_path, loop_data, condition_data, branch_data):
 def load_model(model_id, cache_dir, api_type):
     ## openai models:
     if api_type == "vllm":
-        return LLM(model_id,
-                   download_dir=cache_dir, 
-                   tensor_parallel_size=1
-                   ), None
+        if "deepseek-coder-33b" in model_id:
+            model = LLM(model=model_id, max_model_len=35000, download_dir=cache_dir)
+        else:
+            model = LLM(model=model_id, download_dir=cache_dir, max_model_len=4810)
+        return model, None
     ## huggingface models
     elif api_type == "litellm":
         return model_id, None
@@ -139,7 +140,7 @@ def main(dataset, pl, model_id, cache_dir, write_dir, direct, no_nl):
     branch_data = read_branch_data(dataset)
 
     dataset_path = find_path(dataset, pl)
-    model, tokenizer = load_model(model_id, cache_dir, api_type) 
+    model, _ = load_model(model_id, cache_dir, api_type) 
 
     write_root = os.path.join(write_dir, model_id.split("/")[-1], dataset)
     if no_nl:

@@ -7,3 +7,5 @@ __pycache__
 *model_config.json
 /dataset/humaneval/*
 /build
+**/build/
+**/__pycache__/
