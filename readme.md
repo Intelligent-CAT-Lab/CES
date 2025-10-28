@@ -40,10 +40,6 @@ docker run -it ces bash
 > [!NOTE]
 > If you are using MacOS with an Apple chip, please consider adding `--platform=linux/amd64` in `docker build`.
 
-You can also use the following command to pull the buit image in case you have difficulty in building the image locally and then run `docker run`:
-```
-docker pull ericliuuiuc/ces:v0.0
-```
 ## 🔥 Run CES (**C**ode **E**xecuation **S**imulation)
 We provided a demo video to walk through CES.👇
 [![watch the video](demo-cover.png)](https://youtu.be/6tyOwASc_vw)
